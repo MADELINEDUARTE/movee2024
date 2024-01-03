@@ -23,7 +23,7 @@
                         <ul>
                             <li>
                                 <div class="header-top-contact-icon">
-                                    <img src="/assets/img/icon/mail.svg" alt="">
+                                    <img src="/public/assets/img/icon/mail.svg" alt="">
                                 </div>
                                 <div class="header-top-contact-info">
                                     <a href="mailto:info@example.com">info@123renting.es</a>
@@ -31,7 +31,7 @@
                             </li>
                             <li>
                                 <div class="header-top-contact-icon">
-                                    <img src="/assets/img/icon/clock.svg" alt="">
+                                    <img src="/public/assets/img/icon/clock.svg" alt="">
                                 </div>
                                 <div class="header-top-contact-info">
                                     <a href="#">Lunes a Domingo: 9:00 a 19:00</a>
@@ -60,7 +60,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container custom-nav">
                 <a class="navbar-brand" href="index.html">
-                    <img src="/assets/img/logo/logoh.png" alt="logo">
+                    <img src="/public/assets/img/logo/logoh.png" alt="logo">
                 </a>
                 <div class="mobile-menu-right">
                     <div class="header-account header-mobile-account">
@@ -143,7 +143,7 @@
                     <div class="header-nav-right">
                         <div class="header-phone">
                             <div class="header-phone-icon">
-                                <img src="/assets/img/icon/phone.svg" alt="">
+                                <img src="/public/assets/img/icon/phone.svg" alt="">
                             </div>
                             <div class="header-phone-content">
                                 <span>Necesitas una Furgo?</span>
@@ -195,7 +195,7 @@
     <!-- hero slider -->
     <div class="hero-section">
         <div class="hero-slider owl-carousel owl-theme" style="display: block">
-            <div class="hero-single" style="background: url('/assets/img/slider/slider-1.png')">
+            <div class="hero-single" style="background: url('/public/assets/img/slider/slider-1.png')">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-9 col-lg-7">
@@ -223,7 +223,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-single" style="background: url('/assets/img/slider/slider-2.png')">
+            <div class="hero-single" style="background: url('/public/assets/img/slider/slider-2.png')">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-9 col-lg-7">
@@ -252,7 +252,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-single" style="background: url('/assets/img/slider/slider-3.png')">
+            <div class="hero-single" style="background: url('/public/assets/img/slider/slider-3.png')">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-9 col-lg-7">
@@ -374,7 +374,7 @@
                         <div class="feature-item">
                           <a href="#"> 
                             <div class="testimonial-quote-icon">
-                                <img src="/assets/img/icon/location.svg" alt=""/>
+                                <img src="/public/assets/img/icon/location.svg" alt=""/>
                             </div>
                             <div class="feature-content">
                                 <h4>Pas de la Casa</h4>
@@ -387,7 +387,7 @@
                         <div class="feature-item">
                             <a href="#">
                               <div class="testimonial-quote-icon">
-                                  <img src="/assets/img/icon/location.svg" alt="">
+                                  <img src="/public/assets/img/icon/location.svg" alt="">
                               </div>
                               <div class="feature-content">
                                   <h4>La Massana</h4>
@@ -400,7 +400,7 @@
                         <div class="feature-item">
                             <a href="#">
                               <div class="testimonial-quote-icon">
-                                  <img src="/assets/img/icon/location.svg" alt="">
+                                  <img src="/public/assets/img/icon/location.svg" alt="">
                               </div>
                               <div class="feature-content">
                                   <h4>Escaldes - EngordanyAvinguda</h4>
@@ -424,12 +424,12 @@
                 <div class="col-lg-6 d-flex align-items-center justify-content-center">
                     <div class="about-left">
                         <div class="about-img">
-                            <img class="about-img-1" src="/assets/img/about/01.png" alt="">
+                            <img class="about-img-1" src="/public/assets/img/about/01.png" alt="">
                         </div>
-                        <div class="about-shape"><img src="/assets/img/shape/02.png" alt=""></div>
+                        <div class="about-shape"><img src="/public/assets/img/shape/02.png" alt=""></div>
                         <div class="about-experience">
                             <div class="about-experience-icon">
-                                <img src="/assets/img/icon/car-rent.svg" alt="">
+                                <img src="/public/assets/img/icon/car-rent.svg" alt="">
                             </div>
                             <b>Más disponibilidad <br>  Y el Mejor Servicio</b>
                         </div>
@@ -498,13 +498,13 @@
                                 <!--<span><i class="fas fa-star"></i> 5.0</span>-->
                             </div>
                         <div class="car-img">
-                            <img src="/assets/img/car/01.png" alt="">
+                            <img src="/public/assets/img/car/01.png" alt="">
                         </div>
                         
                             <ul class="car-list">
-                                <li><img src="/assets/img/car/euro.png" class="far fa-car">100/D.&nbsp;&nbsp;</li>
-                                <li><img src="/assets/img/car/pasajeros.png"  class="far fa-user-tie">5 Personas&nbsp;</li>
-                                <li><img src="/assets/img/car/puerta.png" class="far fa-gas-pump">&nbsp;&nbsp;&nbsp;5 Puertas&nbsp;&nbsp;</li>
+                                <li><img src="/public/assets/img/car/euro.png" class="far fa-car">100/D.&nbsp;&nbsp;</li>
+                                <li><img src="/public/assets/img/car/pasajeros.png"  class="far fa-user-tie">5 Personas&nbsp;</li>
+                                <li><img src="/public/assets/img/car/puerta.png" class="far fa-gas-pump">&nbsp;&nbsp;&nbsp;5 Puertas&nbsp;&nbsp;</li>
                                <!-- <li><i class="far fa-road"></i>10.15km / 1-litre</li>
                                 <li><i class="far fa-steering-wheel"></i>Automatic</li>-->
                             </ul>
@@ -531,13 +531,13 @@
                                 <!--<span><i class="fas fa-star"></i> 5.0</span>-->
                             </div>
                             <div class="car-img">
-                                <img src="/assets/img/car/02.png" alt="">
+                                <img src="/public/assets/img/car/02.png" alt="">
                             </div>
                 
                             <ul class="car-list">
-                                <li><img src="/assets/img/car/euro.png" class="far fa-car">100/D.&nbsp;&nbsp;</li>
-                                <li><img src="/assets/img/car/pasajeros.png" class="far fa-user-tie">5 Personas&nbsp;</li>
-                                <li><img src="/assets/img/car/puerta.png" class="far fa-gas-pump">&nbsp;&nbsp;&nbsp;5 Puertas&nbsp;&nbsp;</li>
+                                <li><img src="/public/assets/img/car/euro.png" class="far fa-car">100/D.&nbsp;&nbsp;</li>
+                                <li><img src="/public/assets/img/car/pasajeros.png" class="far fa-user-tie">5 Personas&nbsp;</li>
+                                <li><img src="/public/assets/img/car/puerta.png" class="far fa-gas-pump">&nbsp;&nbsp;&nbsp;5 Puertas&nbsp;&nbsp;</li>
                                 <!-- <li><i class="far fa-road"></i>10.15km / 1-litre</li>
                                                     <li><i class="far fa-steering-wheel"></i>Automatic</li>-->
                             </ul>
@@ -564,13 +564,13 @@
                                 <!--<span><i class="fas fa-star"></i> 5.0</span>-->
                             </div>
                             <div class="car-img">
-                                <img src="/assets/img/car/03.png" alt="">
+                                <img src="/public/assets/img/car/03.png" alt="">
                             </div>
                 
                             <ul class="car-list">
-                                <li><img src="/assets/img/car/euro.png" class="far fa-car">100/D.&nbsp;&nbsp;</li>
-                                <li><img src="/assets/img/car/pasajeros.png"  class="far fa-user-tie">5 Personas&nbsp;</li>
-                                <li><img src="/assets/img/car/puerta.png" class="far fa-gas-pump">&nbsp;&nbsp;&nbsp;5 Puertas&nbsp;&nbsp;</li>
+                                <li><img src="/public/assets/img/car/euro.png" class="far fa-car">100/D.&nbsp;&nbsp;</li>
+                                <li><img src="/public/assets/img/car/pasajeros.png"  class="far fa-user-tie">5 Personas&nbsp;</li>
+                                <li><img src="/public/assets/img/car/puerta.png" class="far fa-gas-pump">&nbsp;&nbsp;&nbsp;5 Puertas&nbsp;&nbsp;</li>
                                 <!-- <li><i class="far fa-road"></i>10.15km / 1-litre</li>
                                  <li><i class="far fa-steering-wheel"></i>Automatic</li>-->
                             </ul>
@@ -587,7 +587,7 @@
                 <!--<div class="col-lg-6 col-xl-4">
                     <div class="car-item">
                         <div class="car-img">
-                            <img src="/assets/img/car/02.jpg" alt="">
+                            <img src="/public/assets/img/car/02.jpg" alt="">
                         </div>
                         <div class="car-content">
                             <div class="car-top">
@@ -612,7 +612,7 @@
                 <div class="col-lg-6 col-xl-4">
                     <div class="car-item">
                         <div class="car-img">
-                            <img src="/assets/img/car/03.jpg" alt="">
+                            <img src="/public/assets/img/car/03.jpg" alt="">
                         </div>
                         <div class="car-content">
                             <div class="car-top">
@@ -637,7 +637,7 @@
                 <div class="col-lg-6 col-xl-4">
                     <div class="car-item">
                         <div class="car-img">
-                            <img src="/assets/img/car/04.jpg" alt="">
+                            <img src="/public/assets/img/car/04.jpg" alt="">
                         </div>
                         <div class="car-content">
                             <div class="car-top">
@@ -662,7 +662,7 @@
                 <div class="col-lg-6 col-xl-4">
                     <div class="car-item">
                         <div class="car-img">
-                            <img src="/assets/img/car/05.jpg" alt="">
+                            <img src="/public/assets/img/car/05.jpg" alt="">
                         </div>
                         <div class="car-content">
                             <div class="car-top">
@@ -687,7 +687,7 @@
                 <div class="col-lg-6 col-xl-4">
                     <div class="car-item">
                         <div class="car-img">
-                            <img src="/assets/img/car/06.jpg" alt="">
+                            <img src="/public/assets/img/car/06.jpg" alt="">
                         </div>
                         <div class="car-content">
                             <div class="car-top">
@@ -797,7 +797,7 @@
                         <div class="choose-content-wrapper">
                             <div class="choose-item">
                                 <div class="choose-item-icon">
-                                    <img src="/assets/img/icon/car.svg" alt="">
+                                    <img src="/public/assets/img/icon/car.svg" alt="">
                                 </div>
                                 <div class="choose-item-info">
                                     <h3>Best Quality Cars</h3>
@@ -807,7 +807,7 @@
                             </div>
                             <div class="choose-item">
                                 <div class="choose-item-icon">
-                                    <img src="/assets/img/icon/car-key.svg" alt="">
+                                    <img src="/public/assets/img/icon/car-key.svg" alt="">
                                 </div>
                                 <div class="choose-item-info">
                                     <h3>No Cancellation Fees</h3>
@@ -817,7 +817,7 @@
                             </div>
                             <div class="choose-item">
                                 <div class="choose-item-icon">
-                                    <img src="/assets/img/icon/driver.svg" alt="">
+                                    <img src="/public/assets/img/icon/driver.svg" alt="">
                                 </div>
                                 <div class="choose-item-info">
                                     <h3>Personal Driver</h3>
@@ -856,7 +856,7 @@
                         </div>
                         <p class="about-text">Sabemos que puedes tener muchas dudas al momento de planificar tu mejor viaje, por ello te ayudamos a resolverlas para que disfrutes al máximo.</p>
                         <div class="faq-img mt-3">
-                            <img src="/assets/img/faq/01.png" alt="">
+                            <img src="/public/assets/img/faq/01.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -965,7 +965,7 @@
                 <div class="testimonial-single">
                     <div class="testimonial-content">
                         <div class="testimonial-author-img">
-                            <img src="/assets/img/testimonial/01.jpg" alt="">
+                            <img src="/public/assets/img/testimonial/01.jpg" alt="">
                         </div>
                         <div class="testimonial-author-info">
                             <h4>Alejandro Roura</h4>
@@ -986,7 +986,7 @@
                             Trato incomparable, lasfurgonetas están en perfecto estado, total comodidad. Sin duda volveré a 123 RENTING.
                         </p>
                         <div class="testimonial-quote-icon">
-                            <img src="/assets/img/icon/quote.svg" alt="">
+                            <img src="/public/assets/img/icon/quote.svg" alt="">
                         </div>
                     </div>
                     
@@ -994,7 +994,7 @@
                 <div class="testimonial-single">
                     <div class="testimonial-content">
                         <div class="testimonial-author-img">
-                            <img src="/assets/img/testimonial/02.jpg" alt="">
+                            <img src="/public/assets/img/testimonial/02.jpg" alt="">
                         </div>
                         <div class="testimonial-author-info">
                             <h4>Daniel Rodriguéz</h4>
@@ -1014,7 +1014,7 @@
                             Trato profesional, amable, las furgonetas son de primera calidad.
                         </p>
                         <div class="testimonial-quote-icon">
-                            <img src="/assets/img/icon/quote.svg" alt="">
+                            <img src="/public/assets/img/icon/quote.svg" alt="">
                         </div>
                     </div>
                     
@@ -1022,7 +1022,7 @@
                 <div class="testimonial-single">
                     <div class="testimonial-content">
                         <div class="testimonial-author-img">
-                            <img src="/assets/img/testimonial/03.jpg" alt="">
+                            <img src="/public/assets/img/testimonial/03.jpg" alt="">
                         </div>
                         <div class="testimonial-author-info">
                             <h4>Monserrat Calves</h4>
@@ -1042,7 +1042,7 @@
                             Hoy he alquilado una furgoneta, el trato es estupendo, no puedes ser más majos.
                         </p>
                         <div class="testimonial-quote-icon">
-                            <img src="/assets/img/icon/quote.svg" alt="">
+                            <img src="/public/assets/img/icon/quote.svg" alt="">
                         </div>
                     </div>
                     
@@ -1050,7 +1050,7 @@
                 <div class="testimonial-single">
                     <div class="testimonial-content">
                         <div class="testimonial-author-img">
-                            <img src="/assets/img/testimonial/04.jpg" alt="">
+                            <img src="/public/assets/img/testimonial/04.jpg" alt="">
                         </div>
                         <div class="testimonial-author-info">
                             <h4>Miguel Dalton</h4>
@@ -1070,7 +1070,7 @@
                             He alquilado mi primera furgoneta a través de la APP, es muy fácil!.
                         </p>
                         <div class="testimonial-quote-icon">
-                            <img src="/assets/img/icon/quote.svg" alt="">
+                            <img src="/public/assets/img/icon/quote.svg" alt="">
                         </div>
                     </div>
                     
@@ -1078,7 +1078,7 @@
                 <div class="testimonial-single">
                     <div class="testimonial-content">
                         <div class="testimonial-author-img">
-                            <img src="/assets/img/testimonial/05.jpg" alt="">
+                            <img src="/public/assets/img/testimonial/05.jpg" alt="">
                         </div>
                         <div class="testimonial-author-info">
                             <h4>Angelica Carré</h4>
@@ -1098,7 +1098,7 @@
                             Realice mi reserva en su oficina, atención insuperable, le dieron respuestas a todas mis dudas. Recomendado al 100%.
                         </p>
                         <div class="testimonial-quote-icon">
-                            <img src="/assets/img/icon/quote.svg" alt="">
+                            <img src="/public/assets/img/icon/quote.svg" alt="">
                         </div>
                     </div>
                     
@@ -1115,13 +1115,13 @@
     <div class="partner-area bg pt-50 pb-50">
         <div class="container">
             <div class="partner-wrapper partner-slider owl-carousel owl-theme">
-                <img src="/assets/img/partner/01.png" alt="thumb">
-                <img src="/assets/img/partner/02.png" alt="thumb">
-                <img src="/assets/img/partner/03.png" alt="thumb">
-                <img src="/assets/img/partner/04.png" alt="thumb">
-                <!--<img src="/assets/img/partner/01.png" alt="thumb">
-                <img src="/assets/img/partner/02.png" alt="thumb">
-                <img src="/assets/img/partner/01.png" alt="thumb">-->
+                <img src="/public/assets/img/partner/01.png" alt="thumb">
+                <img src="/public/assets/img/partner/02.png" alt="thumb">
+                <img src="/public/assets/img/partner/03.png" alt="thumb">
+                <img src="/public/assets/img/partner/04.png" alt="thumb">
+                <!--<img src="/public/assets/img/partner/01.png" alt="thumb">
+                <img src="/public/assets/img/partner/02.png" alt="thumb">
+                <img src="/public/assets/img/partner/01.png" alt="thumb">-->
             </div>
         </div>
     </div>
@@ -1145,7 +1145,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-item">
                         <div class="blog-item-img">
-                            <img src="/assets/img/blog/01.jpg" alt="Thumb">
+                            <img src="/public/assets/img/blog/01.jpg" alt="Thumb">
                         </div>
                         <div class="blog-item-info">
                             <div class="blog-item-meta">
@@ -1164,7 +1164,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-item">
                         <div class="blog-item-img">
-                            <img src="/assets/img/blog/02.jpg" alt="Thumb">
+                            <img src="/public/assets/img/blog/02.jpg" alt="Thumb">
                         </div>
                         <div class="blog-item-info">
                             <div class="blog-item-meta">
@@ -1183,7 +1183,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="blog-item">
                         <div class="blog-item-img">
-                            <img src="/assets/img/blog/03.jpg" alt="Thumb">
+                            <img src="/public/assets/img/blog/03.jpg" alt="Thumb">
                         </div>
                         <div class="blog-item-info">
                             <div class="blog-item-meta">
@@ -1217,10 +1217,10 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="footer-widget-box about-us">
                         <a href="#" class="footer-logo1">
-                            <img class="log1blanco" src="/assets/img/logo/logo-light1.png" alt="">
+                            <img class="log1blanco" src="/public/assets/img/logo/logo-light1.png" alt="">
                         </a>
                         <a href="#" class="footer-logo2">
-                            <img class="log2oscuro" src="/assets/img/logo/logoh.png" alt="">
+                            <img class="log2oscuro" src="/public/assets/img/logo/logoh.png" alt="">
                         </a>
 
                        <!-- <p class="mb-3">
@@ -1267,13 +1267,13 @@
                         <div class="footer-newsletter">
                             <p></p>
                         <ul class="pago">
-                            <!--<img src="/assets/img/footer/01.png" alt="">
+                            <!--<img src="/public/assets/img/footer/01.png" alt="">
                             <a href="">
-                            <img src="/assets/img/footer/02.png" alt="">
+                            <img src="/public/assets/img/footer/02.png" alt="">
                             </a>-->
-                            <a href=""><img src="/assets/img/footer/03.png" alt="">
+                            <a href=""><img src="/public/assets/img/footer/03.png" alt="">
                             </a>
-                            <a href=""><img src="/assets/img/footer/04.png" alt=""></a>
+                            <a href=""><img src="/public/assets/img/footer/04.png" alt=""></a>
                            
                         </ul>
                             <!--<div class="subscribe-form">

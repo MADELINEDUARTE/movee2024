@@ -1243,7 +1243,7 @@
                             <li><a href="#nosotros123"><i class="fas fa-caret-right"></i>Sobre Nosotros</a></li>
                            <!-- <li><a href="#"><i class="fas fa-caret-right"></i> Update News</a>-->
                             <li><a href="privacy.html"><i class="fas fa-caret-right"></i> Política de Privacidad</a></li>
-                            <li><NuxtLink to="/politica de cookies.vue"><i class="fas fa-caret-right"> Política de Cookies</NuxtLink></li>
+                            <li><NuxtLink to="/politicadecookies.vue"><i class="fas fa-caret-right"> Política de Cookies</NuxtLink></li>
                             <!--<li><a href="#"><i class="fas fa-caret-right"></i> Our Team</a>-->
                             
                         </ul>

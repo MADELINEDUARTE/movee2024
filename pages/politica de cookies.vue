@@ -1,32 +1,4 @@
 <template>
-    <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <!-- meta tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-
-    <!-- title -->
-    <title>123 RENTING Política de Cookies</title>
-
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
-
-    <!-- css -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-
-<body>
 
     <!-- preloader -->
     <div class="preloader">
@@ -75,7 +47,7 @@
                     </div>
                     <div class="header-top-right">
                         <div class="header-top-social">
-                            <a href="#" button id="bdark" i class="fa-regular fa-eclipse"></button></i></a>
+                            <a href="#" button id="bdark" i class="fa-regular fa-eclipse"></button></a>
                             <a href="https://www.facebook.com/profile.php?id=100063699933991&ref=bookmarks"><i
                                     class="fab fa-facebook-f"></i></a>
                             <a href="https://www.instagram.com/123renting.es/?hl=es"><i class="fab fa-instagram"></i></a>
@@ -84,7 +56,7 @@
                                     class="fa-brands fa-youtube"></i></a>
                             <a
                                 href="https://www.google.com/maps/place/123Renting/@39.5904605,-0.464268,17z/data=!3m1!4b1!4m6!3m5!1s0xd605da73e2c14c5:0x46e6275152a4f1f5!8m2!3d39.5904605!4d-0.464268!16s%2Fg%2F11h_2c1zdp?entry=ttu"><i
-                                    class="fa-brands fa-google"></i></i></a>
+                                    class="fa-brands fa-google"></i></a>
                         </div>
                     </div>
                 </div>
@@ -121,60 +93,11 @@
                     <div class="collapse navbar-collapse" id="main_nav">
                         <ul class="navbar-nav">
                             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                                <!--<ul class="dropdown-menu fade-down">
-                                       <li><a class="dropdown-item" href="index.html">Home Page 01</a></li>
-                                        <li><a class="dropdown-item" href="index-2.html">Home Page 02</a></li>
-                                        <li><a class="dropdown-item" href="index-3.html">Home Page 03</a></li>
-                                    </ul>-->
-                            </li>
+                                
                             <li class="nav-item"><a class="nav-link" href="index.html#visitanos">Oficinas</a></li>
-                                <!--<ul class="dropdown-menu fade-down">
-                                        <li><a class="dropdown-item" href="car.html">Car One</a></li>
-                                        <li><a class="dropdown-item" href="car-2.html">Car Two</a></li>
-                                        <li><a class="dropdown-item" href="car-single.html">Car Single</a></li>
-                                        <li><a class="dropdown-item" href="car-booking.html">Car Booking</a></li>
-                                        <li><a class="dropdown-item" href="car-checkout.html">Car Checkout</a></li>
-                                        <li><a class="dropdown-item" href="car-booking-confirm.html">Car Booking Confirm</a></li>
-                                    </ul>
-                            </li>-->
+                                
                             <li class="nav-item"><a class="nav-link" href="index.html#flota">Flota</a></li>
-                                <!--<ul class="dropdown-menu fade-down">
-                                        <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                                        <li><a class="dropdown-item" href="team.html">Our Team</a></li>
-                                        <li><a class="dropdown-item" href="pricing.html">Pricing Plan</a></li>
-                                        <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
-                                        <li><a class="dropdown-item" href="faq.html">Faq</a></li>
-                                        <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Account</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="login.html">Login</a></li>
-                                                <li><a class="dropdown-item" href="register.html">Register</a></li>
-                                                <li><a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="dropdown-item" href="404.html">404 Error</a></li>
-                                        <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-                                        <li><a class="dropdown-item" href="terms.html">Terms Of Service</a></li>
-                                        <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
-                                    <ul class="dropdown-menu fade-down">
-                                        <li><a class="dropdown-item" href="service.html">Services</a></li>
-                                        <li><a class="dropdown-item" href="service-single.html">Service Single</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
-                                    <ul class="dropdown-menu fade-down">
-                                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                                        <li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
-                                    </ul>
-                                </li>-->
-                            <!--<li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>-->
+                                
                         </ul>
                         <div class="header-nav-right">
                             <div class="header-phone">
@@ -472,10 +395,10 @@
                             <h4 class="footer-widget-title">Conócenos</h4>
                             <ul class="footer-list">
                                 <li><a href="#nosotros123"><i class="fas fa-caret-right"></i>Sobre Nosotros</a></li>
-                                <!-- <li><a href="#"><i class="fas fa-caret-right"></i> Update News</a>--></li>
+                                <!-- <li><a href="#"><i class="fas fa-caret-right"></i> Update News</a>-->
                                 <li><a href="privacy.html"><i class="fas fa-caret-right"></i> Política de Privacidad</a></li>
                                 <li><a href="politica de cookies.html"><i class="fas fa-caret-right"></i> Política de Cookies</a></li>
-                                <!--<li><a href="#"><i class="fas fa-caret-right"></i> Our Team</a>--></li>
+                                <!--<li><a href="#"><i class="fas fa-caret-right"></i> Our Team</a>-->
                             </ul>
                         </div>
                     </div>

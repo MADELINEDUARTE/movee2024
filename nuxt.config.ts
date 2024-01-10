@@ -29,7 +29,7 @@ export default defineNuxtConfig({
         { src: '/assets/js/jquery-ui.min.js',  },
         { src: '/assets/js/jquery.timepicker.min.js',  },
         { src: '/assets/js/wow.min.js',  },
-        { src: '/assets/js/main.js',  }
+        { src: '/assets/js/main.js', }
       ]
     },
     

@@ -47,7 +47,7 @@
                     </div>
                     <div class="header-top-right">
                         <div class="header-top-social">
-                            <a href="#" button id="bdark" i class="fa-regular fa-eclipse"></button></a>
+                            <a href="#" button id="bdark" i class="fa-regular fa-eclipse"></a>
                             <a href="https://www.facebook.com/profile.php?id=100063699933991&ref=bookmarks"><i
                                     class="fab fa-facebook-f"></i></a>
                             <a href="https://www.instagram.com/123renting.es/?hl=es"><i class="fab fa-instagram"></i></a>
@@ -464,7 +464,7 @@
                                         class="fa-brands fa-youtube"></i></a>
                                 <a
                                     href="https://www.google.com/maps/place/123Renting/@39.5904605,-0.464268,17z/data=!3m1!4b1!4m6!3m5!1s0xd605da73e2c14c5:0x46e6275152a4f1f5!8m2!3d39.5904605!4d-0.464268!16s%2Fg%2F11h_2c1zdp?entry=ttu"><i
-                                        class="fa-brands fa-google"></i></i></a>
+                                        class="fa-brands fa-google"></i></a>
                             </div>
                     </div>
                 </div>

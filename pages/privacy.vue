@@ -1,7 +1,6 @@
 <template>
     
-
-
+    
     <!-- preloader -->
     <div class="preloader">
         <div class="loader-ripple">
@@ -49,7 +48,11 @@
                     </div>
                     <div class="header-top-right">
                         <div class="header-top-social">
-                            <a href="#" button id="bdark" i class="fa-regular fa-eclipse"></a>
+                        <a href="#" id="bdark">
+                            <button>
+                                <i class="far fa-eclipse"></i>
+                            </button>
+                        </a>
                             <a href="https://www.facebook.com/profile.php?id=100063699933991ref=bookmarks"><i
                                     class="fab fa-facebook-f"></i></a>
                             <a href="https://www.instagram.com/123renting.es/?hl=es"><i class="fab fa-instagram"></i></a>
@@ -57,8 +60,9 @@
                             <a href="https://www.youtube.com/channel/UCDktymZ1Gi_bvVykstBc57Q"><i
                                     class="fa-brands fa-youtube"></i></a>
                             <a
-                                href="https://www.google.com/maps/place/123Renting/@39.5904605,-0.464268,17z/data=!3m1!4b1!4m6!3m5!1s0xd605da73e2c14c5:0x46e6275152a4f1f5!8m2!3d39.5904605!4d-0.464268!16s%2Fg%2F11h_2c1zdp?entry=ttu"><i
-                                    class="fa-brands fa-google"></i></a>
+                                href="https://www.google.com/maps/place/123Renting/@39.5904605,-0.464268,17z/data=!3m1!4b1!4m6!3m5!1s0xd605da73e2c14c5:0x46e6275152a4f1f5!8m2!3d39.5904605!4d-0.464268!16s%2Fg%2F11h_2c1zdp?entry=ttu">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -83,72 +87,23 @@
                                             Billing Info</a></li>
                                     <li><a class="dropdown-item" href="setting.html"><i class="far fa-cog"></i> Settings</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><i class="far fa-sign-out"></i> Log Out</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="far fa-sign-out"></i> Log Out</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-mobile-icon"><i class="far fa-bars"></i></span>
                         </button>
                     </div>
                     <div class="collapse navbar-collapse" id="main_nav">
                         <ul class="navbar-nav">
                             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                                <!--<ul class="dropdown-menu fade-down">
-                                       <li><a class="dropdown-item" href="index.html">Home Page 01</a></li>
-                                        <li><a class="dropdown-item" href="index-2.html">Home Page 02</a></li>
-                                        <li><a class="dropdown-item" href="index-3.html">Home Page 03</a></li>
-                                    </ul>-->
                             
                             <li class="nav-item"><a class="nav-link" href="index.html#visitanos">Oficinas</a></li>
-                                <!--<ul class="dropdown-menu fade-down">
-                                        <li><a class="dropdown-item" href="car.html">Car One</a></li>
-                                        <li><a class="dropdown-item" href="car-2.html">Car Two</a></li>
-                                        <li><a class="dropdown-item" href="car-single.html">Car Single</a></li>
-                                        <li><a class="dropdown-item" href="car-booking.html">Car Booking</a></li>
-                                        <li><a class="dropdown-item" href="car-checkout.html">Car Checkout</a></li>
-                                        <li><a class="dropdown-item" href="car-booking-confirm.html">Car Booking Confirm</a></li>
-                                    </ul>
-                            </li>-->
+                                
                             <li class="nav-item"><a class="nav-link" href="index.html#flota">Flota</a></li>
-                                <!--<ul class="dropdown-menu fade-down">
-                                        <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                                        <li><a class="dropdown-item" href="team.html">Our Team</a></li>
-                                        <li><a class="dropdown-item" href="pricing.html">Pricing Plan</a></li>
-                                        <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
-                                        <li><a class="dropdown-item" href="faq.html">Faq</a></li>
-                                        <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Account</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="login.html">Login</a></li>
-                                                <li><a class="dropdown-item" href="register.html">Register</a></li>
-                                                <li><a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="dropdown-item" href="404.html">404 Error</a></li>
-                                        <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-                                        <li><a class="dropdown-item" href="terms.html">Terms Of Service</a></li>
-                                        <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
-                                    <ul class="dropdown-menu fade-down">
-                                        <li><a class="dropdown-item" href="service.html">Services</a></li>
-                                        <li><a class="dropdown-item" href="service-single.html">Service Single</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
-                                    <ul class="dropdown-menu fade-down">
-                                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                                        <li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
-                                    </ul>
-                                </li>-->
-                            <!--<li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>-->
+                                
                         </ul>
                         <div class="header-nav-right">
                             <div class="header-phone">
@@ -207,18 +162,6 @@
 
     <main class="main">
 
-        <!-- breadcrumb -->
-        <!--<div class="site-breadcrumb" style="background: url(assets/img/breadcrumb/01.jpg)">
-            <div class="container">
-                <h2 class="breadcrumb-title">Política de privacidad</h2>
-            <div class="header-btn mt-2">
-                <a href="index.html #iniciatureserva" class="theme-btn"><strong>Inicia tu reserva</strong></a>
-            </div>
-            </div>
-        </div>-->
-        <!-- breadcrumb end -->
-
-        
         <!-- privacy policy -->
         <div class="pt-120 pb-120">
             <div class="container">
@@ -534,23 +477,11 @@
                             <div class="footer-newsletter">
                                 <p></p>
                                 <ul class="pago">
-                                    <!--<img src="assets/img/footer/01.png" alt="">
-                                    <a href="">
-                                        <img src="assets/img/footer/02.png" alt="">-->
-                                
                                     <a href=""><img src="assets/img/footer/03.png" alt="">
                                     </a>
                                     <a href=""><img src="assets/img/footer/04.png" alt=""></a>
-                    
                                 </ul>
-                               <!-- <div class="subscribe-form">
-                                    <form action="#">
-                                        <input type="email" class="form-control" placeholder="Correo electrónico">
-                                        <button class="theme-btn" type="submit"><strong>Suscríbete ahora</strong>
-                                            <i class="far fa-paper-plane"></i>
-                                        </button>
-                                    </form>
-                                </div>-->
+                               
                             </div>
                         </div>
                     </div>
@@ -595,6 +526,11 @@
     <!-- scroll-top end -->
 
 </template>
+    
+
+
+
+
 
 <!--  -->
 <script>

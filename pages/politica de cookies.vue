@@ -278,7 +278,7 @@
                                         <th>¿Transferen-cias de datos fuera de la UE?</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                
                                     <tr>
                                         <td rowspan="2">Cookies esenciales</td>
                                         <td>
@@ -346,7 +346,7 @@
                                         <td>Persistente</td>
                                         <td>Si</td>
                                     </tr>
-                                </tbody>
+                                
                             </table>
                         </div>
                         <br>

@@ -147,7 +147,7 @@
 
 
 
-    <main class="main">
+<main class="main">
 
         <!-- privacy policy -->
         <div class="pt-120 pb-120">
@@ -179,7 +179,7 @@
 
     <li class="text"><span class="punto"><strong>13. </strong></span>Es de obligado cumplimiento que el arrendatario lleve consigo siempre su ejemplar del contrato de alquiler vigente durante la duración del mismo. El documento Check In debe llevarse en todo momento visible en el vehículo. Si incumple dicha obligación, el arrendatario deberá asumir la sanción y abonar los gastos de gestión.</li>
     <li class="text"><span class="punto"><strong>14. </strong></span>Las traducciones de estas condiciones generales son meramente informativas y no tienen carácter jurídico vinculante en todo el detalle de su redacción, teniendo validez únicamente su versión en español.</li>
-</div>
+        </div>
 
 <div class="terms-content">
     <h3>CONDICIONES DE CONTRATACIÓN</h3>
@@ -340,93 +340,51 @@
         </li>
     </ul>
 </div>  
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- privacy policy end -->
-        
 
-    </main>
+<!-- privacy policy end -->
+</main>
 
 
 
     <!-- footer area -->
     <footer class="footer-area">
-        <div class="footer-widget">
-            <div class="container">
-                <div class="row footer-widget-wrapper pt-100 pb-70">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-widget-box about-us">
-                            <a href="#" class="footer-logo">
-                                <img src="assets/img/logo/logo-light1.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Conócenos</h4>
+    <div class="footer-widget">
+        <!-- ... (resto del código) ... -->
                             <ul class="footer-list">
                                 <li><a href="#nosotros123"><i class="fas fa-caret-right"></i>Sobre Nosotros</a></li>
                                 <li><a href="privacy.html"><i class="fas fa-caret-right"></i> Política de Privacidad</a></li>
                                 <li><a href="politica de cookies.html"><i class="fas fa-caret-right"></i> Política de Cookies</a></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Días Laborables</h4>
-                            <ul class="footer-list">
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Lunes a Domingo</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> De 9:00 a 19:00</a></li>
+               
+                    <!-- ... (resto del código) ... -->
+                            <ul class="pago">
+                                <li><a href="#"><img src="assets/img/footer/03.png" alt=""></a></li>
+                                <li><a href="#"><img src="assets/img/footer/04.png" alt=""></a></li>
                             </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Métodos de Pago</h4>
-                            <div class="footer-newsletter">
-                                <p></p>
-                                <ul class="pago">
-                                    <a href=""><img src="assets/img/footer/03.png" alt="">
-                                    </a>
-                                    <a href=""><img src="assets/img/footer/04.png" alt=""></a>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 align-self-center">
                         <p class="copyright-text">
-                            &copy; Copyright <span id="date"></span> <a href="#"> <strong>123 RENTING</strong></a> Todos los
+                            &copy; Copyright <span id="date"></span> <a href="#"><strong>123 RENTING</strong></a> Todos los
                             derechos reservados 2023.
                         </p>
                     </div>
                     <div class="col-md-6 align-self-center">
                         <ul class="footer-social">
-                            <div class="header-top-social">
-                                <a href="https://www.facebook.com/profile.php?id=100063699933991ref=bookmarks"><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/123renting.es/?hl=es"><i
-                                        class="fab fa-instagram"></i></a>
-                                <a href="https://twitter.com/1Renting"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.youtube.com/channel/UCDktymZ1Gi_bvVykstBc57Q"><i
-                                        class="fa-brands fa-youtube"></i></a>
-                                <a
-                                    href="https://www.google.com/maps/place/123Renting/@39.5904605,-0.464268,17z/data=!3m1!4b1!4m6!3m5!1s0xd605da73e2c14c5:0x46e6275152a4f1f5!8m2!3d39.5904605!4d-0.464268!16s%2Fg%2F11h_2c1zdp?entry=ttu"><i
-                                        class="fa-brands fa-google"></i></a>
-                            </div>
+                            <li><a href="https://www.facebook.com/profile.php?id=100063699933991ref=bookmarks"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/123renting.es/?hl=es"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/1Renting"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCDktymZ1Gi_bvVykstBc57Q"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="https://www.google.com/maps/place/123Renting/@39.5904605,-0.464268,17z/data=!3m1!4b1!4m6!3m5!1s0xd605da73e2c14c5:0x46e6275152a4f1f5!8m2!3d39.5904605!4d-0.464268!16s%2Fg%2F11h_2c1zdp?entry=ttu"><i class="fa-brands fa-google"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
     <!-- footer area end -->
 
 
@@ -444,28 +402,3 @@
 
 
 <!--  -->
-<script>
-    const bdark = document.querySelector('#bdark');
-    const body = document.querySelector('body');
-
-    load();
-
-    bdark.addEventListener('click', e => {
-        body.classList.toggle('darkmode');
-        store(body.classList.contains('darkmode'));
-    });
-
-    function load() {
-        const darkmode = localStorage.getItem('darkmode');
-
-        if (!darkmode) {
-            store('false');
-        } else if (darkmode == 'true') {
-            body.classList.add('darkmode');
-        }
-    }
-
-    function store(value) {
-        localStorage.setItem('darkmode', value);
-    }
-</script>

@@ -1,7 +1,4 @@
 <template>
-    
-   
-
 <!-- preloader -->
 <div class="preloader">
     <div class="loader-ripple">
@@ -10,8 +7,6 @@
     </div>
 </div>
 <!-- preloader end -->
-
-
 <!-- header area -->
 <header class="header">
     <!-- top header -->
@@ -186,9 +181,6 @@
     </div>
 </header>
 <!-- header area end -->
-
-
-
 
 <main class="main">
 

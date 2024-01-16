@@ -4795,7 +4795,7 @@ user profile css
 ====================== */
 
 .user-profile-sidebar {
-  background: #fff;
+  background: #111111;
   border-radius: 10px;
   margin-bottom: 25px;
   padding: 20px;
@@ -4828,7 +4828,7 @@ user profile css
 .user-profile-img button {
   position: absolute;
   border-radius: 50px;
-  background: #4F5DEC;
+  background: #E94B28;
   color: #fff;
   width: 30px;
   height: 30px;
@@ -4844,7 +4844,7 @@ user profile css
 }
 
 .user-profile-sidebar-list li a {
-  color: #111111;
+  color: #ffffff;
   padding: 6px 6px 6px 15px;
   display: block;
   transition: all .5s ease-in-out;
@@ -4852,11 +4852,12 @@ user profile css
 
 .user-profile-sidebar-list li a:hover{
   padding-left: 20px;
+  color: #ffffff;
 }
 
 .user-profile-sidebar-list li a i {
   margin-right: 5px;
-  color: #4F5DEC;
+  color: #E94B28;
 }
 
 .user-profile-sidebar-list .active i {
@@ -4864,20 +4865,20 @@ user profile css
 }
 
 .user-profile-sidebar-list .active {
-  background: #4F5DEC;
+  background: #E94B28;
   color: #fff;
   border-radius: 8px;
 }
 
 .user-profile-card {
-  background: #fff;
+  background: #111111;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
 }
 
 .user-profile-card-title {
-  color: #111111;
+  color: #E94B28;
   padding-bottom: 15px;
   margin-bottom: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -4886,6 +4887,7 @@ user profile css
 .profile-info-list li{
   margin: 12px 0;
   font-weight: bold;
+  color: white;
 }
 
 .profile-info-list li span{
@@ -4915,28 +4917,28 @@ user profile css
 }
 
 .car-table-btn{
-  border: 2px solid #EC3323;
+  border: 2px solid #E94B28;
   width: 32px;
   height: 32px;
   line-height: 28px;
   text-align: center;
   border-radius: 8px;
-  color: #EC3323;
+  color: #E94B28;
 }
 
 .car-table-btn:hover{
-  background: #EC3323;
+  background: #E94B28;
   color: #fff;
 }
 
 .transaction .car-table-btn{
-  border-color: #EC3323;
-  color: #EC3323;
+  border-color: #E94B28;
+  color: #E94B28;
   line-height: 27px;
 }
 
 .transaction .car-table-btn:hover{
-  background: #EC3323;
+  background: #E94B28;
   color: #fff;
 }
 
@@ -4956,7 +4958,7 @@ user profile css
 }
 
 .user-profile-form .form-control:focus{
-  border-color: #4F5DEC;
+  border-color: #E94B28;
 }
 
 .user-profile-form .theme-btn{

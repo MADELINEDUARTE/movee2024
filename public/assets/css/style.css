@@ -986,7 +986,7 @@ nav menu css
 
 /*bootstrap nav*/
 .navbar {
-  background: #;
+  background:#000000;
   padding-top: 0px;
   padding-bottom: 0px;
   box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
@@ -1383,7 +1383,7 @@ hero css
 .hero-slider.owl-theme .owl-nav [class*=owl-] {
   color: #fff;
   font-size: 30px;
-  margin: 0;af
+  margin: 0;
   padding: 0;
   background: rgba(255, 255, 255, 0.2);
   display: inline-block;
@@ -6064,7 +6064,7 @@ box-shadow: 0 0 5px 5px rgb(0 0 0 / 10%);
   color: #E94B28;
   position: relative;
   padding-bottom: 20px;
-  margin-botfootertom: 30px;
+  /*margin-botfootertom: 30px;*/
   font-size: 24px;
   z-index: 1;
 }

@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
     "nuxt": "^3.9.0",
     "vue": "^3.4.3",
     "vue-router": "^4.2.5"

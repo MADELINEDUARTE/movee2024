@@ -14,7 +14,7 @@
                                     data-wow-duration="1s" data-wow-delay=".25s">Reserva ahora!</h6>
                                 <h1 class="hero-title wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".50s">
-                                    Viaja sin límites <br>
+                                    {{$t('viaja_sin_limites')}} <br>
                                     <span>123Renting</span><br>
                                     Te lleva a tu destino
                                 </h1>

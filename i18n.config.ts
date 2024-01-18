@@ -2,21 +2,175 @@ export default defineI18nConfig(() => ({
     legacy: false,
     locale: 'en',
     messages: {
-        en: {
-            viaja_sin_limites: 'Travel without limits',
-
-
-
+        es: {
+            correo: 'info@123renting.es',
+            horarios: 'Lunes a Domingo: 9:00 a 19:00',
+            perfil: 'Mi perfil',
+            facturacion: 'Facturación',
+            ajustes: 'Ajustes',
+            viaja_sin_limites: 'Viaja sin Límites',
             
         },
-        es: {
-            viaja_sin_limites: 'Viaja sin Límites'
+        en: {
+            correo: 'info@123renting.es',
+            horarios: 'Monday to Sunday: 9:00 a.m. to 7:00 p.m.',
+            perfil: 'My profile',
+            facturacion: 'Billing',
+            ajustes: 'Settings',
+            cerrar_sesion: 'Sign off',
+            inicio: 'Start',
+            oficinas: 'Offices',
+            flota: 'Fleet',
+            necesitas_furgo: 'Do you need a Van?',
+            telefono: '812330/650310707',
+            reserva: 'Booking',
+            idioma_es: 'Español',
+            idioma_en: 'English',
+            idioma_ca: 'Català',
+            idioma_ger: 'Deutschland',
+            
+            conocenos: 'know us',
+            nosotros: 'About us',
+            politica_privacidad: 'Privacy Policy',
+            politica_de_cookies: 'Cookies policy',
+            dias_Laborables: 'Work days',
+            lun_dom: 'Monday to Sunday',
+            hora: 'From 9:00 to 19:00',
+            metodo_pagos: 'Payment methods',
+            copyright: 'Copyright',
+            r_123: '123RENTING',
+            derechos_reservados: 'All rights reserved 2024.',
+
+            reserva_ahora: 'Book now!',
+            viaja_sin_limites: 'Travel without limits',
+            destino: 'Takes you to your destination',
+            nuestra_flota: 'Our fleet adapts to all our clients and their needs.',
+
+            disfruta: 'Enjoy our 5% discount!',
+            paga_en: 'Pay in our',
+            oficina: 'Offices',
+            visitanos: 'Visit us!',
+            hacemos: 'We make your TRIP an unforgettable experience!',
+
+            descarga: 'Download',
+            nuestra_app: 'Our APP 123 RENTING',
+            cada_vez: 'Getting closer',
+            descargaste: 'Have you already downloaded our APP?. Download it here!',
+           
+            encuentra: 'Find the perfect Van',
+            ofi_recogida: 'Collection office',
+            elige: 'Choose a car',
+            ofi_devolucion: 'Return Office',
+            fecha_recogida: 'Pick up date',
+            h_recogida: 'Pick up time',
+            fecha_devolucion: 'Return Office',
+            h_devolucion: 'Return time',
+            b_inicia_reserva: 'Start your reservation',
+            furgoneta: 'Van',
+            mm_dd_aa: 'mm/dd/yy',
+            cero: '00:00 AM',
+
+            atencion: 'Top quality care',
+            nuestras_oficinas: 'in our offices',
+            direccion1: 'Pas de la Casa',
+            avenida1: 'Av. Pais Valenciano 33 Bj D.',
+            direccion2: 'The Massana',
+            avenida2: 'The Massana- Andorra',
+            direccion3: 'Escaldes - EngordanyAvinguda',
+            avenida3: 'Pont de la Tosca 9, Local 7',
+            b_ver_mas: 'See more offices',
+
+            disponibilidad: 'More availability',
+            mejor_serv: 'And the best service',
+            mejor_opcion: 'Your best option in the',
+            alquiler: 'Van Rental',
+            rapido: 'Fast and safe',
+            somos: 'We are a short and long term industrial vehicle rental company, providing not only companies and SMEs, but also for individuals and the self- employed, an easy, expert and responsible rental service, with a great variety in our fleet to meet all types of needs.That is, a trusted option for renting vans.The reservation is quick and simple!',
+            tarifas_s: 'Flexible rates',
+            eficiencia: 'Efficiency, technology and reliability are essential.',
+            elevado: 'High level of comfort.',
+
+            quieres: 'Do you want the best VACATIONS?',
+            nuestra: 'Our',
+            nombre_coche1: 'Mercedes Benz Citan',
+            nombre_coche2: '111 Tourer',
+            precio_d: '100/D.',
+            personas: '5 people',
+            puertas: '5 Doors',
+            basico: 'Basic 100€',
+            medio: 'Medium 125€',
+            primiun: 'Premium 135€',
+            ver_furgos: 'See more vans',
+            trabajamos: 'We work to be',
+            opcion: 'Your best option in the',
+            uno: '1',
+            pensamos: 'We think about you',
+            adapta: 'Our fleet adapts to all our clients and their needs.',
+            dos: '2',
+            siempre: 'Always open',
+            entregamos: 'We deliver and pick up vehicles from Monday to Sunday during our business hours.',
+            tres: '3',
+            rapidos: 'Fast and secure',
+            sistema: 'Our reservation system is fast and secure, as is the delivery and collection process.',
+            cuatro: '4',
+            contactanos: 'Contact Us',
+            llamanos: 'Call us at 650 31 07 07 or write to us on WhatsApp, and we will guide you through the reservation process.',
+
+            dudas: 'Do you have doubts?',
+            en123: 'At 123 RENTING',
+            respondemos: 'We respond to all',
+            preguntas: 'your questions',
+            sabemos: 'We know that you may have many doubts when planning your best trip, so we help you resolve them so that you can enjoy it to the fullest.',
+
+            como: 'How can I make a reservation?',
+            facil: 'Too easy! You can visit us at our offices, website or by downloading our App, we will be happy to help you.',
+            
+            necesito: 'What do I need to make a reservation?',
+            necesitas: 'You just need your identification document.',
+            carne: 'Driving license',
+            mayor: 'Be of age.',
+            listo: 'And that´s it, it´s very easy!',
+
+            puedo: 'Can I pick up the van at one office and return it to another?',
+            puedes: 'Yes, you can pick up your van at one office and return it to another, at no extra cost.',
+
+            puedo_recoger: 'Can I pick up and return the vehicle at any time?',
+            principio: 'In principle, the rented van must always be picked up during office hours, which will vary depending on the 123 RENTING delegation where the rental has been managed.',
+
+            circular: 'Can I travel outside of Spain?',
+            circular_furgo: 'If you need to travel with one of our vans outside the Spanish peninsular territory, you must inform us and you are authorized by the office where you will reserve the vehicle at least 72 hours in advance and you hire the extra INTERNATIONAL ASSISTANCE COVERAGE.',
+
+            testimonios: 'Testimonials of',
+            que_dicen: 'What do they say',
+            clientes: 'Our clients?',
+
+            nombre1: 'Alejandro Roura',
+            testimonio1: 'Incomparable treatment, the vans are in perfect condition, total comfort. I will definitely return to 123 RENTING.',
+            
+            nombre2: 'Daniel Rodriguéz',
+            testimonio2: 'Professional, friendly treatment, the vans are top quality.',
+
+            nombre3: 'Monserrat Calves',
+            testimonio3: 'Today I rented a van, the treatment is great, you couldn´t be nicer.',
+
+            nombre4: 'Miguel Dalton',
+            testimonio4: 'I have rented my first van through the APP, it is very easy!',
+
+            nombre5: 'Angelica Carré',
+            testimonio5: 'I made my reservation at their office, unsurpassed attention, they gave answers to all my questions. 100% recommended.',
+
+
+
         },
         ca: {
-            viaja_sin_limites: 'Viatja sense límits'
+            correo: 'info@123renting.es',
+            horarios: 'Dilluns a diumenge: 9:00 a 19:00',
+            viaja_sin_limites: 'Viatja sense límits',
         },
-        al: {
-            viaja_sin_limites: 'Reisen Sie ohne Grenzen'
+        ger: {
+            correo: 'info@123renting.es',
+            horarios: 'Montag bis Sonntag: 9:00 bis 19:00 Uhr',
+            viaja_sin_limites: 'Reisen Sie ohne Grenzen',
         }
     }
 }))

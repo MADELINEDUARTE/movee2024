@@ -2,170 +2,12 @@
 <LayoutWeb>
 <main class="main">
 
-    <!-- hero slider -->
-    <div class="hero-section">
-        <div class="hero-slider owl-carousel owl-theme" style="display: block">
-            <div class="hero-single" style="background: url('/assets/img/slider/slider-1.png')">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-9 col-lg-7">
-                            <div class="hero-content">
-                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".25s">Reserva ahora!</h6>
-                                <h1 class="hero-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".50s">
-                                    {{$t('viaja_sin_limites')}} <br>
-                                    <span>123Renting</span><br>
-                                    Te lleva a tu destino
-                                </h1>
-                                <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay=".75s">
-                                    Nuestra flota se adapta a todos nuestros clientes y sus necesidades.
-                                </p>
-                                <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay="1s">
-                                    <!--<a href="#" class="theme-btn"><strong>Reservar</strong><i class="far fa-arrow-right"></i></a>
-                                    <a href="#" class="theme-btn theme-btn4"><strong>Tarifas</strong><i
-                                    class="far fa-arrow-right"></i></a>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-single" style="background: url('/assets/img/slider/slider-2.png')">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-9 col-lg-7">
-                            <div class="hero-content">
-                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".25s">¡Disfruta de nuestro 5% de descuento!</h6>
-                                <h1 class="hero-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".50s">
-                                    Paga en nuestras<br> <span>oficinas</span> <br>¡Visítanos!
-                                </h1>
-                                <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay=".75s">
-                                    ¡Hacemos de tu VIAJE una experiencia inolvidable!
-                                </p>
-                                <div class="btn-descarga">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay="1s">
-                                    <!--<a href="#" class="theme-btn"><strong>Reservar</strong><i class="far fa-arrow-right"></i></a>
-                                    <a href="#" class="theme-btn theme-btn4"><strong>Tarifas</strong><i
-                                            class="far fa-arrow-right"></i></a>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-single" style="background: url('/assets/img/slider/slider-3.png')">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-9 col-lg-7">
-                            <div class="hero-content">
-                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".25s">¡Reserva ahora!</h6>
-                                <h1 class="hero-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".50s">
-                                    Descarga <br>
-                                     <span>Nuestra APP 123 RENTING</span> <br> 
-                                     Cada vez más cerca
-                                </h1>
-                                <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay=".75s">
-                                    ¿Ya descargaste nuestra APP?.
-                                    ¡Descargala aquí!
-                                </p>
-                                
-                                    
-
-                                
-                                <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay="1s">
-                                    <!--<a href="#" class="theme-btn"><strong>Reservar</strong> <i class="far fa-arrow-right"></i></a>
-                                    <a href="#" class="theme-btn theme-btn4"><strong>Tarifas</strong><i
-                                    class="far fa-arrow-right"></i></a>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- hero slider end -->
+    <HomeCarousel />
 
 
 
     <!-- find-car form -->
-    <div class="find-car" id="iniciatureserva">
-        <div class="container">
-            <div class="find-car-form">
-                <h4 class="find-car-title">Encuentra la Furgoneta perfecta</h4>
-                <form action="#">
-                    <div class="row">
-                        
-                        <div class="col-lg-4">
-                            <div class="form-group">
-                                <label>Oficina de recogida</label>
-                                <input type="text" class="form-control" placeholder="Oficina">
-                                <i class="far fa-location-dot"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form-group">
-                                <label>Elige un coche</label>
-                                <input type="text" class="form-control" placeholder="Furgoneta">
-                                <i class="far fa-car"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form-group">
-                                <label>Oficina de devolución</label>
-                                <input type="text" class="form-control" placeholder="Oficina">
-                                <i class="far fa-location-dot"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="form-group">
-                                <label>Fecha de recogida</label>
-                                <input type="text" class="form-control date-picker" placeholder="MM/DD/AA">
-                                <i class="far fa-calendar-days"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="form-group">
-                                <label>Hora de recogida</label>
-                                <input type="text" class="form-control time-picker" placeholder="00:00 AM">
-                                <i class="far fa-clock"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="form-group">
-                                <label>Oficina de devolución</label>
-                                <input type="text" class="form-control date-picker" placeholder="MM/DD/AA">
-                                <i class="far fa-calendar-days"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="form-group">
-                                <label>Hora de devolución</label>
-                                <input type="text" class="form-control time-picker" placeholder="00:00 AM">
-                                <i class="far fa-clock"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 align-self-end">
-                             <a href="car-single.html" class="theme-btn" type="submit"><strong>Inicia tu reserva</strong> <i class="far fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+    <ReservaSolicitudFormHome />    
     <!-- find-car form end -->
 
     <!-- feature area -->
@@ -1023,55 +865,7 @@ onNuxtReady(async () => {
     (function ($) {
         "use strict";
 
-
-        // multi level dropdown menu
-        $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
-            if (!$(this).next().hasClass('show')) {
-                $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
-            }
-            var $subMenu = $(this).next('.dropdown-menu');
-            $subMenu.toggleClass('show');
-
-            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
-                $('.dropdown-submenu .show').removeClass('show');
-            });
-            return false;
-        });
-
-
-        // data-background    
-        $(document).on('ready', function () {
-            $("[data-background]").each(function () {
-                $(this).css("background-image", "url(" + $(this).attr("data-background") + ")");
-            });
-        });
-
-
-        // wow init
-        new WOW().init();
-
-
-        // hero slider
-        $('.hero-slider').owlCarousel({
-            loop: true,
-            nav: true,
-            dots: false,
-            margin: 0,
-            autoplay: true,
-            autoplayHoverPause: true,
-            autoplayTimeout: 5000,
-            items: 1,
-            navText: [
-                "<i class='fal fa-long-arrow-left'></i>",
-                "<i class='fal fa-long-arrow-right'></i>"
-            ],
-        });
-
-        $('.hero-slider2').on('change.owl.carousel', function (event) {
-            new WOW().init();
-        });
-
-
+       
         // partner-slider
         $('.partner-slider').owlCarousel({
             loop: true,
@@ -1139,98 +933,67 @@ onNuxtReady(async () => {
         });
 
 
-        // preloader
-        $(window).on('load', function () {
-            $(".preloader").fadeOut("slow");
-        });
+        // // fun fact counter
+        // $('.counter').countTo();
+        // $('.counter-box').appear(function () {
+        //     $('.counter').countTo();
+        // }, {
+        //     accY: -100
+        // });
 
 
-        // fun fact counter
-        $('.counter').countTo();
-        $('.counter-box').appear(function () {
-            $('.counter').countTo();
-        }, {
-            accY: -100
-        });
-
-
+            /**
+             * TODO donde se usa esto
+             */
         // magnific popup init
-        $(".popup-gallery").magnificPopup({
-            delegate: '.popup-img',
-            type: 'image',
-            gallery: {
-                enabled: true
-            },
-        });
+        // $(".popup-gallery").magnificPopup({
+        //     delegate: '.popup-img',
+        //     type: 'image',
+        //     gallery: {
+        //         enabled: true
+        //     },
+        // });
 
-        $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
-            type: "iframe",
-            mainClass: "mfp-fade",
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false
-        });
+        // $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
+        //     type: "iframe",
+        //     mainClass: "mfp-fade",
+        //     removalDelay: 160,
+        //     preloader: false,
+        //     fixedContentPos: false
+        // });
 
+        // // countdown
+        // if ($('#countdown').length) {
+        //     $('#countdown').countdown('2030/01/30', function (event) {
+        //         $(this).html(event.strftime('' + '<div class="row">' + '<div class="col countdown-single">' + '<h2 class="mb-0">%-D</h2>' + '<h5 class="mb-0">Day%!d</h5>' + '</div>' + '<div class="col countdown-single">' + '<h2 class="mb-0">%H</h2>' + '<h5 class="mb-0">Hours</h5>' + '</div>' + '<div class="col countdown-single">' + '<h2 class="mb-0">%M</h2>' + '<h5 class="mb-0">Minutes</h5>' + '</div>' + '<div class="col countdown-single">' + '<h2 class="mb-0">%S</h2>' + '<h5 class="mb-0">Seconds</h5>' + '</div>' + '</div>'));
+        //     });
+        // }
 
-
-        // scroll to top
-        $(window).scroll(function () {
-
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                $("#scroll-top").fadeIn('slow');
-            } else {
-                $("#scroll-top").fadeOut('slow');
-            }
-        });
-
-        $("#scroll-top").click(function () {
-            $("html, body").animate({ scrollTop: 0 }, 1500);
-            return false;
-        });
-
-
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('.navbar').addClass("fixed-top");
-            } else {
-                $('.navbar').removeClass("fixed-top");
-            }
-        });
-
-
-        // countdown
-        if ($('#countdown').length) {
-            $('#countdown').countdown('2030/01/30', function (event) {
-                $(this).html(event.strftime('' + '<div class="row">' + '<div class="col countdown-single">' + '<h2 class="mb-0">%-D</h2>' + '<h5 class="mb-0">Day%!d</h5>' + '</div>' + '<div class="col countdown-single">' + '<h2 class="mb-0">%H</h2>' + '<h5 class="mb-0">Hours</h5>' + '</div>' + '<div class="col countdown-single">' + '<h2 class="mb-0">%M</h2>' + '<h5 class="mb-0">Minutes</h5>' + '</div>' + '<div class="col countdown-single">' + '<h2 class="mb-0">%S</h2>' + '<h5 class="mb-0">Seconds</h5>' + '</div>' + '</div>'));
-            });
-        }
-
-
-        // copywrite date
-        let date = new Date().getFullYear();
-        $("#date").html(date);
-
-
+        /**
+         * TODO este se usa?
+         */
+        // // copywrite date
+        // let date = new Date().getFullYear();
+        // $("#date").html(date);
 
         // find-car date picker 
-        if ($('.date-picker').length) {
-            $(function () {
-                $(".date-picker").datepicker();
-            });
-        }
+        // if ($('.date-picker').length) {
+        //     $(function () {
+        //         $(".date-picker").datepicker();
+        //     });
+        // }
 
-        // find-car time picker 
-        if ($('.time-picker').length) {
-            $(function () {
-                $(".time-picker").timepicker();
-            });
-        }
+        // // find-car time picker 
+        // if ($('.time-picker').length) {
+        //     $(function () {
+        //         $(".time-picker").timepicker();
+        //     });
+        // }
 
-
-        // profile image btn
-        $(".profile-img-btn").click(function () {
-            $(".profile-img-file").click(); 
-        });
+        // // profile image btn
+        // $(".profile-img-btn").click(function () {
+        //     $(".profile-img-file").click(); 
+        // });
 
 
     })(jQuery);

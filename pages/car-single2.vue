@@ -4,8 +4,8 @@
     <br>
     <br>
     <div class="site-heading text-center">
-        <span class="site-title-tagline">Revisa los detalles de</span>
-        <h2 class="site-title">Tu <span>Reserva</span></h2>
+        <span class="site-title-tagline">{{$t('revisa')}}</span>
+        <h2 class="site-title">Tu <span>{{$t('reserva')}}</span></h2>
         <div class="heading-divider">
         </div>
     </div>
@@ -17,34 +17,34 @@
                     <div class="tabla1a">
                         <table class="table caption-top">
                             <thead>
-                                <th class="color1a" scope="col">Plan Basic</th>
+                                <th class="color1a" scope="col">{{$t('basico')}}</th>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th>Precio Plan tarifa Basic</th>
+                                    <th>{{$t('tarifa_plan')}}</th>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td><strong>700€</strong>
+                                    <td><strong>{{$t('tarifa_plan_precio')}}</strong>
                                     </td>   
                                 </tr>
                                 <tr>
-                                    <th>Sub-total</th>
+                                    <th>{{$t('sub_total')}}</th>
                                         <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td><strong>724€</strong>
+                                        <td><strong>{{$t('sub_total_precio')}}</strong>
                                         </td>
                                 </tr>
                                 <tr>
-                                    <th>Total a pagar por 7 días</th>
+                                    <th>{{$t('total_pagar')}}</th>
                                         <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td><strong>724€</strong></td>
+                                        <td><strong>{{$t('precio_total')}}</strong></td>
                                 </tr>
                                                 
                             </tbody>
@@ -56,7 +56,7 @@
     </div>
 
      <div class="site-heading text-center">                    
-        <h2 class="site-title">Mejora tu <span>Reserva</span></h2>
+        <h2 class="site-title">{{$t('mejora_reserv')}} <span>{{$t('reserva')}}</span></h2>
             <div class="heading-divider">
             </div>
     </div>
@@ -69,74 +69,72 @@
                         <table class="table caption-top">
                             <thead>
                                 <tr>
-                                    <th scope="col">Descripción</th>
-                                    <th class="color1" scope="col">Basic</th>
-                                    <th class="color2" scope="col">Medium</th>
-                                    <th class="color3" scope="col">Primium</th>
+                                    <th scope="col">{{$t('Description')}}</th>
+                                    <th class="color1" scope="col">{{$t('basico')}}</th>
+                                    <th class="color2" scope="col">{{$t('medio')}}</th>
+                                    <th class="color3" scope="col">{{$t('primiun')}}</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th>Precio por día</th>
-                                    <td class="color1"><strong>100€</strong></td>
-                                    <td class="color2"><strong>100€</strong></td>
-                                    <td class="color3"><strong>100€</strong></td>
+                                    <th>{{$t('precio_dia')}}</th>
+                                    <td class="color1"><strong>{{$t('cien')}}</strong></td>
+                                    <td class="color2"><strong>{{$t('cien')}}</strong></td>
+                                    <td class="color3"><strong>{{$t('cien')}}</strong></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Combustible</th>
+                                    <th scope="row">{{$t('Fuel')}}</th>
                                     <td><strong><button class="btn-pagar">100€</button></strong></td>
                                     <td><strong><button class="btn-pagar2">100€</button></strong></td>
                                     <td><strong><button class="btn-pagar3">100€</button></strong></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Kilometraje ilimitado</th>
+                                    <th scope="row">{{$t('kilometraje')}}</th>
                                     <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
                                     <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
                                     <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Tasa de repostaje</th>
+                                    <th scope="row">{{$t('tasa')}}</th>
                                     <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
                                     <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
                                     <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Cobertura de ruedas
-                                    y lunas</th>
-                                    <td><strong><button class="btn-pagar">54€</button></strong></td>
+                                    <th scope="row">{{$t('cobertura')}}</th>
+                                    <td><strong><button class="btn-pagar">{{$t('b_cobertura_precio')}}</button></strong></td>
                                     <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
                                     <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Cobertura asistencia
-                                    en carretera</th>
-                                    <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
-                                    <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
-                                    <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Conductor adicional</th>
-                                    <td><strong><button class="btn-pagar">30€</button></strong></td>
-                                    <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
-                                    <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">GPS</th>
+                                    <th scope="row">{{$t('asistencia')}}
+                                    </th>
                                     <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
                                     <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
                                     <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Kilometraje ampliado</th>
+                                    <th scope="row">{{$t('conductor')}}</th>
+                                    <td><strong><button class="btn-pagar">{{$t('b_conductor_precio')}}</button></strong></td>
+                                    <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
+                                    <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">{{$t('gps')}}</th>
                                     <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
                                     <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
                                     <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Devolución en
-                                    otra sucursal</th>
-                                    <td><strong><button class="btn-pagar">40€</button></strong></td>
-                                    <td><strong><button class="btn-pagar2">40€</button></strong></td>
+                                    <th scope="row">{{$t('kilometraje_a')}}</th>
+                                    <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
+                                    <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
+                                    <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">{{$t('devo_sucursal')}}</th>
+                                    <td><strong><button class="btn-pagar">{{$t('b_devo_sucursal')}}</button></strong></td>
+                                    <td><strong><button class="btn-pagar2">{{$t('b_devo_sucursal')}}</button></strong></td>
                                     <td class="coloru"><i class="fa-sharp fa-regular fa-circle-check"></i></td>
                                 </tr>
                             </tbody>
@@ -155,33 +153,33 @@
                         <table class="table caption-top">
                             <tbody>
                                 <tr>
-                                    <th>Precio Plan tarifa Basic</th>
+                                    <th>{{$t('tarifa_plan')}}</th>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td><strong>700€</strong></td>
+                                    <td><strong>{{$t('tarifa_plan_precio')}}</strong></td>
                                 </tr>
                                 <tr>
-                                    <th>Sub-total</th>
+                                    <th>{{$t('sub_total')}}</th>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td><strong>724€</strong></td>
+                                    <td><strong>{{$t('sub_total_precio')}}</strong></td>
                                 </tr>
                                 <tr>
-                                    <th>Total a pagar por 7 días</th>
+                                    <th>{{$t('total_pagar')}}</th>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td><strong>724€</strong></td>
+                                    <td><strong>{{$t('precio_total')}}</strong></td>
                                 </tr>
                             </tbody>
                         </table>
                         <div class="text-center mt-4">
-                            <a href="#" class="theme-btn"> <strong>Confirmar</strong></a>
+                            <a href="#" class="theme-btn"> <strong>{{$t('Confirm')}}</strong></a>
                         </div>
                     </div>
                 </div>

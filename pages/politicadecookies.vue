@@ -6,16 +6,14 @@
             <div class="row">
                 <div class="col">
                     <div class="terms-content">
-                        <h3>POLÍTICAS DE COOKIES</h3>
-                            <p>123renting puede utilizar “cookies” cuando un Usuario navega por el Sitio Web. Las “cookies” son ficheros enviados a un
-                            navegador por medio de un servidor web para registrar datos de navegación del Usuario en el Sitio Web.</p>
+                        <h3>{{$t('politica')}}</h3>
+                            <p>{{$t('politica_texto')}}</p>
                     </div>   
 
                      <div class="terms-content">
-                            <h3>CONDICIONES</h3>
-                            <p>123renting recopila información sobre su dispositivo mediante el uso de cookies y tecnologías similares.</p>
-                            <p>Las cookies y otras tecnologías similares son localizadores que se almacenan en su dispositivo cuando visita nuestro
-                            sitio web.</p>
+                            <h3>{{$t('condiciones')}}</h3>
+                            <p>{{$t('condiciones_texto1')}}</p>
+                            <p>{{$t('condiciones_texto2')}}</p>
                             <p>Esta política (la «política de cookies») tiene como objetivo describir los diferentes tipos de cookies que se utilizan
                             en relación con el sitio web de 123renting <a href="#"><strong>www.123renting.es</strong></a>  y que controla 123renting.</p>
                             <p>Esta política de cookies se complementa y debe leerse junto con la política de privacidad de 123renting, que encontrará

@@ -63,9 +63,9 @@ export default defineI18nConfig(() => ({
             ofi_devolucion: 'Return Office',
             fecha_recogida: 'Pick up date',
             h_recogida: 'Pick up time',
-            fecha_devolucion: 'Return Office',
-            h_devolucion: 'Return time',
-            b_inicia_reserva: 'Start your reservation',
+            fecha_devolucion: 'Return date:',
+            h_devolucion: 'Return time:',
+            b_inicia_reserva: 'Start your reservation:',
             furgoneta: 'Van',
             mm_dd_aa: 'mm/dd/yy',
             cero: '00:00 AM',
@@ -115,6 +115,7 @@ export default defineI18nConfig(() => ({
             cuatro: '4',
             contactanos: 'Contact Us',
             llamanos: 'Call us at 650 31 07 07 or write to us on WhatsApp, and we will guide you through the reservation process.',
+            detalle_furgo: 'Vehicle details',
 
             dudas: 'Do you have doubts?',
             en123: 'At 123 RENTING',
@@ -159,6 +160,55 @@ export default defineI18nConfig(() => ({
             nombre5: 'Angelica Carré',
             testimonio5: 'I made my reservation at their office, unsurpassed attention, they gave answers to all my questions. 100% recommended.',
 
+            nombre_perfil: 'Antoni Jonson',
+            correo_usuario: 'jonson@gmail.com',
+            primer_nombre: 'First Name',
+            apellido: 'Last Name',
+            c_correo: 'Email',
+            telefono_usuario: 'Phone',
+            direccion_usuario1: 'Address',
+            direccion_usuario2: 'Address 2',
+            ciudad: 'City',
+            estado: 'State',
+            codigo_postal: 'Zip',
+            b_guardar: 'Save',
+            total_pagar: 'Total to pay Basic Plan for 7 days',
+            precio_total: '724€',
+            aceptar_con: 'Accept and continue',
+
+            revisa: 'Check the details of',
+            tarifa_plan: 'Price Basic rate plan',
+            tarifa_plan_precio: '700€',
+            sub_total: 'Subtotal',
+            sub_total_precio: '724€',
+            mejora_reserv: 'Improve your',
+
+            descripcion: 'Description',
+            precio_dia: 'Price per day',
+            cien: '100€',
+            combustible: 'Fuel',
+            kilometraje: 'Unlimited mileage',
+            tasa: 'Refueling fee',
+            cobertura: 'Wheel coverage and moons',
+            b_cobertura_precio: '54€',
+            asistencia: 'Assistance coverage on the highway',
+            conductor: 'Aditional driver',
+            b_conductor_precio: '30€',
+            gps: 'GPS',
+            kilometraje_a: 'Extended mileage',
+            devo_sucursal: 'Return in another branch',
+            b_devo_sucursal: '40€',
+            b_confirmar: 'Confirm',
+
+            politica: 'COOKIE POLICIES',
+            politica_texto: '123renting may use “cookies” when a User browses the Website. “Cookies” are files sent to a browser through a web server to record the User`s navigation data on the Website.',
+            condiciones: 'CONDITIONS',
+            condiciones_texto1: '123renting collects information about your device through the use of cookies and similar technologies.',
+            condiciones_texto2: 'Cookies and other similar technologies are locators that are stored on your device when you visit our website.',
+
+
+        }
+
 
 
         },
@@ -173,4 +223,4 @@ export default defineI18nConfig(() => ({
             viaja_sin_limites: 'Reisen Sie ohne Grenzen',
         }
     }
-}))
+))

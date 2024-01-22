@@ -1,5 +1,5 @@
 # Usa una imagen base con Node.js
-FROM node:14
+FROM node:18-alpine
 
 # Establece el directorio de trabajo dentro del contenedor
 WORKDIR /usr/src/app
@@ -7,14 +7,17 @@ WORKDIR /usr/src/app
 # Copia el package.json y package-lock.json al directorio de trabajo
 COPY package*.json ./
 
-# Instala las dependencias
-RUN npm install
+# Elimina el directorio node_modules y el archivo package-lock.json
+RUN rm -rf node_modules package-lock.json
+
+# Instala las dependencias usando yarn
+RUN yarn install
 
 # Copia el resto de los archivos al directorio de trabajo
 COPY . .
 
-# Expone el puerto 3000 (puerto predeterminado para aplicaciones Nuxt)
-EXPOSE 3000
+# Construye la aplicación para producción
+RUN npm run build
 
-# Comando por defecto para iniciar la aplicación
-CMD [ "npm", "run", "dev" ]
+# Comando para ejecutar la aplicación
+CMD ["npm", "start"]

@@ -14,40 +14,35 @@
                             <h3>{{$t('condiciones')}}</h3>
                             <p>{{$t('condiciones_texto1')}}</p>
                             <p>{{$t('condiciones_texto2')}}</p>
-                            <p>Esta política (la «política de cookies») tiene como objetivo describir los diferentes tipos de cookies que se utilizan
-                            en relación con el sitio web de 123renting <a href="#"><strong>www.123renting.es</strong></a>  y que controla 123renting.</p>
-                            <p>Esta política de cookies se complementa y debe leerse junto con la política de privacidad de 123renting, que encontrará
-                           <a href="privacy.html"><strong> aquí.</strong></a></p>
+                            <p>{{$t('condiciones_texto3')}} <a href="#"><strong>{{$t('web')}}</strong></a>  {{$t('condiciones_texto4')}}</p>
+                            <p>{{$t('condiciones_texto5')}}
+                           <a href="privacy.html"><strong> {{$t('aqui')}}</strong></a></p>
                     </div>
 
                     <div class="terms-content">
-                            <h3>ÍNDICE</h3>
+                            <h3>{{$t('indice')}}</h3>
                             <ul>
-                                <li class="text"><span class="punto"><strong>A. </strong></span>¿Qué tipo de cookies utiliza 123renting y con qué propósito?</li>
-                                <li class="text"><span class="punto"><strong>B. </strong></span>¿Durante cuánto tiempo conserva 123renting las cookies?</li>
-                                <li class="text"><span class="punto"><strong>C. </strong></span>Cookies de terceros</li>
-                                <li class="text"><span class="punto"><strong>D. </strong></span>¿Se transfiere fuera de la UE la información que se recopila mediante el uso de cookies?</li>
-                                <li class="text"><span class="punto"><strong>E. </strong></span>¿Cómo gestionar sus cookies?</li>
-                                <li class="text"><span class="punto"><strong>F. </strong></span>¿A quién debe contactar cuando tenga una duda sobre el uso de sus cookies?</li>
-                                <li class="text"><span class="punto"><strong>G. </strong></span>Cambios a esta política de cookies</li>
+                                <li class="text"><span class="punto"><strong>{{$t('a')}} </strong></span>{{$t('a_texto')}}</li>
+                                <li class="text"><span class="punto"><strong>{{$t('b')}} </strong></span>{{$t('b_texto')}}</li>
+                                <li class="text"><span class="punto"><strong>{{$t('c')}} </strong></span>{{$t('c_texto')}}</li>
+                                <li class="text"><span class="punto"><strong>{{$t('d')}} </strong></span>{{$t('d_texto')}}</li>
+                                <li class="text"><span class="punto"><strong>{{$t('e')}} </strong></span>{{$t('e_texto')}}</li>
+                                <li class="text"><span class="punto"><strong>{{$t('f')}} </strong></span>{{$t('f_texto')}}</li>
+                                <li class="text"><span class="punto"><strong>{{$t('g')}} </strong></span>{{$t('g_texto')}}</li>
                             </ul>
                         </div>  
 
                     <div class="terms-content">
-                            <h3>A. ¿Qué tipo de cookies utiliza 123renting y con qué propósito?</h3>
-                            <p>123renting utiliza diferentes tipos de cookies para los siguientes propósitos:</p>
+                            <h3>{{$t('a')}} {{$t('a_titulo')}}</h3>
+                            <p>{{$t('a_texto2')}}</p>
                             <ul>
-                                <li class="text"><span class="punto"><strong>A. Cookies esenciales: </strong> </span> Estas cookies son estrictamente necesarias para el correcto funcionamiento de nuestro sitio web. Sin estas cookies, no
-                                podría utilizar nuestro sitio.</li>
-                                <li class="text"><span class="punto"><strong>B. Cookies funcionales </strong> </span>123renting utiliza estas cookies para darle acceso a ciertas funcionalidades de nuestro sitio web, con el fin de
-                                facilitar y mejorar su experiencia de navegación y su selección de productos/servicios.</li>
-                                <li class="text"><span class="punto"><strong>C. Cookies de análisis: </strong> </span>Estas cookies permiten a 123renting analizar cómo nuestros clientes utilizan nuestro sitio web para mejorar tanto la
-                                calidad del mismo como su navegación.</li>
-                                <li class="text"><span class="punto"><strong>D. Cookies publicitarias: </strong> </span>123renting y nuestras agencias de marketing utilizan estas cookies para medir la efectividad de nuestras campañas de
-                                publicidad en medios.</li>
+                                <li class="text"><span class="punto"><strong>{{$t('a')}} C{{$t('a_texto3')}} </strong> </span> {{$t('a_texto3a')}}</li>
+                                <li class="text"><span class="punto"><strong>{{$t('b')}} {{$t('b_titulo')}} </strong> </span>{{$t('b_texto2')}}</li>
+                                <li class="text"><span class="punto"><strong>{{$t('c')}} {{$t('c_titulo')}} </strong> </span>{{$t('c_texto2')}}</li>
+                                <li class="text"><span class="punto"><strong>{{$t('d')}} {{$t('d_titulo')}} </strong> </span>{{$t('d_texto2')}}</li>
                             </ul>
                             <br>
-                            <p>A continuación, encontrará información detallada sobre los propósitos para los que 123renting utiliza las cookies.</p>
+                            <p>{{$t('a_continucion')}}</p>
                         </div>
 
                     <div class="table-responsive">
@@ -55,15 +50,15 @@
                                 <thead>
                                     <tr>
                                         <th></th>
-                                        <th>Descripción / Propósito</th>
-                                        <th>Cookies</th>
-                                        <th>Cookies persistentes/ de sesión</th>
-                                        <th>¿Transferen-cias de datos fuera de la UE?</th>
+                                        <th>{{$t('tabla_tituloa')}}</th>
+                                        <th>{{$t('tabla_titulob')}}</th>
+                                        <th>{{$t('tabla_tituloc')}}</th>
+                                        <th>{{$t('tabla_titulod')}}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td rowspan="2">Cookies esenciales</td>
+                                        <td rowspan="2">{{$t('tabla_columnaa1')}}</td>
                                         <td>
                                             <p>Estas cookies son esenciales para que 123renting garantice el correcto funcionamiento de nuestro
                                                 sitio web y la seguridad de su entorno. Sin estas cookies no podríamos memorizar sus elecciones
@@ -91,7 +86,7 @@
                                         <td>No</td>
                                     </tr>
                                     <tr>
-                                        <td>Cookies de análisis</td>
+                                        <td>{{$t('tabla_columnaa2')}}</td>
                                         <td>
                                             <p>Estas cookies permiten a 123renting analizar cómo nuestros clientes utilizan nuestro sitio web
                                                 para hacer un seguimiento de su rendimiento, mejorar su calidad y su navegación.</p>
@@ -114,7 +109,7 @@
                                         <td>Si</td>
                                     </tr>
                                     <tr>
-                                        <td>Cookies publicitarias</td>
+                                        <td>{{$t('tabla_columnaa3')}}</td>
                                         <td>
                                             <p>123renting y nuestras agencias de marketing utilizan estas cookies para medir la efectividad de
                                                 nuestras campañas de publicidad en los medios.

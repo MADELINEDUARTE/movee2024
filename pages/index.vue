@@ -1,7 +1,163 @@
 <template>
 <LayoutWeb>
 <main class="main">
+<!-- hero slider -->
+<div class="hero-section">
+    <div class="hero-slider owl-carousel owl-theme">
+        <div class="hero-single" style="background: url(/assets/img/slider/slider-1.png)">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-9 col-lg-7">
+                        <div class="hero-content">
+                            <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1s" data-wow-delay=".25s">{{$t('reserva_ahora')}}</h6>
+                            <h1 class="hero-title wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1s" data-wow-delay=".50s">
+                                {{$t('viaja_sin_limites')}} <br>
+                                <span>{{$t('r_123')}}</span><br>
+                                {{$t('destino')}}
+                            </h1>
+                            <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay=".75s">
+                                {{$t('nuestra_flota')}}
+                            </p>
+                            <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay="1s">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-single" style="background: url(/assets/img/slider/slider-2.png)">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-9 col-lg-7">
+                        <div class="hero-content">
+                            <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1s" data-wow-delay=".25s">{{$t('disfruta')}}</h6>
+                            <h1 class="hero-title wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1s" data-wow-delay=".50s">
+                                {{$t('paga_en')}}<br> <span>{{$t('oficina')}}</span> <br>{{$t('visitanos')}}
+                            </h1>
+                            <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay=".75s">
+                                {{$t('hacemos')}}
+                            </p>
+                            <div class="btn-descarga">
+                                <img src="" alt="">
+                            </div>
+                            <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay="1s">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-single" style="background: url(/assets/img/slider/slider-3.png)">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-9 col-lg-7">
+                        <div class="hero-content">
+                            <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1s" data-wow-delay=".25s">{{$t('reserva_ahora')}}</h6>
+                            <h1 class="hero-title wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1s" data-wow-delay=".50s">
+                                {{$t('descarga')}} <br>
+                                <span>{{$t('nuestra_app')}}</span> <br>
+                                {{$t('cada_vez')}}
+                            </h1>
+                            <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay=".75s">
+                                {{$t('descargaste')}}
+                            </p>
+                            <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay="1s">
+                                <!--<a href="#" class="theme-btn"><strong>Reservar</strong> <i class="far fa-arrow-right"></i></a>
+                                <a href="#" class="theme-btn theme-btn4"><strong>Tarifas</strong><i
+                                class="far fa-arrow-right"></i></a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+        <!-- hero slider end -->
+
+
+
+        <!-- find-car form -->
+<div class="find-car" id="iniciatureserva">
+    <div class="container">
+        <div class="find-car-form">
+            <h4 class="find-car-title">{{$t('encuentra')}}</h4>
+            <form action="#">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label>{{$t('ofi_recogida')}}</label>
+                            <input type="text" class="form-control" :placeholder="$t('ofi_recogida')">
+                            <i class="far fa-location-dot"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label>{{$t('elige')}}</label>
+                            <input type="text" class="form-control" :placeholder="$t('furgoneta')">
+                            <i class="far fa-car"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label>{{$t('ofi_devolucion')}}</label>
+                            <input type="text" class="form-control" :placeholder="$t('ofi_devolucion')">
+                            <i class="far fa-location-dot"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group">
+                            <label>{{$t('fecha_recogida')}}</label>
+                            <input type="text" class="form-control date-picker" :placeholder="$t('mm_dd_aa')">
+                            <i class="far fa-calendar-days"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group">
+                            <label>{{$t('h_recogida')}}</label>
+                            <input type="text" class="form-control time-picker" :placeholder="$t('cero')">
+                            <i class="far fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group">
+                            <label>{{$t('fecha_devolucion')}}</label>
+                            <input type="text" class="form-control date-picker" :placeholder="$t('mm_dd_aa')">
+                            <i class="far fa-calendar-days"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group">
+                            <label>{{$t('h_devolucion')}}</label>
+                            <input type="text" class="form-control time-picker" :placeholder="$t('cero')">
+                            <i class="far fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 align-self-end">
+                        <nuxt-link to="car-single" class="theme-btn" type="submit">
+                            <strong>{{$t('b_inicia_reserva')}}</strong> <i class="far fa-arrow-right"></i>
+                        </nuxt-link>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+        <!-- find-car form end -->
 
     <!-- feature area -->
     <div class="feature-area pt-120" id="visitanos">

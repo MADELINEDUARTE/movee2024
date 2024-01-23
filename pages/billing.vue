@@ -16,10 +16,10 @@
                             <p>{{$t('correo_usuario')}}</p>
                     </div>
                             <ul class="user-profile-sidebar-list">
-                                <li><a href="profile.html" class="active"><i class="far fa-user"></i> {{$t('perfil')}}</a>
+                                <li><nuxt-link to="profile" class="active"><i class="far fa-user"></i>{{$t('perfil')}}</nuxt-link>
                                 </li>
-                                <li><a href="billing.html"><i class="far fa-draw-circle"></i> {{$t('facturacion')}}</a></li>
-                                <li><a href="setting.html"><i class="far fa-cog"></i> {{$t('ajustes')}}</a></li>
+                                <li><nuxt-link to="billing"><i class="far fa-draw-circle"></i> {{$t('facturacion')}}</nuxt-link></li>
+                                <li><nuxt-link to="setting"><i class="far fa-cog"></i>{{$t('ajustes')}}</nuxt-link></li>
                                 <li><a href="#"><i class="far fa-sign-out"></i> {{$t('cerrar_sesion')}}</a></li>
                             </ul>
                 </div>

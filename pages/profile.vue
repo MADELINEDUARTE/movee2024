@@ -23,26 +23,26 @@
                             <p>jonson@gmail.com</p>
                     </div>
                             <ul class="user-profile-sidebar-list">
-                                <li><a href="profile.html" class="active"><i class="far fa-user"></i> Mi perfil</a>
+                                <li><nuxt-link to="profile" class="active"><i class="far fa-user"></i>{{$t('perfil')}}</nuxt-link>
                                 </li>
-                                <li><a href="billing.html"><i class="far fa-draw-circle"></i> Facturación</a></li>
-                                <li><a href="setting.html"><i class="far fa-cog"></i> Ajustes</a></li>
-                                <li><a href="#"><i class="far fa-sign-out"></i> Cerrar sesión</a></li>
+                                <li><nuxt-link to="billing"><i class="far fa-draw-circle"></i> {{$t('facturacion')}}</nuxt-link></li>
+                                <li><nuxt-link to="setting"><i class="far fa-cog"></i>{{$t('ajustes')}}</nuxt-link></li>
+                                <li><a href="#"><i class="far fa-sign-out"></i> {{$t('cerrar_sesion')}}</a></li>
                             </ul>
                 </div>
             </div>
                     <div class="col-lg-9">
                         <div class="user-profile-wrapper">
                             <div class="user-profile-card">
-                                <h4 class="user-profile-card-title">Información de perfil</h4>
+                                <h4 class="user-profile-card-title">{{$t('info_perfil')}}</h4>
                                     <div class="col-lg-6">
                                         <div class="profile-info-list">
                                         <ul>
-                                            <li>Nombre completo <span>Antoni Jonson</span></li>
-                                            <li>Email <span>jonson@example.com</span></li>
-                                            <li>Teléfono <span>+2 134 562 458</span></li>
-                                            <li>Dirección <span>New York, USA</span></li>
-                                            <li>Fecha de ingreso <span>17 March, 2023</span></li>
+                                            <li>{{$t('nombre_completo')}} <span>{{$t('nombre_apellido')}}</span></li>
+                                            <li>{{$t('c_correo')}} <span>{{$t('correo_usuario')}}</span></li>
+                                            <li>{{$t('telefono_usuario')}} <span>{{$t('telefono_usuario_nro')}}</span></li>
+                                            <li>{{$t('direccion_usuario1')}} <span>{{$t('direccion_usuario3')}}</span></li>
+                                            <li>{{$t('fecha_de_ingreso')}} <span>{{$t('fecha_de_ingresonro')}}</span></li>
                                         </ul>
                                     </div>
                         </div>

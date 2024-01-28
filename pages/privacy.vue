@@ -6,188 +6,169 @@
             <div class="row">
                 <div class="col">
                     <div class="terms-content">
-                                        <h3>CONDICIONES DE CONTRATACIÓN</h3>
+                                        <h3>{{$t('titulo_a1')}}</h3>
                                         <ul>
-                                            <li class="text"><span class="punto"><strong>1. </strong></span>Nuestros alquileres se computan en periodos de 24 horas contado desde la hora de entrega prevista en la reserva. Vehículos de carga disponibles para alquileres de media jornada.</li>
-                                            <li class="text"><span class="punto"><strong>2. </strong></span>Para periodos de alquiler superiores a 28 días, consultar condiciones especiales a <a href="mailto:info@123renting.es">info@123renting.es</a></li>
-                                            <li class="text"><span class="punto"><strong>3. </strong></span>En caso de retraso en la devolución del vehículo o abandono del mismo, se cobrará el importe correspondiente al periodo extendido según la tarifa específica publicada en <a href="https://www.123renting.es/terminos_condiciones">www.123renting.es/terminos_condiciones</a>, más un recargo de 40€ por jornada hasta la recuperación del vehículo por parte de la empresa, así como el importe correspondiente a los posibles daños causados y los gastos ocasionados por la recuperación.</li>
-                                            <li class="text"><span class="punto"><strong>4. </strong></span>La devolución anticipada del vehículo no generará reembolso alguno. Por motivos operacionales de revisión del Vehículo el Arrendador se reserva el derecho a sustituir el vehículo en cualquier momento por otro de similares características informando previamente al Arrendatario.</li>
-                                            <li class="text"><span class="punto"><strong>5. </strong></span>123renting se reserva el derecho a cancelar la reserva del vehículo en caso de incidentes con esta u otra compañía de alquiler o ante la existencia de dudas fundadas sobre la capacidad financiera del cliente por antecedentes de impagos o incidencias relativas a los medios de pago aportados.</li>
-                                            <li class="text"><span class="punto"><strong>6. </strong></span>No está permitido alquilar, ni ser conductor adicional, con edad inferior a los 21 años ni con una antigüedad de menos de 2 años en el permiso de conducir. *Para el alquiler de motocicletas solo se exige 18 años y permiso de conducir en vigor.</li>
-                                            <li class="text"><span class="punto"><strong>7. </strong></span>No está permitido abandonar el territorio nacional en ningún caso ni tampoco el transporte marítimo del vehículo, sin autorización expresa por parte de la compañía.</li>
-                                            <li class="text"><span class="punto"><strong>8. </strong></span>Es obligatoria la presentación de una tarjeta de crédito nominativa, cuyo titular ha de figurar como conductor principal o adicional en el contrato. La caducidad de la tarjeta deberá ser superior a la duración del contrato.</li>
-                                            <li class="text"><span class="punto"><strong>9. </strong></span>El precio del pago del alquiler y de los artículos extras contratados se efectuará mediante tarjeta de crédito. El uso de tarjeta de débito precisa de la contratación de la cobertura Premiun obligatoriamente. No se aceptan pagos con tarjetas Amex, Diners, Maestro ni tarjetas no nominativas.</li>
-                                            <li class="text"><span class="punto"><strong>10. </strong></span>Se ha de presentar un permiso de conducir y documento de identidad vigentes para la recogida del vehículo. El arrendatario que posea un permiso de conducción en caracteres no latinos, deberá presentar un carnet de conducir internacional vigente. Todos los precios son expresados en euros e incluyen IVA.</li>
-                                            <li class="text"><span class="punto"><strong>11. </strong></span>Los modelos indicados en las reservas son siempre orientativos. Se entregará un modelo de características similares o superiores. Los artículos extras vinculados a la reserva se corresponderán con el grupo entregado en caso de que este difiera del grupo inicialmente reservado.</li>
+                                            <li class="text"><span class="punto"><strong>{{$t('uno')}} </strong></span>{{$t('texto_a1')}}</li>
+                                            <li class="text"><span class="punto"><strong>{{$t('dos')}} </strong></span>{{$t('texto_a2')}}<a href="mailto:info@123renting.es">{{$t('correo')}}</a></li>
+                                            <li class="text"><span class="punto"><strong>{{$t('tres')}} </strong></span>{{$t('texto_a3')}} <a href="https://www.123renting.es/terminos_condiciones">{{$t('www_ren')}}</a>{{$t('texto_a3a')}}</li>
+                                            <li class="text"><span class="punto"><strong>{{$t('cuatro')}} </strong></span>{{$t('texto_a4')}}</li>
+                                            <li class="text"><span class="punto"><strong>{{$t('cinco')}} </strong></span>{{$t('texto_a5')}}</li>
+                                            <li class="text"><span class="punto"><strong>{{$t('seis')}} </strong></span>{{$t('texto_a6')}}</li>
+                                            <li class="text"><span class="punto"><strong>{{$t('siete')}} </strong></span>{{$t('texto_a7')}}</li>
+                                            <li class="text"><span class="punto"><strong>{{$t('ocho')}} </strong></span>{{$t('texto_a8')}}</li>
+                                            <li class="text"><span class="punto"><strong>{{$t('nueve')}} </strong></span>{{$t('texto_a9')}}</li>
+                                            <li class="text"><span class="punto"><strong>{{$t('diez')}} </strong></span>{{$t('texto_a10')}}</li>
+                                            <li class="text"><span class="punto"><strong>{{$t('once')}} </strong></span>{{$t('texto_a11')}}</li>
                                         </ul>
 
-                                        <li class="text"><span class="punto"><strong>12. </strong></span>Las categorías de vehículos ofertadas por 123renting se organizan según la siguiente agrupación:</li>
-                                        <li class="text">Grupo A4 (Nissan NV250, Renault Kangoo o similar)</li>
-                                        <li class="text">Grupo B4 (Nissan NV300, Renault Trafic o similar)</li>
-                                        <li class="text">Grupo C4 (Mercedes Benz Sprinter o similar de 8 a 10m3)</li>
-                                        <li class="text">Grupo D4 (Ford Transit L2H2 o similar de 10 a 13m3)</li>
-                                        <li class="text">Grupo I4 (Carrozados hasta 20m3) Grupo F4 (Carrozados con plataforma hasta 20m3)</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('doce')}} </strong></span>{{$t('texto_a12')}}</li>
+                                        <li class="text">{{$t('grupo_a1')}}</li>
+                                        <li class="text">{{$t('grupo_a2')}}</li>
+                                        <li class="text">{{$t('grupo_a3')}}</li>
+                                        <li class="text">{{$t('grupo_a4')}}</li>
+                                        <li class="text">{{$t('grupo_a4')}}</li>
 
-                                        <li class="text"><span class="punto"><strong>13. </strong></span>Es de obligado cumplimiento que el arrendatario lleve consigo siempre su ejemplar del contrato de alquiler vigente durante la duración del mismo. El documento Check In debe llevarse en todo momento visible en el vehículo. Si incumple dicha obligación, el arrendatario deberá asumir la sanción y abonar los gastos de gestión.</li>
-                                        <li class="text"><span class="punto"><strong>14. </strong></span>Las traducciones de estas condiciones generales son meramente informativas y no tienen carácter jurídico vinculante en todo el detalle de su redacción, teniendo validez únicamente su versión en español.</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('trece')}} </strong></span>{{$t('texto_a13')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('catorce')}} </strong></span>{{$t('texto_a14')}}</li>
                     </div>
 
                     <div class="terms-content">
-                                    <h3>CONDICIONES DE CONTRATACIÓN</h3>
+                                    <h3>{{$t('titulo_b1')}}</h3>
                                     <ul>
-                                        <li class="text"><span class="punto"><strong>1. </strong></span>Nuestros alquileres se computan en periodos de 24 horas contado desde la hora de entrega prevista en la reserva.
-                                            Vehículos de carga disponibles para alquileres de media jornada.</li>
-                                        <li class="text"><span class="punto"><strong>2. </strong></span>Para periodos de alquiler superiores a 28 días, consultar condiciones especiales a info@123renting.es</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('uno')}} </strong></span>{{$t('texto_b1')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('dos')}} </strong></span>{{$t('texto_b2')}} {{$t('correo')}}</li>
                                         <!-- Otros elementos de la lista -->
                                     </ul>
 
-                                    <li class="text"><span class="punto"><strong>12. </strong></span>Las categorías de vehículos ofertadas por 123renting se organizan según la siguiente agrupación:</li>
-                                    <li class="text">Grupo A4 (Nissan NV250, Renault Kangoo o similar)</li>
+                                    <li class="text"><span class="punto"><strong>{{$t('tres')}} </strong></span>{{$t('texto_b3')}}</li>
+                                    <li class="text">{{$t('grupo_b1')}}</li>
                                     <!-- Otros elementos de la lista -->
 
-                                    <li class="text"><span class="punto"><strong>13. </strong></span>Es de obligado cumplimiento que el arrendatario lleve consigo siempre su ejemplar del contrato de alquiler vigente
-                                        durante la duración del mismo. El documento Check In debe llevarse en todo momento visible en el vehículo. Si incumple
-                                        dicha obligación el arrendatario deberá asumir la sanción y abonar los gastos de gestión.</li>
-                                    <li class="text"><span class="punto"><strong>14. </strong></span>Las traducciones de estas condiciones generales son meramente informativas y no tienen carácter jurídico vinculante en
-                                        todo el detalle de su redacción, teniendo validez únicamente su versión en español.</li>
+                                    <li class="text"><span class="punto"><strong>{{$t('cuatro')}} </strong></span>{{$t('texto_b4')}}</li>
+                                    <li class="text"><span class="punto"><strong>{{$t('cinco')}} </strong></span>{{$t('texto_b5')}}</li>
                     </div>
 
                     <div class="terms-content">
-                                    <h3>SUPLEMENTOS Y ARTÍCULOS EXTRAS</h3>
+                                    <h3>{{$t('titulo_c1')}}</h3>
                                     <ul>
-                                        <li class="text"><span class="punto"><strong>1. </strong></span>Silla infantil Grupo 0+ (0-13 kg; 0-15 meses), sujeto a disponibilidad. 7,95€/día.</li>
-                                        <li class="text"><span class="punto"><strong>2. </strong></span>Silla infantil Grupo 1 (9-18 kg; 9 meses-4 años), sujeto a disponibilidad. 7,95€/día.</li>
-                                        <li class="text"><span class="punto"><strong>3. </strong></span>Silla infantil Grupo 2 (15-25 kg; 4-6 años), sujeto a disponibilidad. 7,95€/día.</li>
-                                        <li class="text"><span class="punto"><strong>4. </strong></span>Silla infantil Grupo 3 (22-36 kg; 6-12 años), sujeto a disponibilidad. 5,95€/día.</li>
-                                        <li class="text"><span class="punto"><strong>5. </strong></span>Conductor adicional, contratables hasta 3 conductores adicionales por contrato además del principal. 6,95€/día.</li>
-                                        <li class="text"><span class="punto"><strong>6. </strong></span>Conductor novel (25 años de edad y/o 4 años de carné). 7,95€/día.</li>
-                                        <li class="text"><span class="punto"><strong>7. </strong></span>Conductor Senior (>75 años de edad) 7,95€/día.</li>
-                                        <li class="text"><span class="punto"><strong>8. </strong></span>GPS, sujeto a disponibilidad: 5,95€/día.</li>
-                                        <li class="text"><span class="punto"><strong>9. </strong></span>Suplemento por vehículo diésel: 2,50 €/día.</li>
-                                        <li class="text"><span class="punto"><strong>10. </strong></span>Recogida y devolución en aeropuerto, solo disponible ‘on request’ y para reservas totalmente prepagadas 45€.</li>
-                                        <li class="text"><span class="punto"><strong>11. </strong></span>Ticket de parking por recogida en aeropuerto: hasta 5€ (independiente del precio del servicio de entrega/devolución en aeropuerto).</li>
-                                        <li class="text"><span class="punto"><strong>12. </strong></span>Traslados (entrega/devolución en hotel o dirección solicitada), consultar disponibilidad. 30€ / 45€ por trayecto según distancia.</li>
-                                        <li class="text"><span class="punto"><strong>13. </strong></span>Servicio Express. 40€</li>
-                                        <li class="text"><span class="punto"><strong>15. </strong></span>Servicio ‘one way’ de devolución en oficina distinta a la de recogida: consultar disponibilidad.</li>
-                                        <li class="text"><span class="punto"><strong>16. </strong></span>Paquete de kilometraje ampliado. 80€</li>
-                                        <li class="text"><span class="punto"><strong>17. </strong></span>Baca: 7,95€/día.</li>
-                                        <li class="text"><span class="punto"><strong>18. </strong></span>Cadenas para nieve: 7,95€/día.</li>
-                                        <li class="text"><span class="punto"><strong>19. </strong></span>Recargo horario: todas las recogidas y devoluciones están libres de cargo entre las 08:00h y las 20:00h durante todo el año. Fuera de este horario se aplican los recargos previstos en <a href="#"> <strong>www.123renting.es/terminos_condiciones</strong></a></li>
+                                        <li class="text"><span class="punto"><strong>{{$t('uno')}} </strong></span>{{$t('texto_c1')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('dos')}} </strong></span>{{$t('texto_c2')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('tres')}} </strong></span>{{$t('texto_c3')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('cuatro')}} </strong></span>{{$t('texto_c4')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('cinco')}} </strong></span>{{$t('texto_c5')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('seis')}} </strong></span>{{$t('texto_c6')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('siete')}} </strong></span>{{$t('texto_c7')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('ocho')}} </strong></span>{{$t('texto_c8')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('nueve')}} </strong></span>{{$t('texto_c9')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('diez')}} </strong></span>{{$t('texto_c10')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('once')}} </strong></span>{{$t('texto_c11')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('doce')}} </strong></span>{{$t('texto_c12')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('trece')}} </strong></span>{{$t('texto_c13')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('catorce')}} </strong></span>{{$t('texto_c14')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('quince')}} </strong></span>{{$t('texto_c15')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('dieciseis')}} </strong></span>{{$t('texto_c16')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('diecisiete')}} </strong></span>{{$t('texto_c17')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('dieciocho')}} </strong></span>{{$t('texto_c18')}} <a href="#"> <strong>{{$t('www_ren')}}</strong></a></li>
                                     </ul>
                     </div>
 
                     <div class="terms-content">
-                                    <h3>POLÍTICA DE COMBUSTIBLE</h3>
+                                    <h3>{{$t('titulo_d1')}}</h3>
                                     <ul>
-                                        <li class="text"><span class="punto"><strong>1. </strong></span>Modalidad Lleno-Lleno: Los vehículos son entregados con el tanque completamente lleno sin cargo alguno y deben ser devueltos en las mismas condiciones. En caso de combustible faltante a la devolución, el importe de éste le será cargado al cliente, junto a una tasa de gestión y repostaje: 31€</li>
-                                        <li class="text"><span class="punto"><strong>2. </strong></span>Modalidad Devolución Rápida: Los vehículos son entregados con el tanque completamente lleno y el importe del mismo se le cobra al cliente en el momento de formalizar el contrato de alquiler, junto a la tasa de gestión y repostaje. A la devolución del vehículo y una vez comprobado el nivel del combustible conforme al marcador en ocho octavos, se procederá al reembolso del importe correspondiente al combustible no utilizado. La tasa de gestión y repostaje no es reembolsable.</li>
-                                        <li class="text"><span class="punto"><strong>3. </strong></span>Cualquier incidencia en el estado del tanque del vehículo a la entrega del mismo debe ser comunicada por parte del cliente antes de abandonar las instalaciones. No se admitirá ninguna reclamación con posterioridad.</li>
-                                        <li class="text"><span class="punto"><strong>4. </strong></span>Los precios de combustible de 123renting para cada categoría se encuentran publicados y actualizados en www.123renting.es/terminos_condiciones. No incluyen el precio de la tasa de repostaje. (Precio medio litro/anual*capacidad vehículo)</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('uno')}} </strong></span>{{$t('texto_d2')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('dos')}} </strong></span>{{$t('texto_d3')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('tres')}} </strong></span>{{$t('texto_d4')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('cuatro')}} </strong></span>{{$t('texto_d5')}} <a href="#"> <strong>{{$t('www_ren')}}</strong></a> {{$t('texto_d6')}}</li>
                                     </ul>
                                     <ul class="terms-list ms-4">
-                                        <li class="text"><span class="punto"><strong>A. </strong></span>Grupo A4 90,00€</li>
-                                        <li class="text"><span class="punto"><strong>B. </strong></span>Grupo B4 120,00€</li>
-                                        <li class="text"><span class="punto"><strong>C. </strong></span>Grupo C4 130,00€</li>
-                                        <li class="text"><span class="punto"><strong>D. </strong></span>Grupo D4 130,00€</li>
-                                        <li class="text"><span class="punto"><strong>E. </strong></span>Grupo I4 150,00€</li>
-                                        <li class="text"><span class="punto"><strong>F. </strong></span>Grupo F4 150,00€</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('a')}} </strong></span>{{$t('grupo_d7')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('b')}} </strong></span>{{$t('grupo_d8')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('c')}} </strong></span>{{$t('grupo_d9')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('d')}} </strong></span>{{$t('grupo_d10')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('e')}} </strong></span>{{$t('grupo_d11')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('f')}} </strong></span>{{$t('grupo_d12')}}</li>
                                     </ul>
                     </div>
 
                     <div class="terms-content">
-                                    <h3>HORARIOS</h3>
+                                    <h3>{{$t('titulo_e1')}}</h3>
                                     <ul>
-                                        <li class="text"><span class="punto"><strong>1. </strong></span>Todas nuestras oficinas funcionan en su horario comercial de 08.00h a 20.00h.</li>
-                                        <li class="text"><span class="punto"><strong>2. </strong></span>Para cualquier petición de reserva y/o consulta sobre la entrega o devolución del vehículo debe hacerse a través del teléfono <a href="tel:+376 812330"><strong>+376 812330</strong></a> o accediendo a <a href="#"><strong>www.123renting.es</strong></a></li>
+                                        <li class="text"><span class="punto"><strong>{{$t('uno')}} </strong></span>{{$t('texto_e2')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('dos')}} </strong></span>{{$t('texto_e3')}} <a href="tel:+376 812330"><strong>{{$t('telefono')}}</strong></a> {{$t('texto_e4')}} <a href="#"><strong>{{$t('web')}}</strong></a></li>
                                     </ul>
                     </div>
 
                     <div class="terms-content">
-                                    <h3>ENTREGA Y DEVOLUCIÓN</h3>
+                                    <h3>{{$t('titulo_f1')}}</h3>
                                     <ul>
-                                        <li class="text"><span class="punto"><strong>1. </strong></span>Andorra, Avinguda Pont de la Tosca 9 Local 7, Escaldes Engordany, Andorra <a href="tel:+376 812330"><strong>+376 812330</strong></a></li>
+                                        <li class="text"><span class="punto"><strong>{{$t('uno')}} </strong></span>{{$t('texto_f1')}} <a href="tel:+376 812330"><strong>{{$t('telefono')}}</strong></a></li>
                                     </ul>
                     </div>
 
                     <div class="terms-content">
-                                    <h3>CANCELACIONES, NO SHOW Y PROLONGACIONES</h3>
+                                    <h3>{{$t('titulo_g1')}}</h3>
                                     <ul>
-                                        <li class="text"><span class="punto"><strong>1. </strong></span>Las cancelaciones dirigidas por email a <a href="mailto:info@123renting.es"><strong>info@123renting.es</strong></a>
-                                            al menos 24 horas antes de la hora de entrega prevista en la
-                                            reserva no generarán ningún cargo por parte de 123Renting.</li>
-                                        <li class="text"><span class="punto"><strong>2. </strong></span>Las cancelaciones con un preaviso inferior a 24 horas supondrán el pago del 50% del valor total de la reserva por parte
-                                            del cliente, salvo causa justificada documentalmente.</li>
-                                        <li class="text"><span class="punto"><strong>3. </strong></span>Transcurridas 3 horas desde la hora de entrega prevista en la reserva sin que el cliente haya retirado su vehículo,
-                                            123renting declarará la reserva como no-show y liberará el vehículo reservado. Las cancelaciones recibidas con un plazo
-                                            inferior a 2 horas, se considerarán también como no-show.</li>
-                                        <li class="text"><span class="punto"><strong>4. </strong></span>Tanto los no-show como las cancelaciones con menos de 2 horas de antelación deberán abonar el 100% del valor de la
-                                            reserva para cubrir los costes operativos y el lucro cesante.</li>
-                                        <li class="text"><span class="punto"><strong>5. </strong></span>Cualquier prolongación de una reserva vigente está sujeta a confirmación por escrito de disponibilidad y precio por
-                                            parte de 123renting. Todas las prolongaciones se realizarán con la Tarifa General Vigente de 123renting en el momento en
-                                            que se solicite. Además, requiere de la firma y pago del nuevo contrato en las instalaciones de la compañía.</li>
-                                        <li class="text"><span class="punto"><strong>6. </strong></span>Las multas y gastos judiciales motivados por infracciones de tráfico o infracción de las leyes, reglamentos u
-                                            ordenanzas, por parte del Arrendatario. El arrendatario satisfará y será responsable como si fuera propietario del
-                                            Vehículo frente a las multas o sanciones que los órganos administrativos impongan por uso y estado del Vehículo en los
-                                            casos en que le sea imputable. El Arrendatario deberá restituir al Arrendador los importes, recargos o intereses de
-                                            cualquier tipo que esté obligado a abonar por razón de las multas o sanciones impuestas como propietario del Vehículo,
-                                            además de un cargo administrativo por gestión de cualquier multa o sanción que reciba el propietario.</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('uno')}} </strong></span>{{$t('texto_g2')}} <a href="mailto:info@123renting.es"><strong>{{$t('correo')}}</strong></a>
+                                            {{$t('texto_g3')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('dos')}} </strong></span>{{$t('texto_g4')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('tres')}} </strong></span>{{$t('texto_g5')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('cuatro')}} </strong></span>{{$t('texto_g6')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('cinco')}} </strong></span>{{$t('texto_g7')}}</li>
+                                        <li class="text"><span class="punto"><strong>{{$t('seis')}} </strong></span>{{$t('texto_g8')}}</li>
                                     </ul>
                     </div>
 
                     <div class="terms-content">
-                                    <h3>ACTUALIZACIÓN DE LA POLÍTICA DE PRIVACIDAD</h3>
+                                    <h3>{{$t('titulo_h1')}}</h3>
                                     <ul>
                                         <li class="text">
-                                            <span class="punto"><strong>1. </strong></span>Es posible que esta Política de Privacidad deba ser actualizada. Por este motivo, es necesario que el Usuario revise
-                                            esta política periódicamente y, si es posible, cada vez que acceda a la Página Web con el objetivo de estar
-                                            adecuadamente informado sobre el tipo de información recopilada y su tratamiento.
+                                            <span class="punto"><strong>{{$t('uno')}} </strong></span>{{$t('texto_h2')}}
                                         </li>
                                         <li class="text">
-                                            <span class="punto"><strong>2. </strong></span>No obstante, lo anterior, el Usuario será informado de cualquier modificación de la presente política de privacidad que
-                                            afecte al tratamiento de sus datos personales.
+                                            <span class="punto"><strong>{{$t('dos')}} </strong></span>{{$t('texto_h3')}}
                                         </li>
                                     </ul>
                     </div>
 
                     <div class="terms-content">
-                        <h3>USO DE COOKIES</h3>
+                        <h3>{{$t('titulo_i1')}}</h3>
                         <ul>
-                            <li class="text"><span class="punto"><strong>1. </strong></span>La página web de <a href="https://www.123renting.es"><strong>www.123renting.es</strong></a> utiliza cookies para diferenciar entre los distintos usuarios de la Página Web. Esto hace que el Usuario pueda tener una mejor experiencia cuando visita nuestra Página Web, ayudando así a mejorarla.</li>
-                            <li class="text"><span class="punto"><strong>2. </strong></span>El Usuario podrá obtener más información sobre el uso de cookies en el enlace a nuestra <a href="#">Política de cookies</a>.</li>
+                            <li class="text"><span class="punto"><strong>{{$t('uno')}} </strong></span>{{$t('texto_i2')}} <a href="https://www.123renting.es"><strong>{{$t('web')}}</strong></a> {{$t('texto_i3')}}</li>
+                            <li class="text"><span class="punto"><strong>{{$t('dos')}} </strong></span>{{$t('texto_i4')}} <nuxt-link to="privacy">{{$t('politica_privacidad')}}</nuxt-link></li>
                         </ul>
                     </div>
 
                     <div class="terms-content">
-                            <h3>ATENCIÓN AL USUARIO</h3>
+                            <h3>{{$t('titulo_j1')}}</h3>
                             <ul>
-                            <li class="text"><span class="punto"><strong>1. </strong></span>Para cualquier solicitud de información o modificación de los datos de su reserva futura o en curso, puede solicitarlo a <a href="mailto:info@123renting.ad"><strong>info@123renting.es</strong></a></li>
-                            <li class="text"><span class="punto"><strong>2. </strong></span>Si desea realizar alguna sugerencia sobre la mejora de nuestros servicios o reclamación, puede dirigirla a <a href="mailto:info@123renting.ad"><strong>info@123renting.es</strong></a></li>
+                            <li class="text"><span class="punto"><strong>{{$t('uno')}} </strong></span>{{$t('texto_j2')}} <a href="mailto:info@123renting.ad"><strong>{{$t('correo')}}</strong></a></li>
+                            <li class="text"><span class="punto"><strong>{{$t('dos')}} </strong></span>{{$t('texto_j3')}} <a href="mailto:info@123renting.ad"><strong>{{$t('correo')}}</strong></a></li>
                             </ul>
                     </div>
 
                     <div class="terms-content">
-                            <h3>POLÍTICA DE PRIVACIDAD</h3>
+                            <h3>{{$t('titulo_k1')}}</h3>
                             <ul>
-                            <li class="text"><span class="punto"><strong>1. </strong></span><strong>Responsable: </strong>123RENTING, S.L.U. L715426C</li>
-                            <li class="text"><span class="punto"><strong>2. </strong></span><strong>Datos de Registro: </strong>Registro Mercantil de Andorra</li>
-                            <li class="text"><span class="punto"><strong>3. </strong></span><strong>Finalidad: </strong>Poder gestionar el servicio solicitado, contestar a su solicitud y/o tramitar su petición.</li>
-                            <li class="text"><span class="punto"><strong>4. </strong></span><strong>Legitimación: </strong>Correcta prestación del servicio solicitado. Sus datos se mantendrán durante los plazos legales previstos y necesarios para el fin.</li>
-                            <li class="text"><span class="punto"><strong>5. </strong></span><strong>Destinatarios: </strong>Se le informa que sus datos también pueden ser comunicados, en su caso, a cualquier poder Público que acredite su legitimación, así como a cualquier otro necesario que deba tener acceso para la consecución de la finalidad y sus consecuencias.</li>
-                            <li class="text"><span class="punto"><strong>6. </strong></span><strong>Derechos: </strong>El titular de los datos podrá ejercer los derechos de acceso, rectificación, cancelación, oposición, supresión, limitación y portabilidad de sus datos a <a href="mailto:info@123renting.ad"><strong>info@123renting.es</strong></a></li>
+                            <li class="text"><span class="punto"><strong>{{$t('uno')}} </strong></span><strong>{{$t('texto_k2')}} </strong>{{$t('texto_k3')}}</li>
+                            <li class="text"><span class="punto"><strong>{{$t('dos')}} </strong></span><strong>{{$t('texto_k4')}} </strong>{{$t('texto_k5')}}</li>
+                            <li class="text"><span class="punto"><strong>{{$t('tres')}} </strong></span><strong>{{$t('texto_k6')}} </strong>{{$t('texto_k7')}}</li>
+                            <li class="text"><span class="punto"><strong>{{$t('cuatro')}} </strong></span><strong>{{$t('texto_k8')}} </strong>{{$t('texto_k9')}}</li>
+                            <li class="text"><span class="punto"><strong>{{$t('cinco')}} </strong></span><strong>{{$t('texto_k10')}} </strong>{{$t('texto_11')}}</li>
+                            <li class="text"><span class="punto"><strong>{{$t('seis')}} </strong></span><strong>{{$t('texto_k12')}} </strong>{{$t('texto_k13')}} <a href="mailto:info@123renting.ad"><strong> {{$t('correo')}}</strong></a></li>
                             </ul>
                     </div>
 
                     <div class="terms-content">
-                            <h3>PROTECCIÓN DE DATOS DE CARÁCTER PERSONAL</h3>
+                            <h3>{{$t('titulo_l1')}}</h3>
                             <ul>
                             <li>
-                            <p>En cumplimiento al Reglamento Europeo UE 2016/679, y de acuerdo a su normativa estatal complementaria, relativa a la Protección de Datos de Carácter Personal, 123RENTING, S.L.U., comunica a los usuarios del Sitio Web <a href="#">www.123renting.es</a> que los datos facilitados a través de nuestra página web mediante los correspondientes formularios y los e-mails recibidos y que tienen la consideración de datos de carácter personal, serán incorporados a ficheros cuya responsabilidad corresponde a 123RENTING, S.L.U., con la finalidad de poder gestionar el servicio solicitado, contestar a su solicitud y/o tramitar su petición.</p>
+                            <p>{{$t('texto_l2')}} <a href="#">{{$t('web')}}</a> {{$t('texto_l3')}}</p>
                             </li>
                             <li>
-                            <p>Dichos ficheros se encuentran inscritos en la Agencia Española de Protección de Datos conforme a la legislación vigente y normativa de desarrollo. Los usuarios garantizan y responden, en cualquier caso, de la veracidad, exactitud, vigencia, autenticidad, pertinencia y no excesividad de los Datos Personales proporcionados, y se comprometen a mantenerlos debidamente actualizados.</p>
+                            <p>{{$t('texto_l4')}}</p>
                             </li>
                             <li>
-                            <p>Cuando se requiera que los usuarios completen un formulario y hagan clic en el botón de enviar para hacer una solicitud, el cumplimiento de ese procedimiento implicará necesariamente que estén informados y hayan dado su consentimiento expreso al contenido de la cláusula adjunta a este formulario o hayan aceptado la política de privacidad.</p>
+                            <p>{{$t('texto_l5')}}</p>
                             </li>
                         </ul>
                     </div>

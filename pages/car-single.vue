@@ -7,13 +7,13 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="car-single-slider-box">
-                             <div class="car-single-slider owl-carousel owl-theme">
+                        <div class="car-single-slider owl-carousel owl-theme">
                         <div>
                         <img src="/assets/img/car/01.jpg" alt="">
                         <div class="car-footer">
-                            <a href="#" class="theme-btn1"><strong>Basic 100€</strong></a>
-                            <a href="#" class="theme-btn2"><strong>Medium 125€</strong></a>
-                            <a href="#" class="theme-btn3"><strong>Premium 135€</strong></a>
+                            <a href="#" class="theme-btn1"><strong>{{$t('basico')}}</strong></a>
+                            <a href="#" class="theme-btn2"><strong>{{$t('medio')}}</strong></a>
+                            <a href="#" class="theme-btn3"><strong>{{$t('primiun')}}</strong></a>
                         </div>
                     </div>
                 </div>
@@ -22,41 +22,41 @@
        
                     <div class="col-lg-4">
                         <div class="car-top">
-                            <h4><a class="letrac" href="#">Mercedes Benz Citan<br><span class="modelo">111 Tourer</span></a></h4>
+                            <h4><a class="letrac" href="#">{{$t('nombre_coche1')}}<br><span class="modelo">{{$t('nombre_coche2')}}</span></a></h4>
                         </div>
 
                         <div class="car-single-details">
-                        <h5 class="mb-2">Detalles del vehículo</h5>
+                        <h5 class="mb-2">{{$t('detalle_furgo')}}</h5>
                         <ul class="car-list">
-                            <li><img src="/assets/img/car/euro.png" class="far fa-car">100/D.&nbsp;&nbsp;</li>
-                            <li><img src="/assets/img/car/pasajeros.png" class="far fa-user-tie">5Personas&nbsp;</li>
-                            <li><img src="/assets/img/car/puerta.png" class="far fa-gas-pump">&nbsp;&nbsp;&nbsp;5 Puertas&nbsp;&nbsp;</li>
+                            <li><img src="/assets/img/car/euro.png" class="far fa-car">{{$t('precio_d')}}&nbsp;&nbsp;</li>
+                            <li><img src="/assets/img/car/pasajeros.png" class="far fa-user-tie">{{$t('personas')}}&nbsp;</li>
+                            <li><img src="/assets/img/car/puerta.png" class="far fa-gas-pump">&nbsp;&nbsp;&nbsp;{{$t('puertas')}}&nbsp;&nbsp;</li>
                         </ul>
                     </div>
 
                     <div class="car-single-terms mb-3">
-                        <h5 class="mb-2">Oficina de recogida</h5>
+                        <h5 class="mb-2">{{$t('ofi_recogida')}}</h5>
                         <ul class="car-single-terms-list">
-                            <li>Oficina de recogida: <span>La Massana</span></li>
-                            <li>Fecha de devolución: <span>27/12/23</span></li>
-                            <li>Hora de recogida: <span>18:00</span></li>
+                            <li>{{$t('ofi_recogida')}}: <span>{{$t('direccion2')}}</span></li>
+                            <li>{{$t('fecha_recogida')}}: <span>{{$t('mm_dd_aa')}}</span></li>
+                            <li>{{$t('h_recogida')}}: <span>{{$t('cero')}}</span></li>
                         </ul>
                     </div>
 
                     <div class="car-single-terms mb-3">
-                        <h5 class="mb-2">Oficina de devolución</h5>
+                        <h5 class="mb-2">{{$t('ofi_devolucion')}}</h5>
                         <ul class="car-single-terms-list">
-                            <li>Oficina de devolución: <span>La Massana</span></li>
-                            <li>Fecha de devolución: <span>20/12/23</span></li>
-                            <li>Hora de devolución: <span>16:00</span></li>
+                            <li>{{$t('ofi_devolucion')}} <span>{{$t('direccion2')}}</span></li>
+                            <li>{{$t('fecha_devolucion')}} <span>{{$t('mm_dd_aa')}}</span></li>
+                            <li>{{$t('h_devolucion')}}: <span>{{$t('cero')}}</span></li>
                         </ul>
                     </div>
 
                     <div class="car-single-share">
-                        <h5 class="mb-3">Total a pagar Plan Basic por 7 días</h5>
+                        <h5 class="mb-3">{{$t('total_pagar')}}</h5>
                         <div class="car-single-price">
                             <span class="car-price"><strong>600€</strong><sub>/ 7 días</sub></span>
-                            <a href="car-single2.html" class="theme-btn">Aceptar y continuar</a>
+                            <a href="car-single2.html" class="theme-btn">{{$t('aceptar_con')}}</a>
                         </div>
                     </div>
                     </div>  

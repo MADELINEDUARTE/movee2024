@@ -1,22 +1,171 @@
 <template>
 <LayoutWeb>
 <main class="main">
+<!-- hero slider -->
+<div class="hero-section">
+    <div class="hero-slider owl-carousel owl-theme">
+        <div class="hero-single" style="background: url(/assets/img/slider/slider-1.png)">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-9 col-lg-7">
+                        <div class="hero-content">
+                            <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1s" data-wow-delay=".25s">{{$t('reserva_ahora')}}</h6>
+                            <h1 class="hero-title wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1s" data-wow-delay=".50s">
+                                {{$t('viaja_sin_limites')}} <br>
+                                <span>{{$t('r_123')}}</span><br>
+                                {{$t('destino')}}
+                            </h1>
+                            <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay=".75s">
+                                {{$t('nuestra_flota')}}
+                            </p>
+                            <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay="1s">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-single" style="background: url(/assets/img/slider/slider-2.png)">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-9 col-lg-7">
+                        <div class="hero-content">
+                            <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1s" data-wow-delay=".25s">{{$t('disfruta')}}</h6>
+                            <h1 class="hero-title wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1s" data-wow-delay=".50s">
+                                {{$t('paga_en')}}<br> <span>{{$t('oficina')}}</span> <br>{{$t('visitanos')}}
+                            </h1>
+                            <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay=".75s">
+                                {{$t('hacemos')}}
+                            </p>
+                            <div class="btn-descarga">
+                                <img src="" alt="">
+                            </div>
+                            <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay="1s">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-single" style="background: url(/assets/img/slider/slider-3.png)">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-9 col-lg-7">
+                        <div class="hero-content">
+                            <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1s" data-wow-delay=".25s">{{$t('reserva_ahora')}}</h6>
+                            <h1 class="hero-title wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1s" data-wow-delay=".50s">
+                                {{$t('descarga')}} <br>
+                                <span>{{$t('nuestra_app')}}</span> <br>
+                                {{$t('cada_vez')}}
+                            </h1>
+                            <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay=".75s">
+                                {{$t('descargaste')}}
+                            </p>
+                            <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay="1s">
+                                <!--<a href="#" class="theme-btn"><strong>Reservar</strong> <i class="far fa-arrow-right"></i></a>
+                                <a href="#" class="theme-btn theme-btn4"><strong>Tarifas</strong><i
+                                class="far fa-arrow-right"></i></a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <HomeCarousel />
+        <!-- hero slider end -->
 
 
 
-    <!-- find-car form -->
-    <ReservaSolicitudFormHome />    
-    <!-- find-car form end -->
+        <!-- find-car form -->
+<div class="find-car" id="iniciatureserva">
+    <div class="container">
+        <div class="find-car-form">
+            <h4 class="find-car-title">{{$t('encuentra')}}</h4>
+            <form action="#">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label>{{$t('ofi_recogida')}}</label>
+                            <input type="text" class="form-control" :placeholder="$t('ofi_recogida')">
+                            <i class="far fa-location-dot"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label>{{$t('elige')}}</label>
+                            <input type="text" class="form-control" :placeholder="$t('furgoneta')">
+                            <i class="far fa-car"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label>{{$t('ofi_devolucion')}}</label>
+                            <input type="text" class="form-control" :placeholder="$t('ofi_devolucion')">
+                            <i class="far fa-location-dot"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group">
+                            <label>{{$t('fecha_recogida')}}</label>
+                            <input type="text" class="form-control date-picker" :placeholder="$t('mm_dd_aa')">
+                            <i class="far fa-calendar-days"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group">
+                            <label>{{$t('h_recogida')}}</label>
+                            <input type="text" class="form-control time-picker" :placeholder="$t('cero')">
+                            <i class="far fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group">
+                            <label>{{$t('fecha_devolucion')}}</label>
+                            <input type="text" class="form-control date-picker" :placeholder="$t('mm_dd_aa')">
+                            <i class="far fa-calendar-days"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group">
+                            <label>{{$t('h_devolucion')}}</label>
+                            <input type="text" class="form-control time-picker" :placeholder="$t('cero')">
+                            <i class="far fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 align-self-end">
+                        <nuxt-link to="car-single" class="theme-btn" type="submit">
+                            <strong>{{$t('b_inicia_reserva')}}</strong> <i class="far fa-arrow-right"></i>
+                        </nuxt-link>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+        <!-- find-car form end -->
 
     <!-- feature area -->
     <div class="feature-area pt-120" id="visitanos">
         <div class="container">
             <div class="col-lg-6 mx-auto">
                 <div class="site-heading text-center">
-                    <span class="site-title-tagline">Atención de primera calidad</span>
-                    <h2 class="site-title text">Visítanos<span> en nuestras oficinas</span></h2>
+                    <span class="site-title-tagline">{{$t('atencion')}}</span>
+                    <h2 class="site-title text">{{$t('visitanos')}} <span> {{$t('nuestras_oficinas')}}</span></h2>
                     <div class="heading-divider"></div>
                 </div>
             </div>
@@ -29,8 +178,8 @@
                                 <img src="/assets/img/icon/location.svg" alt=""/>
                             </div>
                             <div class="feature-content">
-                                <h4>Pas de la Casa</h4>
-                                <p>Av. Pais Valenciano 33 Bj D.</p>
+                                <h4>{{$t('direccion1')}}</h4>
+                                <p>{{$t('avenida1')}}</p>
                             </div>
                           </a>
                         </div>
@@ -42,8 +191,8 @@
                                   <img src="/assets/img/icon/location.svg" alt="">
                               </div>
                               <div class="feature-content">
-                                  <h4>La Massana</h4>
-                                <p>La Massana- Andorra</p>
+                                  <h4>{{$t('direccion2')}}</h4>
+                                <p>{{$t('avenida2')}}</p>
                               </div>
                             </a>
                         </div>
@@ -55,14 +204,14 @@
                                   <img src="/assets/img/icon/location.svg" alt="">
                               </div>
                               <div class="feature-content">
-                                  <h4>Escaldes - EngordanyAvinguda</h4>
-                                  <p>Pont de la Tosca 9, Local 7</p>
+                                  <h4>{{$t('direccion3')}}</h4>
+                                <p>{{$t('avenida3')}}</p>
                               </div>
                             </a>
                         </div>
                     </div>
                     <div class="text-center mt-4">
-                        <a href="#" class="theme-btn"> <strong>Ver más oficinas</strong> <i class="far fa-arrow-rotate-right"></i> </a>
+                        <a href="#" class="theme-btn"> <strong>{{$t('b_ver_mas')}}</strong> <i class="far fa-arrow-rotate-right"></i> </a>
                     </div>
                 </div>
              </div>
@@ -83,7 +232,7 @@
                             <div class="about-experience-icon">
                                 <img src="/assets/img/icon/car-rent.svg" alt="">
                             </div>
-                            <b>Más disponibilidad <br>  Y el Mejor Servicio</b>
+                            <b>{{$t('disponibilidad')}} <br>  {{$t('mejor_serv')}}</b>
                         </div>
                     </div>
                 </div>
@@ -91,31 +240,28 @@
                 <div class="col-lg-6">
                     <div class="about-right">
                         <div class="site-heading mb-3">
-                            <span class="site-title-tagline">Nosotros</span>
+                            <span class="site-title-tagline">{{$t('nosotros')}}</span>
                             <h2 class="site-title">
-                                Tú mejor opción en el <span>Alquiler de Furgonetas</span> Rápido y seguro
+                                {{$t('mejor_opcion')}} <span>{{$t('alquiler')}} </span> {{$t('rapido')}}
                             </h2>
                         </div>
                         <p class="about-text">
-                            Somos una empresa de alquiler de vehículos industriales, a corto y largo plazo, proporcionando no sólo a empresas y
-                            pymes, sino también para particulares y autónomos un servicio de renting fácil, experto y responsable, con una gran
-                            variedad en nuestra flota para atender todo tipo de necesidades. Es decir, una opción de confianza para el alquiler de
-                            furgonetas. ¡La reserva es rápida y sencilla!.
+                            {{$t('somos')}}
                         </p>
                         <div class="about-list-wrapper">
                             <ul class="about-list list-unstyled">
                                 <li>
-                                    Tarifas flexibles
+                                    {{$t('tarifas_s')}}
                                 </li>
                                 <li>
-                                    La eficiencia, la tecnología y la fiabilidad son fundamentales.
+                                    {{$t('eficiencia')}}
                                 </li>
                                 <li>
-                                    Elevado nivel de confort.
+                                    {{$t('elevado')}}
                                 </li>
                             </ul>
                         </div>
-                        <a href="#iniciatureserva" class="theme-btn mt-4"><strong>Inicia tu reserva</strong> <i
+                        <a href="#iniciatureserva" class="theme-btn mt-4"><strong>{{$t('b_inicia_reserva')}}</strong> <i
                                 class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -132,8 +278,8 @@
             <div class="row">
                 <div class="col-lg-6 mx-auto">
                     <div class="site-heading text-center">
-                        <span class="site-title-tagline">¿Quieres las mejores VACACIONES?</span>
-                        <h2 class="site-title">Nuestra <span>Flota</span></h2>
+                        <span class="site-title-tagline">{{$t('quieres')}}</span>
+                        <h2 class="site-title">{{$t('nuestra')}} <span>{{$t('flota')}}</span></h2>
                         <div class="heading-divider"></div>
                     </div>
                 </div>
@@ -143,8 +289,8 @@
                     <div class="car-item">
                         <div class="car-content">
                             <div class="car-top">
-                                <h4><a class="letrac" href="#">Mercedes Benz Citan <br>
-                                <h6 class="modelo">111 Tourer</h6></a></h4>
+                                <h4><a class="letrac" href="#">{{$t('nombre_coche1')}} <br>
+                                <h6 class="modelo">{{$t('nombre_coche2')}}</h6></a></h4>
                                 <br>
                         
                                 <!--<span><i class="fas fa-star"></i> 5.0</span>-->
@@ -154,18 +300,18 @@
                         </div>
                         
                             <ul class="car-list">
-                                <li><img src="/assets/img/car/euro.png" class="far fa-car">100/D.&nbsp;&nbsp;</li>
-                                <li><img src="/assets/img/car/pasajeros.png"  class="far fa-user-tie">5 Personas&nbsp;</li>
-                                <li><img src="/assets/img/car/puerta.png" class="far fa-gas-pump">&nbsp;&nbsp;&nbsp;5 Puertas&nbsp;&nbsp;</li>
+                                <li><img src="/assets/img/car/euro.png" class="far fa-car">{{$t('precio_d')}}&nbsp;&nbsp;</li>
+                                <li><img src="/assets/img/car/pasajeros.png"  class="far fa-user-tie">{{$t('personas')}}&nbsp;</li>
+                                <li><img src="/assets/img/car/puerta.png" class="far fa-gas-pump">&nbsp;&nbsp;&nbsp;{{$t('puertas')}}&nbsp;&nbsp;</li>
                                <!-- <li><i class="far fa-road"></i>10.15km / 1-litre</li>
                                 <li><i class="far fa-steering-wheel"></i>Automatic</li>-->
                             </ul>
                             <div class="car-footer">
                                 <!--<span class="car-price">$390 <sub>/ month</sub></span>
                                 <a href="#" class="car-favorite-btn"><i class="far fa-heart"></i></a>-->
-                                <a href="#" class="theme-btn1"><strong>Basic 100€</strong></a>
-                                <a href="#" class="theme-btn2"><strong>Medium 125€</strong></a>
-                                <a href="#" class="theme-btn3"><strong>Premium 135€</strong></a>
+                                <a href="#" class="theme-btn1"><strong>{{$t('basic')}}</strong></a>
+                                <a href="#" class="theme-btn2"><strong>{{$t('medio')}}</strong></a>
+                                <a href="#" class="theme-btn3"><strong>{{$t('primium')}}</strong></a>
                             </div>
                         </div>
                     </div>
@@ -175,30 +321,29 @@
                     <div class="car-item">
                         <div class="car-content">
                             <div class="car-top">
-                                <h4><a class="letrac" href="#" >Mercedes Benz <br>
-                                        <h6 class="modelo">Vito L-A02</h6>
-                                    </a></h4>
+                                <h4><a class="letrac" href="#">{{$t('nombre_coche1')}} <br>
+                                <h6 class="modelo">{{$t('nombre_coche2')}}</h6></a></h4>
                                 <br>
-                
+                        
                                 <!--<span><i class="fas fa-star"></i> 5.0</span>-->
                             </div>
-                            <div class="car-img">
-                                <img src="/assets/img/car/02.png" alt="">
-                            </div>
-                
+                        <div class="car-img">
+                            <img src="/assets/img/car/01.png" alt="">
+                        </div>
+                        
                             <ul class="car-list">
-                                <li><img src="/assets/img/car/euro.png" class="far fa-car">100/D.&nbsp;&nbsp;</li>
-                                <li><img src="/assets/img/car/pasajeros.png" class="far fa-user-tie">5 Personas&nbsp;</li>
-                                <li><img src="/assets/img/car/puerta.png" class="far fa-gas-pump">&nbsp;&nbsp;&nbsp;5 Puertas&nbsp;&nbsp;</li>
-                                <!-- <li><i class="far fa-road"></i>10.15km / 1-litre</li>
-                                                    <li><i class="far fa-steering-wheel"></i>Automatic</li>-->
+                                <li><img src="/assets/img/car/euro.png" class="far fa-car">{{$t('precio_d')}}&nbsp;&nbsp;</li>
+                                <li><img src="/assets/img/car/pasajeros.png"  class="far fa-user-tie">{{$t('personas')}}&nbsp;</li>
+                                <li><img src="/assets/img/car/puerta.png" class="far fa-gas-pump">&nbsp;&nbsp;&nbsp;{{$t('puertas')}}&nbsp;&nbsp;</li>
+                               <!-- <li><i class="far fa-road"></i>10.15km / 1-litre</li>
+                                <li><i class="far fa-steering-wheel"></i>Automatic</li>-->
                             </ul>
                             <div class="car-footer">
                                 <!--<span class="car-price">$390 <sub>/ month</sub></span>
-                                                    <a href="#" class="car-favorite-btn"><i class="far fa-heart"></i></a>-->
-                                <a href="#" class="theme-btn1"><strong>Basic 100€</strong></a>
-                                <a href="#" class="theme-btn2"><strong>Medium 125€</strong></a>
-                                <a href="#" class="theme-btn3"><strong>Premium 135€</strong></a>
+                                <a href="#" class="car-favorite-btn"><i class="far fa-heart"></i></a>-->
+                                <a href="#" class="theme-btn1"><strong>{{$t('basic')}}</strong></a>
+                                <a href="#" class="theme-btn2"><strong>{{$t('medio')}}</strong></a>
+                                <a href="#" class="theme-btn3"><strong>{{$t('primium')}}</strong></a>
                             </div>
                         </div>
                     </div>
@@ -208,162 +353,36 @@
                     <div class="car-item">
                         <div class="car-content">
                             <div class="car-top">
-                                <h4><a class="letrac" href="#">Mercedes Benz Vito <br>
-                                        <h6 class="modelo">Aut L-A06</h6>
-                                    </a></h4>
+                                <h4><a class="letrac" href="#">{{$t('nombre_coche1')}} <br>
+                                <h6 class="modelo">{{$t('nombre_coche2')}}</h6></a></h4>
                                 <br>
-                
+                        
                                 <!--<span><i class="fas fa-star"></i> 5.0</span>-->
                             </div>
-                            <div class="car-img">
-                                <img src="/assets/img/car/03.png" alt="">
-                            </div>
-                
+                        <div class="car-img">
+                            <img src="/assets/img/car/01.png" alt="">
+                        </div>
+                        
                             <ul class="car-list">
-                                <li><img src="/assets/img/car/euro.png" class="far fa-car">100/D.&nbsp;&nbsp;</li>
-                                <li><img src="/assets/img/car/pasajeros.png"  class="far fa-user-tie">5 Personas&nbsp;</li>
-                                <li><img src="/assets/img/car/puerta.png" class="far fa-gas-pump">&nbsp;&nbsp;&nbsp;5 Puertas&nbsp;&nbsp;</li>
-                                <!-- <li><i class="far fa-road"></i>10.15km / 1-litre</li>
-                                 <li><i class="far fa-steering-wheel"></i>Automatic</li>-->
+                                <li><img src="/assets/img/car/euro.png" class="far fa-car">{{$t('precio_d')}}&nbsp;&nbsp;</li>
+                                <li><img src="/assets/img/car/pasajeros.png"  class="far fa-user-tie">{{$t('personas')}}&nbsp;</li>
+                                <li><img src="/assets/img/car/puerta.png" class="far fa-gas-pump">&nbsp;&nbsp;&nbsp;{{$t('puertas')}}&nbsp;&nbsp;</li>
+                               <!-- <li><i class="far fa-road"></i>10.15km / 1-litre</li>
+                                <li><i class="far fa-steering-wheel"></i>Automatic</li>-->
                             </ul>
                             <div class="car-footer">
                                 <!--<span class="car-price">$390 <sub>/ month</sub></span>
-                                <ahref="#" class="car-favorite-btn"><i class="far fa-heart"></i></a>-->
-                                <a href="#" class="theme-btn1"><strong>Basic 100€</strong></a>
-                                <a href="#" class="theme-btn2"><strong>Medium 125€</strong></a>
-                                <a href="#" class="theme-btn3"><strong>Premium 135€</strong></a>
+                                <a href="#" class="car-favorite-btn"><i class="far fa-heart"></i></a>-->
+                                <a href="#" class="theme-btn1"><strong>{{$t('basic')}}</strong></a>
+                                <a href="#" class="theme-btn2"><strong>{{$t('medio')}}</strong></a>
+                                <a href="#" class="theme-btn3"><strong>{{$t('primium')}}</strong></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--<div class="col-lg-6 col-xl-4">
-                    <div class="car-item">
-                        <div class="car-img">
-                            <img src="/assets/img/car/02.jpg" alt="">
-                        </div>
-                        <div class="car-content">
-                            <div class="car-top">
-                                <h4><a href="#">Bmw E46 Car</a></h4>
-                                <span><i class="fas fa-star"></i> 5.0</span>
-                            </div>
-                            <ul class="car-list">
-                                <li><i class="far fa-car"></i>Model: 2020</li>
-                                <li><i class="far fa-user-tie"></i>4 People</li>
-                                <li><i class="far fa-gas-pump"></i>Hybrid</li>
-                                <li><i class="far fa-road"></i>10.15km / 1-litre</li>
-                                <li><i class="far fa-steering-wheel"></i>Automatic</li>
-                            </ul>
-                            <div class="car-footer">
-                                <span class="car-price">$390 <sub>/ month</sub></span>
-                                <a href="#" class="car-favorite-btn"><i class="far fa-heart"></i></a>
-                                <a href="#" class="theme-btn">Rent Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xl-4">
-                    <div class="car-item">
-                        <div class="car-img">
-                            <img src="/assets/img/car/03.jpg" alt="">
-                        </div>
-                        <div class="car-content">
-                            <div class="car-top">
-                                <h4><a href="#">Mercedes Benz Car</a></h4>
-                                <span><i class="fas fa-star"></i> 5.0</span>
-                            </div>
-                            <ul class="car-list">
-                                <li><i class="far fa-car"></i>Model: 2020</li>
-                                <li><i class="far fa-user-tie"></i>4 People</li>
-                                <li><i class="far fa-gas-pump"></i>Hybrid</li>
-                                <li><i class="far fa-road"></i>10.15km / 1-litre</li>
-                                <li><i class="far fa-steering-wheel"></i>Automatic</li>
-                            </ul>
-                            <div class="car-footer">
-                                <span class="car-price">$390 <sub>/ month</sub></span>
-                                <a href="#" class="car-favorite-btn"><i class="far fa-heart"></i></a>
-                                <a href="#" class="theme-btn">Rent Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xl-4">
-                    <div class="car-item">
-                        <div class="car-img">
-                            <img src="/assets/img/car/04.jpg" alt="">
-                        </div>
-                        <div class="car-content">
-                            <div class="car-top">
-                                <h4><a href="#">Audi R8 Car</a></h4>
-                                <span><i class="fas fa-star"></i> 5.0</span>
-                            </div>
-                            <ul class="car-list">
-                                <li><i class="far fa-car"></i>Model: 2020</li>
-                                <li><i class="far fa-user-tie"></i>4 People</li>
-                                <li><i class="far fa-gas-pump"></i>Hybrid</li>
-                                <li><i class="far fa-road"></i>10.15km / 1-litre</li>
-                                <li><i class="far fa-steering-wheel"></i>Automatic</li>
-                            </ul>
-                            <div class="car-footer">
-                                <span class="car-price">$390 <sub>/ month</sub></span>
-                                <a href="#" class="car-favorite-btn"><i class="far fa-heart"></i></a>
-                                <a href="#" class="theme-btn">Rent Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xl-4">
-                    <div class="car-item">
-                        <div class="car-img">
-                            <img src="/assets/img/car/05.jpg" alt="">
-                        </div>
-                        <div class="car-content">
-                            <div class="car-top">
-                                <h4><a href="#">Ferrari 458 Car</a></h4>
-                                <span><i class="fas fa-star"></i> 5.0</span>
-                            </div>
-                            <ul class="car-list">
-                                <li><i class="far fa-car"></i>Model: 2020</li>
-                                <li><i class="far fa-user-tie"></i>4 People</li>
-                                <li><i class="far fa-gas-pump"></i>Hybrid</li>
-                                <li><i class="far fa-road"></i>10.15km / 1-litre</li>
-                                <li><i class="far fa-steering-wheel"></i>Automatic</li>
-                            </ul>
-                            <div class="car-footer">
-                                <span class="car-price">$390 <sub>/ month</sub></span>
-                                <a href="#" class="car-favorite-btn"><i class="far fa-heart"></i></a>
-                                <a href="#" class="theme-btn">Rent Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xl-4">
-                    <div class="car-item">
-                        <div class="car-img">
-                            <img src="/assets/img/car/06.jpg" alt="">
-                        </div>
-                        <div class="car-content">
-                            <div class="car-top">
-                                <h4><a href="#">Mercedes Suv Car</a></h4>
-                                <span><i class="fas fa-star"></i> 5.0</span>
-                            </div>
-                            <ul class="car-list">
-                                <li><i class="far fa-car"></i>Model: 2020</li>
-                                <li><i class="far fa-user-tie"></i>4 People</li>
-                                <li><i class="far fa-gas-pump"></i>Hybrid</li>
-                                <li><i class="far fa-road"></i>10.15km / 1-litre</li>
-                                <li><i class="far fa-steering-wheel"></i>Automatic</li>
-                            </ul>
-                            <div class="car-footer">
-                                <span class="car-price">$390 <sub>/ month</sub></span>
-                                <a href="#" class="car-favorite-btn"><i class="far fa-heart"></i></a>
-                                <a href="#" class="theme-btn">Rent Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
+
             <div class="text-center mt-4">
-                <a href="#" class="theme-btn"> <strong>Ver más furgos</strong>  <i class="far fa-arrow-rotate-right"></i> </a>
+                <a href="#" class="theme-btn"> <strong>{{$t('ver_furgos')}}</strong>  <i class="far fa-arrow-rotate-right"></i> </a>
             </div>
         </div>
     </div>
@@ -378,8 +397,8 @@
             <div class="row">
                 <div class="col-lg-6 mx-auto">
                     <div class="site-heading text-center">
-                        <span class="site-title-tagline">Trabajamospara ser</span>
-                        <h2 class="site-title">Tú mejor opción en el <span>alquiler de furgonetas</span></h2>
+                        <span class="site-title-tagline">{{$t('trabajamos')}}</span>
+                        <h2 class="site-title">{{$t('opcion')}} <span>{{$t('alquiler')}}</span></h2>
                         <div class="heading-divider"></div>
                     </div>
                 </div>
@@ -388,41 +407,41 @@
                 <div class="col-lg-3 col-md-6 text-center mb-50">
                     <div class="process-single">
                         <div class="icon">
-                            <span>01</span>
+                            <span>{{$t('uno')}}</span>
                             <i class="fa-thin fa-thought-bubble"></i>
                         </div>
-                        <h4>Pensamos en ti</h4>
-                        <p>Nuestra flota se adapta a todos nuestros clientes y sus necesidades.</p>
+                        <h4>{{$t('pensamos')}}</h4>
+                        <p>{{$t('adapta')}}</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center mb-50">
                     <div class="process-single">
                         <div class="icon">
-                            <span>02</span>
+                            <span>{{$t('dos')}}</span>
                             <i class="fa-thin fa-garage-open"></i>
                         </div>
-                        <h4>Siempre abiertos</h4>
-                        <p>Entregamos y recogemos vehiculos de lunes a domingo en nuestro horario comercial.</p>
+                        <h4>{{$t('siempre')}}</h4>
+                        <p>{{$t('entregamos')}}</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center mb-50">
                     <div class="process-single">
                         <div class="icon">
-                            <span>03</span>
+                            <span>{{$t('tres')}}</span>
                             <i class="fa-thin fa-gauge-max"></i>
                         </div>
-                        <h4>Rápidos y seguros</h4>
-                        <p>Nuestro sistema de reserva es rápido y seguro, al igual que el proceso de entrega y recogida.</p>
+                        <h4>{{$t('rapidos')}}</h4>
+                        <p>{{$t('sistema')}}</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center mb-50">
                     <div class="process-single">
                         <div class="icon">
-                            <span>04</span>
+                            <span>{{$t('cuatro')}}</span>
                             <i class="fa-thin fa-phone-volume"></i>
                         </div>
-                        <h4>Contáctenos</h4>
-                        <p>Llamanos al 650 31 07 07 o escribenos al whatsapp, y te guiamos en el proceso de reserva. </p>
+                        <h4>{{$t('contactanos')}}</h4>
+                        <p>{{$t('llamanos')}}</p>
                     </div>
                 </div>
             </div>
@@ -503,10 +522,10 @@
                 <div class="col-lg-6">
                     <div class="faq-right">
                         <div class="site-heading mb-3">
-                            <span class="site-title-tagline">¿Tienes dudas?</span>
-                            <h2 class="site-title my-3">En 123 RENTING <span>Respondemos a todas</span> tus preguntas</h2>
+                            <span class="site-title-tagline">{{$t('dudas')}}</span>
+                            <h2 class="site-title my-3">{{$t('en123')}} <span>{{$t('respondemos')}}</span> {{$t('preguntas')}}</h2>
                         </div>
-                        <p class="about-text">Sabemos que puedes tener muchas dudas al momento de planificar tu mejor viaje, por ello te ayudamos a resolverlas para que disfrutes al máximo.</p>
+                        <p class="about-text">{{$t('sabemos')}}</p>
                         <div class="faq-img mt-3">
                             <img src="/assets/img/faq/01.png" alt="">
                         </div>
@@ -518,13 +537,13 @@
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <span><i class="far fa-question"></i></span> ¿Cómo puedo realizar una reserva?
+                                    <span><i class="far fa-question"></i></span> {{$t('como')}}
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show"
                                 aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                        ¡Es muy fácil! puedes visitarnos en nuestras oficinas, página web o descargando nuestra App estaremos feliz de poder ayudarte.
+                                        {{$t('facil')}}
                                 </div>
                             </div>
                         </div>
@@ -532,16 +551,16 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <span><i class="far fa-question"></i></span> ¿Qué necesito para realizar una reserva?
+                                    <span><i class="far fa-question"></i></span> {{$t('necesito')}}
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Solo Necesitas tu documento de identificación. <br>
-                                    Carné de conducir<br>
-                                    Ser mayor de edad.<br>
-                                    ¡Y listo es muy fácil!
+                                    {{$t('necesitas')}} <br>
+                                    {{$t('carne')}}<br>
+                                    {{$t('mayor')}}<br>
+                                    {{$t('listo')}}
                                 </div>
                             </div>
                         </div>
@@ -550,13 +569,13 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false"
                                     aria-controls="collapseThree">
-                                    <span><i class="far fa-question"></i></span> ¿Puedo recoger la furgoneta en una oficina y devolverla en otra?
+                                    <span><i class="far fa-question"></i></span> {{$t('puedo')}}
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse"
                                 aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Sí, puedes recoger tu furgoneta en una oficina y hacer la devolución en otra, sin coste extra.
+                                    {{$t('puedes')}}
                                 </div>
                             </div>
                         </div>
@@ -565,14 +584,13 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false"
                                     aria-controls="collapseFour">
-                                    <span><i class="far fa-question"></i></span>¿Puedo recoger y devolver el vehículo a cualquier hora?
+                                    <span><i class="far fa-question"></i></span>{{$t('puedo_recoger')}}
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse"
                                 aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    En principio la furgoneta alquilada debe ser recogida siempre dentro del horario de oficina, que variará en función de
-                                    la delegación de 123 RENTING donde se haya gestionado el alquiler.
+                                    {{$t('principio')}}
                                 </div>
                             </div>
                         </div>
@@ -580,15 +598,13 @@
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <span><i class="far fa-question"></i></span>¿Puedo circular fuera de España?
+                                    <span><i class="far fa-question"></i></span>{{$t('circular')}}
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Si necesitas circular con una de nuestras furgonetas fuera del territorio peninsular español, es necesario que informes
-                                    y te autorice la oficina donde reservarás el vehículo con al menos 72 horas de antelación y contrates el extra de
-                                    COBERTURA DE ASISTENCIA INTERNACIONAL.
+                                    {{$t('circular_furgo')}}
                                 </div>
                             </div>
                         </div>
@@ -607,8 +623,8 @@
             <div class="row">
                 <div class="col-lg-6 mx-auto">
                     <div class="site-heading text-center">
-                        <span class="site-title-tagline">Testimonios de </span>
-                        <h2 class="site-title text-">¿Qué dicen<span> Nuestros clientes?</span></h2>
+                        <span class="site-title-tagline">{{$t('testimonios')}} </span>
+                        <h2 class="site-title text-">{{$t('que_dicen')}}<span> {{$t('clientes')}}</span></h2>
                         <div class="heading-divider"></div>
                     </div>
                 </div>
@@ -620,7 +636,7 @@
                             <img src="/assets/img/testimonial/01.jpg" alt="">
                         </div>
                         <div class="testimonial-author-info">
-                            <h4>Alejandro Roura</h4>
+                            <h4>{{$t('nombre1')}}</h4>
                            <!--<p>Customer</p>-->
                             
                         </div>
@@ -635,7 +651,7 @@
                             <i class="fas fa-star"></i>
                         </div>
                         <p>
-                            Trato incomparable, lasfurgonetas están en perfecto estado, total comodidad. Sin duda volveré a 123 RENTING.
+                            {{$t('testimonio1')}}
                         </p>
                         <div class="testimonial-quote-icon">
                             <img src="/assets/img/icon/quote.svg" alt="">
@@ -649,7 +665,7 @@
                             <img src="/assets/img/testimonial/02.jpg" alt="">
                         </div>
                         <div class="testimonial-author-info">
-                            <h4>Daniel Rodriguéz</h4>
+                            <h4>{{$t('nombre2')}}</h4>
                             <!--<p>Customer</p>-->
                         </div>
                     </div>
@@ -663,7 +679,7 @@
                             <i class="fas fa-star"></i>
                         </div>
                         <p>
-                            Trato profesional, amable, las furgonetas son de primera calidad.
+                            {{$t('testimonio2')}}
                         </p>
                         <div class="testimonial-quote-icon">
                             <img src="/assets/img/icon/quote.svg" alt="">
@@ -677,7 +693,7 @@
                             <img src="/assets/img/testimonial/03.jpg" alt="">
                         </div>
                         <div class="testimonial-author-info">
-                            <h4>Monserrat Calves</h4>
+                            <h4>{{$t('nombre3')}}</h4>
                             <!--<p>Customer</p>-->
                         </div>
                     </div>
@@ -691,7 +707,7 @@
                             <i class="fas fa-star"></i>
                         </div>
                         <p>
-                            Hoy he alquilado una furgoneta, el trato es estupendo, no puedes ser más majos.
+                            {{$t('testimonio3')}}
                         </p>
                         <div class="testimonial-quote-icon">
                             <img src="/assets/img/icon/quote.svg" alt="">
@@ -705,7 +721,7 @@
                             <img src="/assets/img/testimonial/04.jpg" alt="">
                         </div>
                         <div class="testimonial-author-info">
-                            <h4>Miguel Dalton</h4>
+                            <h4>{{$t('nombre4')}}</h4>
                             <!--<p>Customer</p>-->
                         </div>
                     </div>
@@ -719,7 +735,7 @@
                             <i class="fas fa-star"></i>
                         </div>
                         <p>
-                            He alquilado mi primera furgoneta a través de la APP, es muy fácil!.
+                            {{$t('testimonio4')}}
                         </p>
                         <div class="testimonial-quote-icon">
                             <img src="/assets/img/icon/quote.svg" alt="">
@@ -733,7 +749,7 @@
                             <img src="/assets/img/testimonial/05.jpg" alt="">
                         </div>
                         <div class="testimonial-author-info">
-                            <h4>Angelica Carré</h4>
+                            <h4>{{$t('nombre5')}}</h4>
                             <!--<p>Customer</p>-->
                         </div>
                     </div>
@@ -747,7 +763,7 @@
                             <i class="fas fa-star"></i>
                         </div>
                         <p>
-                            Realice mi reserva en su oficina, atención insuperable, le dieron respuestas a todas mis dudas. Recomendado al 100%.
+                            {{$t('testimonio5')}}
                         </p>
                         <div class="testimonial-quote-icon">
                             <img src="/assets/img/icon/quote.svg" alt="">

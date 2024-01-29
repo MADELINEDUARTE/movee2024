@@ -38,6 +38,10 @@ export default defineNuxtConfig({
         { src: '/assets/js/main.js', }
       ]
     },
-    
+  },
+  webpack:{
+    plugins: [
+      { src: '/assets/js/jquery-3.6.0.min.js', ssr: false }
+    ]
   }
 })

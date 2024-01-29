@@ -13,7 +13,7 @@
                                     <img src="/assets/img/icon/mail.svg" alt="">
                                 </div>
                                 <div class="header-top-contact-info">
-                                    <a href="mailto:info@example.com">{{$t('correo')}}</a>
+                                    <!-- <a href="mailto:info@example.com">{{$t("correo")}}</a> -->
                                 </div>
                             </li>
                             <li>

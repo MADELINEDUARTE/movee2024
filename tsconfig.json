@@ -1,4 +1,11 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json"
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    // ... otras opciones ...
+    "types": [
+      // ... otras definiciones de tipo ...
+      "jquery"
+    ]
+  }
 }

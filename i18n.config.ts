@@ -3,7 +3,7 @@ export default defineI18nConfig(() => ({
     locale: 'en',
     messages: {
         es: {
-            correo: 'info@123renting.es',
+            correo: "info@123renting.es",
             horarios: 'Lunes a Domingo: 9:00 a.m. a 7:00 p.m.',
             perfil: 'Mi perfil',
             facturacion: 'Facturación',
@@ -419,7 +419,7 @@ export default defineI18nConfig(() => ({
             repetir_contraseña: 'Repetir contraseña',  
         },
         en: {
-            correo: 'info@123renting.es',
+            correo: "info@123renting.es",
             horarios: 'Monday to Sunday: 9:00 a.m. to 7:00 p.m.',
             perfil: 'My profile',
             facturacion: 'Billing',
@@ -1256,7 +1256,7 @@ export default defineI18nConfig(() => ({
             
         },
         ger: {
-            correo: 'info@123renting.es',
+            correo: "info@123renting.es",
             horarios: 'Montag bis Sonntag: 9:00 bis 19:00 Uhr',
             perfil: 'Mein Profil',
             facturacion: 'Abrechnung',

@@ -15,8 +15,8 @@
                 <form @click="onOpenaLL" action="#">
 
                     <div v-if="statusOpen" class="col-12 d-flex mb-4" :class="paso > 1 ? 'justify-content-between':'justify-content-end'">
-                        <button type="button" v-if="paso > 1" @click="siguiente(paso-1)" class="theme-btn w-25 py-2">Volver</button>
-                        <button type="button" @click="siguiente(paso+1)" class="theme-btn w-25 py-2">Siguiente</button>
+                        <button type="button" v-if="paso > 1" @click="siguiente(paso-1)" class="theme-btn w-auto py-2">Volver</button>
+                        <button type="button" @click="siguiente(paso+1)" class="theme-btn w-auto py-2">Siguiente</button>
                     </div>
                     <Transition>
                         <div class="row"  v-if="paso == 1">
@@ -54,22 +54,35 @@
 
                         </div>
                     </Transition>
-                    <Transition>
+                   
                         <div class="row" v-if="paso == 2">
                             <ReservaPasosCoches 
-                                class="col-paso" 
+                               
                                 :status_open="statusOpen"
                                 :coches="coches.data"
                                 :textos="{
                                     number: '3.',
                                     text: 'Elige un coche seleccionando el plan que prefieras.'
                                 }"
-                                :class="statusOpen ? 'col-12 ':'col-12 col-md-4'" 
+                                
                                 v-model:plan_id="reserva.coche.plan_id"
                                 v-model:coche_id="reserva.coche.coche_id"
                             />
+
+                            <ReservaPasosResumen 
+                                class="col-12 col-sm-8"
+                                :textos="{
+                                    number: '4.',
+                                    text: 'Resumen de la reserva.'
+                                }"
+                                v-if="reserva.coche.coche_id"
+                                :plan_id="reserva.coche.plan_id"
+                                :coche="coches.data.find( e => e.id == reserva.coche.coche_id)"
+                            />
+
+                            
                         </div>
-                    </Transition>
+                  
                     
                     
                 </form>
@@ -81,17 +94,11 @@
 <script setup lang="ts">
 
     import type { Coche } from '~/composables/useCoche'
-
+    import type { Mejora } from '~/composables/useMejoras'
     const { oficinas } = useOficina()
-
-    // const { data, pending, error, refresh } = await useFetch('https://dev.api.123renting.es/api/oficinas', {
-    //     query: { idregion: 1, total: 5 }
-    // })
-
     const { reserva } = useReserva()
-
-
     const { coches } = useCoche()
+    const { mejoras } = useMejoras()
 
 
     watch(reserva.recogida,(to)=>{
@@ -107,7 +114,7 @@
             data: {
                 // beneficios: number,
                 flota: Coche[];
-
+                beneficios: Mejora[]
             }
         }
 
@@ -121,7 +128,7 @@
         })
         
         coches.data =  data.value?.data.flota || []
-   
+        mejoras.data = data.value?.data.beneficios || []
         return { data, pending, error, refresh }
     }
 

@@ -1,6 +1,6 @@
 export default defineI18nConfig(() => ({
     legacy: false,
-    locale: 'en',
+    locale: 'es',
     messages: {
         es: {
             correo: "info@123renting.es",
@@ -836,9 +836,8 @@ export default defineI18nConfig(() => ({
             repetir_contraseña:'Repeat password',            
 
 
-        }
-
         },
+
         cat: {
             correo: 'info@123renting.es',
             horarios: 'Dilluns a diumenge: de 9:00 a 19:00',
@@ -1253,7 +1252,7 @@ export default defineI18nConfig(() => ({
             contraseña_anterior: 'Contrasenya anterior',
             nueva_contraseña: 'Nova contrasenya',
             repetir_contraseña: 'Repetir contrasenya',
-            
+
         },
         ger: {
             correo: "info@123renting.es",
@@ -1566,35 +1565,35 @@ export default defineI18nConfig(() => ({
             grupo_a5: 'Gruppe I4 (Karosserien bis zu 20 m³) Gruppe F4 (Karosserien mit Plattform bis zu 20 m³)',
             texto_a13: 'Der Mieter muss während der gesamten Mietdauer immer eine Kopie des aktuellen Mietvertrags mitführen. Das Check-in-Dokument muss jederzeit im Fahrzeug sichtbar sein. Bei Nichteinhaltung dieser Verpflichtung muss der Mieter die Strafe übernehmen und die Verwaltungskosten tragen.',
             texto_a14: 'Übersetzungen dieser Allgemeinen Geschäftsbedingungen dienen nur zur Information und sind in allen Details ihrer Formulierung rechtlich nicht bindend. Nur die spanische Version ist gültig.',
-        
-        titulo_b1: 'VERTRAGSBEDINGUNGEN',
-        texto_b1: 'Unsere Mieten werden in 24-Stunden-Intervallen ab der geplanten Lieferzeit in der Reservierung berechnet. Nutzfahrzeuge stehen für Halbtagesmieten zur Verfügung.',
-        texto_b2: 'Für Mietzeiträume von mehr als 28 Tagen siehe besondere Bedingungen auf',
-        texto_b3: 'Die von 123renting angebotenen Fahrzeugkategorien sind wie folgt organisiert:',
-        grupo_b1: 'Gruppe A4 (Nissan NV250, Renault Kangoo oder ähnlich)',
-        texto_b4: 'Der Mieter muss während der gesamten Mietdauer immer eine Kopie des aktuellen Mietvertrags mitführen. Das Check-in-Dokument muss jederzeit im Fahrzeug sichtbar sein. Wenn dieser Verpflichtung nicht nachgekommen wird, muss der Mieter die Strafe übernehmen und die Verwaltungskosten tragen.',
-        texto_b5: 'Übersetzungen dieser Allgemeinen Geschäftsbedingungen dienen nur zur Information und sind in allen Details ihrer Formulierung rechtlich nicht bindend. Nur die spanische Version ist gültig.',
 
-        titulo_c1: 'ZUSCHLÄGE UND ZUSÄTZLICHE ARTIKEL',
-        texto_c1: 'Kindersitz der Gruppe 0+ (0-13 kg; 0-15 Monate), je nach Verfügbarkeit. 7,95 €/Tag.',
-        texto_c2: 'Kindersitz der Gruppe 1 (9-18 kg; 9 Monate-4 Jahre), je nach Verfügbarkeit. 7,95 €/Tag.',
-        texto_c3: 'Kindersitz der Gruppe 2 (15-25 kg; 4-6 Jahre), je nach Verfügbarkeit. 7,95 €/Tag.',
-        texto_c4: 'Kindersitz der Gruppe 3 (22-36 kg; 6-12 Jahre), je nach Verfügbarkeit. 5,95 €/Tag.',
-        texto_c5: 'Zusätzlicher Fahrer, bis zu 3 zusätzliche Fahrer können zusätzlich zum Hauptfahrer im Vertrag eingeschrieben werden. 6,95 €/Tag.',
-        texto_c6: 'Neuer Fahrer (25 Jahre und/oder 4 Jahre Fahrerfahrung). 7,95 €/Tag.',
-        texto_c7: 'Älterer Fahrer (75 Jahre). 7,95 €/Tag.',
-        texto_c8: 'GPS, je nach Verfügbarkeit: 5,95 €/Tag.',
-        texto_c9: 'Dieselzuschlag pro Fahrzeug: 2,50 €/Tag.',
-        texto_c10: 'Abholung und Rückgabe am Flughafen, nur "auf Anfrage" und für vollständig im Voraus bezahlte Reservierungen 45 €.',
-        texto_c11: 'Parkstrafe für die Abholung am Flughafen: bis zu 5 € (unabhängig vom Preis des Abhol-/Rückgabe-Service am Flughafen).',
-        texto_c12: 'Transfers (Lieferung/Rückgabe am Hotel oder an der angegebenen Adresse), Verfügbarkeit auf Anfrage. 30 € / 45 € pro Strecke je nach Entfernung.',
-        texto_c13: 'Express-Service. 40 €',
-        texto_c14: 'Einweg-Rückgabeservice an einer anderen Filiale als der Abholort: Verfügbarkeit auf Anfrage.',
-        texto_c15: 'Paket für erweiterte Kilometerleistung. 80 €',
-        texto_c16: 'Dachgepäckträger: 7,95 €/Tag.',
-        texto_c17: 'Schneeketten: 7,95 €/Tag.',
-        texto_c18: 'Stundenzuschlag: Alle Abholungen und Rückgaben sind zwischen 8:00 Uhr und 20:00 Uhr das ganze Jahr über kostenlos. Außerhalb dieser Zeiten gelten die im',
-    
+            titulo_b1: 'VERTRAGSBEDINGUNGEN',
+            texto_b1: 'Unsere Mieten werden in 24-Stunden-Intervallen ab der geplanten Lieferzeit in der Reservierung berechnet. Nutzfahrzeuge stehen für Halbtagesmieten zur Verfügung.',
+            texto_b2: 'Für Mietzeiträume von mehr als 28 Tagen siehe besondere Bedingungen auf',
+            texto_b3: 'Die von 123renting angebotenen Fahrzeugkategorien sind wie folgt organisiert:',
+            grupo_b1: 'Gruppe A4 (Nissan NV250, Renault Kangoo oder ähnlich)',
+            texto_b4: 'Der Mieter muss während der gesamten Mietdauer immer eine Kopie des aktuellen Mietvertrags mitführen. Das Check-in-Dokument muss jederzeit im Fahrzeug sichtbar sein. Wenn dieser Verpflichtung nicht nachgekommen wird, muss der Mieter die Strafe übernehmen und die Verwaltungskosten tragen.',
+            texto_b5: 'Übersetzungen dieser Allgemeinen Geschäftsbedingungen dienen nur zur Information und sind in allen Details ihrer Formulierung rechtlich nicht bindend. Nur die spanische Version ist gültig.',
+
+            titulo_c1: 'ZUSCHLÄGE UND ZUSÄTZLICHE ARTIKEL',
+            texto_c1: 'Kindersitz der Gruppe 0+ (0-13 kg; 0-15 Monate), je nach Verfügbarkeit. 7,95 €/Tag.',
+            texto_c2: 'Kindersitz der Gruppe 1 (9-18 kg; 9 Monate-4 Jahre), je nach Verfügbarkeit. 7,95 €/Tag.',
+            texto_c3: 'Kindersitz der Gruppe 2 (15-25 kg; 4-6 Jahre), je nach Verfügbarkeit. 7,95 €/Tag.',
+            texto_c4: 'Kindersitz der Gruppe 3 (22-36 kg; 6-12 Jahre), je nach Verfügbarkeit. 5,95 €/Tag.',
+            texto_c5: 'Zusätzlicher Fahrer, bis zu 3 zusätzliche Fahrer können zusätzlich zum Hauptfahrer im Vertrag eingeschrieben werden. 6,95 €/Tag.',
+            texto_c6: 'Neuer Fahrer (25 Jahre und/oder 4 Jahre Fahrerfahrung). 7,95 €/Tag.',
+            texto_c7: 'Älterer Fahrer (75 Jahre). 7,95 €/Tag.',
+            texto_c8: 'GPS, je nach Verfügbarkeit: 5,95 €/Tag.',
+            texto_c9: 'Dieselzuschlag pro Fahrzeug: 2,50 €/Tag.',
+            texto_c10: 'Abholung und Rückgabe am Flughafen, nur "auf Anfrage" und für vollständig im Voraus bezahlte Reservierungen 45 €.',
+            texto_c11: 'Parkstrafe für die Abholung am Flughafen: bis zu 5 € (unabhängig vom Preis des Abhol-/Rückgabe-Service am Flughafen).',
+            texto_c12: 'Transfers (Lieferung/Rückgabe am Hotel oder an der angegebenen Adresse), Verfügbarkeit auf Anfrage. 30 € / 45 € pro Strecke je nach Entfernung.',
+            texto_c13: 'Express-Service. 40 €',
+            texto_c14: 'Einweg-Rückgabeservice an einer anderen Filiale als der Abholort: Verfügbarkeit auf Anfrage.',
+            texto_c15: 'Paket für erweiterte Kilometerleistung. 80 €',
+            texto_c16: 'Dachgepäckträger: 7,95 €/Tag.',
+            texto_c17: 'Schneeketten: 7,95 €/Tag.',
+            texto_c18: 'Stundenzuschlag: Alle Abholungen und Rückgaben sind zwischen 8:00 Uhr und 20:00 Uhr das ganze Jahr über kostenlos. Außerhalb dieser Zeiten gelten die im',
+
             titulo_d1: 'KRAFTSTOFFPOLITIK',
             texto_d2: 'Voll-voll-Modus: Fahrzeuge werden vollgetankt ohne Gebühr geliefert und müssen in denselben Bedingungen zurückgegeben werden. Bei fehlendem Kraftstoff bei der Rückgabe wird dem Kunden der entsprechende Betrag zusammen mit einer Verwaltungs- und Betankungsgebühr von 31 € in Rechnung gestellt.',
             texto_d3: 'Schnellrückgabemodus: Fahrzeuge werden vollgetankt und der Betrag wird dem Kunden bei Vertragsabschluss zusammen mit der Verwaltungs- und Betankungsgebühr berechnet. Bei der Fahrzeugrückgabe und nach Überprüfung des Kraftstoffniveaus gemäß dem Achtel-Messgerät wird der Betrag für nicht verbrauchten Kraftstoff erstattet. Die Verwaltungs- und Betankungsgebühr ist nicht erstattungsfähig.',
@@ -1615,7 +1614,7 @@ export default defineI18nConfig(() => ({
 
             titulo_f1: 'ABHOLUNG UND RÜCKGABE',
             texto_f1: 'Andorra, Avinguda Pont de la Tosca 9 Local 7, Escaldes Engordany, Andorra',
-        
+
             titulo_g1: 'STORNIERUNGEN, NO SHOWS UND VERLÄNGERUNGEN',
             texto_g2: 'Stornierungen per E-Mail an',
             texto_g3: 'mindestens 24 Stunden vor der geplanten Lieferzeit in der Reservierung führen zu keinen Kosten seitens 123Renting.',
@@ -1624,20 +1623,20 @@ export default defineI18nConfig(() => ({
             texto_g6: 'Sowohl Nichterscheinen als auch Stornierungen mit weniger als 2 Stunden Vorlaufzeit müssen 100% des Reservierungswerts zahlen, um die Betriebskosten und entgangenen Gewinne zu decken.',
             texto_g7: 'Jede Verlängerung einer bestehenden Reservierung unterliegt der schriftlichen Bestätigung der Verfügbarkeit und des Preises durch 123renting. Alle Verlängerungen erfolgen zum zum Zeitpunkt der Anfrage geltenden Allgemeinen Tarif von 123renting. Außerdem ist die Unterzeichnung und Bezahlung des neuen Vertrags in den Räumlichkeiten des Unternehmens erforderlich.',
             texto_g8: 'Strafen und rechtliche Kosten aufgrund von Verkehrsverstößen oder Verstößen gegen Gesetze, Vorschriften oder Verordnungen durch den Mieter. Der Mieter zahlt und haftet wie der Eigentümer des Fahrzeugs für Strafen oder Sanktionen, die von Verwaltungsbehörden für die Nutzung und den Zustand des Fahrzeugs verhängt werden, wenn sie ihm zurechenbar sind. Der Mieter muss dem Vermieter die Beträge, Aufschläge oder Zinsen für Gebühren erstatten, die er als Eigentümer des Fahrzeugs aufgrund von Strafen oder Sanktionen zahlen muss, zuzüglich einer Verwaltungsgebühr für die Bearbeitung von Bußgeldern oder Strafen, die der Eigentümer erhalten hat.',
-        
+
             titulo_h1: 'AKTUALISIERUNG DER DATENSCHUTZRICHTLINIE',
             texto_h2: 'Diese Datenschutzrichtlinie kann aktualisiert werden. Aus diesem Grund sollte der Benutzer diese Richtlinie regelmäßig überprüfen und, wenn möglich, jedes Mal, wenn er auf die Website zugreift, um angemessen über die Art der erfassten Informationen und deren Verarbeitung informiert zu sein.',
             texto_h3: 'Ungeachtet dessen wird der Benutzer über jede Änderung dieser Datenschutzrichtlinie informiert, die die Verarbeitung seiner personenbezogenen Daten betrifft.',
-        
+
             titulo_i1: 'VERWENDUNG VON COOKIES',
             texto_i2: 'Die Website von',
             texto_i3: 'verwendet Cookies, um zwischen den verschiedenen Benutzern der Website zu unterscheiden. Dies bedeutet, dass der Benutzer beim Besuch unserer Website eine bessere Erfahrung machen kann und somit dazu beiträgt, sie zu verbessern.',
             texto_i4: 'Weitere Informationen zur Verwendung von Cookies finden Sie unter dem folgenden Link zu unserer',
-        
+
             titulo_j1: 'BENUTZERUNTERSTÜTZUNG',
             texto_j2: 'Für Anfragen nach Informationen oder Änderungen an Ihren zukünftigen oder laufenden Reservierungsdetails können Sie dies anfordern bei',
             texto_j3: 'Wenn Sie Vorschläge zur Verbesserung unserer Dienstleistungen machen oder eine Beschwerde einreichen möchten, können Sie dies tun bei',
-        
+
             titulo_k1: 'DATENSCHUTZRICHTLINIE',
             texto_k2: 'Verantwortlich:',
             texto_k3: '123RENTING, S.L.U. L715426C',
@@ -1651,13 +1650,13 @@ export default defineI18nConfig(() => ({
             texto_k11: 'Es wird darauf hingewiesen, dass Ihre Daten gegebenenfalls auch an jede staatliche Stelle weitergegeben werden können, die ihre Rechtmäßigkeit bescheinigt, sowie an jede andere Partei, die Zugang haben muss, um den Zweck und seine Konsequenzen zu erreichen.',
             texto_k12: 'Rechte:',
             texto_k13: 'Der Dateninhaber kann seine Rechte auf Zugang, Berichtigung, Löschung, Widerspruch, Unterdrückung, Einschränkung und Portabilität seiner Daten ausüben bei',
-        
+
             titulo_l1: 'DATENSCHUTZ PERSÖNLICHER DATEN',
             texto_l2: 'In Übereinstimmung mit der Europäischen Verordnung EU 2016/679 und gemäß ihrer ergänzenden nationalen Gesetzgebung zum Schutz personenbezogener Daten informiert 123RENTING, S.L.U. die Benutzer der Website',
             texto_l3: 'dass die über unsere Website durch die entsprechenden Formulare und erhaltenen E-Mails bereitgestellten Daten, die als personenbezogene Daten gelten, in Dateien eingetragen werden, deren Verantwortung bei 123RENTING, S.L.U. liegt, um den angeforderten Dienst zu verwalten, auf Ihre Anfrage zu antworten und/oder Ihre Anfrage zu bearbeiten.',
             texto_l4: 'Diese Dateien sind gemäß den geltenden Gesetzen und Entwicklungsstandards bei der Spanischen Agentur für Datenschutz registriert. Die Benutzer garantieren und sind in jedem Fall verantwortlich für die Wahrheit, Genauigkeit, Gültigkeit, Authentizität, Relevanz und Nichtüberschreitung der bereitgestellten personenbezogenen Daten und verpflichten sich, diese ordnungsgemäß zu aktualisieren.',
             texto_l5: 'Wenn von den Benutzern verlangt wird, ein Formular auszufüllen und auf die Schaltfläche "Senden" zu klicken, um eine Anfrage zu stellen, bedeutet die Erfüllung dieses Verfahrens zwangsläufig, dass sie informiert sind und ihre ausdrückliche Zustimmung zum Inhalt der diesem Formular beigefügten Klausel gegeben haben oder die Datenschutzrichtlinie akzeptiert haben.',
-        
+
             info_perfil: 'PROFILINFORMATIONEN',
             nombre_completo: 'Vollständiger Name',
             nombre_apellido: 'Anthony Jonson',
@@ -1668,7 +1667,10 @@ export default defineI18nConfig(() => ({
             contraseña_anterior: 'Altes Passwort',
             nueva_contraseña: 'Neues Passwort',
             repetir_contraseña: 'Passwort wiederholen',
-        
+
         }
+
+        },
+ 
     }
 ))

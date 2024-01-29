@@ -32,7 +32,7 @@
                 <div class="header-top-right">
                 </div>
                     <div class="header-top-social">
-                        <a href="#" button id="bdark" class="fa-regular fa-eclipse"></a>
+                        <DarkMode/>
                         <a href="https://www.facebook.com/profile.php?id=100063699933991ref=bookmarks"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/123renting.es/?hl=es"><i class="fab fa-instagram"></i></a>
                         <a href="https://twitter.com/1Renting"><i class="fab fa-twitter"></i></a>

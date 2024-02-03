@@ -26,7 +26,7 @@
                 <BoxCoche :coche="cocheSeleccionado" @selectCoche="selectCoche" :plan_id="plan_id" />
                 <div @click="reset" class="w-100 d-flex justify-content-end" style="cursor: pointer;">
                     <i class="fa fa-rotate mx-2" style="color: white"></i>
-                    <p class="m-0">Cambiar de coche</p>
+                    <p class="m-0">{{$t('cambio_coche')}}</p>
                 </div>
             </div>
         </div>

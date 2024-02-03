@@ -10,30 +10,30 @@
                     <table class="table caption-top">
                         <tbody>
                             <tr>
-                                <th>Precio Plan tarifa Basic</th>
+                                <th>{{$t('tarifa_plan')}}</th>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><strong>700€</strong>
+                                <td><strong>{{$t('tarifa_plan_precio')}}</strong>
                                 </td>   
                             </tr>
                             <tr>
-                                <th>Sub-total</th>
+                                <th>{{$t('sub_total')}}</th>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td><strong>{{ precio }}€</strong>
+                                    <td><strong>{{ precio }}{{$t('moneda')}}</strong>
                                     </td>
                             </tr>
                             <tr>
-                                <th>Total a pagar por 7 días</th>
+                                <th>{{$t('total_pagar')}}</th>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td><strong>724€</strong></td>
+                                    <td><strong>{{$t('precio_total')}}</strong></td>
                             </tr>
                                             
                         </tbody>
@@ -44,18 +44,18 @@
         </div>
         
         <div class="col-12">
-            <p class="mt-4" style="font-size: 12px" ><span style="font-size: 18px; font-weight: 900; color: #E94B28">5</span> Mejora tu reserva</p>
+            <p class="mt-4" style="font-size: 12px" ><span style="font-size: 18px; font-weight: 900; color: #E94B28">5</span>{{$t('mejora_reserva')}}</p>
             
             <div class="row mt-2">
                 <div class="col-2 pe-0">
                         <div class="cardPaquete theme-btn1 m-0 mb-2 d-flex justify-content-center align-items-center">
-                            <h4 class="">Basic</h4>
+                            <h4 class="">{{$t('basic')}}</h4>
                         </div>
                         <div class="cardPaquete theme-btn2 m-0 mb-2 d-flex justify-content-center align-items-center">
-                            <h4>Medium</h4>
+                            <h4>{{$t('medium')}}</h4>
                         </div>
                         <div class="cardPaquete theme-btn3 m-0 mb-2 d-flex justify-content-center align-items-center">
-                            <h4>Premium</h4>
+                            <h4>{{$t('premium')}}</h4>
                         </div>
                 </div>
             
@@ -71,14 +71,14 @@
                                
                                 <div class="d-flex justify-content-center pt-2">
                                     <i v-if="item.basic" class="fa fa-check d-flex align-items-center justify-content-center p-0 m-0 circleC" style=""></i>
-                                    <button v-else type="button" class="btn btn-sm btn-outline-light">+{{ item.precio }}€</button>
+                                    <button v-else type="button" class="btn btn-sm btn-outline-light">+{{ item.precio }}{{$t('moneda')}}</button>
                                 </div> 
                             </div>
                             <div class="cardPaquete card bgcard mb-2 ">
                                 <p>{{ item.descripcion }}</p>
                                 <div class="d-flex justify-content-center pt-2">
                                     <i v-if="item.medium" class="fa fa-check d-flex align-items-center justify-content-center p-0 m-0 circleC" style=""></i>
-                                    <button v-else type="button" class="btn btn-sm btn-outline-light">+{{ item.precio }}€</button>
+                                    <button v-else type="button" class="btn btn-sm btn-outline-light">+{{ item.precio }}{{$t('moneda')}}</button>
                                     
                                 </div> 
                             </div>
@@ -87,7 +87,7 @@
 
                                 <div class="d-flex justify-content-center pt-2">
                                     <i v-if="item.premium" class="fa fa-check d-flex align-items-center justify-content-center p-0 m-0 circleC" style=""></i>
-                                    <button v-else type="button" class="btn btn-sm btn-outline-light">+{{ item.precio }}€</button>
+                                    <button v-else type="button" class="btn btn-sm btn-outline-light">+{{ item.precio }}{{$t('moneda')}}</button>
                                     
                                 </div> 
                             </div>

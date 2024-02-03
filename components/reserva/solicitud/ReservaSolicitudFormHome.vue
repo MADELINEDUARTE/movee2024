@@ -4,8 +4,9 @@
             <div class="find-car-form">
                 <div class="d-flex justify-content-between" :class="statusOpen ? 'mb-4':''">
                     <div class="d-flex justify-center flex-column ">
-                        <h4 class="find-car-title m-0">Encuentra la Furgoneta perfecta</h4>
-                        <p v-if="statusOpen">Completa la siguiente informacion para iniciar tu reserva.</p>
+                        <h4 class="find-car-title m-0">{{$t('encuentra')}}</h4>
+                        <p v-if="statusOpen">
+                            {{$t('completainformacion')}}</p>
                     </div>
                     <div @click="onOpen" v-if="statusOpen" class="d-flex justify-center align-items-center p-3">
                         <i class="fa fa-times" style="color: white;font-size: 20px;"></i>
@@ -15,8 +16,8 @@
                 <form @click="onOpenaLL" action="#">
 
                     <div v-if="statusOpen" class="col-12 d-flex mb-4" :class="paso > 1 ? 'justify-content-between':'justify-content-end'">
-                        <button type="button" v-if="paso > 1" @click="siguiente(paso-1)" class="theme-btn w-auto py-2">Volver</button>
-                        <button type="button" @click="siguiente(paso+1)" class="theme-btn w-auto py-2">Siguiente</button>
+                        <button type="button" v-if="paso > 1" @click="siguiente(paso-1)" class="theme-btn w-auto py-2">{{$t('volver')}}</button>
+                        <button type="button" @click="siguiente(paso+1)" class="theme-btn w-auto py-2">{{$t('siguiente')}}</button>
                     </div>
                     <Transition>
                         <div class="row"  v-if="paso == 1">

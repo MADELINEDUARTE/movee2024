@@ -417,6 +417,9 @@ export default defineI18nConfig(() => ({
             contraseña_anterior: 'Contraseña anterior',
             nueva_contraseña: 'Nueva contraseña',
             repetir_contraseña: 'Repetir contraseña',  
+
+            completa_informacion: 'Completa la siguiente informacion para iniciar tu reserva.',
+
         },
         en: {
             correo: "info@123renting.es",
@@ -835,7 +838,23 @@ export default defineI18nConfig(() => ({
             nueva_contraseña: 'New Password',
             repetir_contraseña:'Repeat password',            
 
-
+            completainformacion: 'Complete the following information to start your reservation.',
+            volver: 'Return',
+            siguiente: 'Following',
+            Oficina_de: 'Office of',
+            ver_mapa: 'View on Map',
+            seleccione_ofi: 'Select the office',
+            fecha_de: 'Date',
+            hora_de: 'Time of',
+            mejora_reserva: 'Improve your reservation',
+            basic: 'Basic',
+            medium: 'Medium',
+            premium: 'Premium',
+            moneda: '€',
+            perso:'People',
+            puerta: 'Doors',
+            cambio_coche: 'Change car',
+            
         },
 
         cat: {
@@ -1668,6 +1687,7 @@ export default defineI18nConfig(() => ({
             nueva_contraseña: 'Neues Passwort',
             repetir_contraseña: 'Passwort wiederholen',
 
+            
         }
 
         },

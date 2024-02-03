@@ -9,11 +9,11 @@
             <div class="col-12">
                 <div  class="form-group">
                     <div class="d-flex justify-content-between">
-                        <label>Oficina de {{ type }}</label>
-                        <a href="#" style="font-size: 12px" class="mt-1" v-if="oficina_id" >Ver en el Mapa <span class="fa fa-location-dot"></span> </a>
+                        <label>{{$t('Oficina_de')}} {{ type }}</label>
+                        <a href="#" style="font-size: 12px" class="mt-1" v-if="oficina_id" >{{$t('ver_mapa')}} <span class="fa fa-location-dot"></span> </a>
                     </div>
                     <select type="text" class="form-control" placeholder="Oficina" v-model="oficina_id">
-                        <option value="0">Seleccione la oficina</option>
+                        <option value="0">{{$t('seleccione_ofi')}}</option>
                         <option 
                             v-for="(oficina, key) in oficinas" 
                             :key="`oficina-${type}-${key}`"
@@ -25,14 +25,14 @@
             </div>
             <div class="col-6">
                 <div class="form-group">
-                    <label>Fecha de {{ type }}</label>
+                    <label>{{$t('fecha_de')}} {{ type }}</label>
                     <input type="date" v-model="date" class="form-control date-picker px-3" placeholder="MM/DD/AA">
                     <!-- <i class="far fa-calendar-days"></i> -->
                 </div>
             </div>
             <div class="col-6">
                 <div class="form-group">
-                    <label>Hora de {{ type }}</label>
+                    <label>{{$t('hora_de')}} {{ type }}</label>
                     <input type="time" v-model="time" class="form-control time-picker px-3" placeholder="00:00 AM">
                     <!-- <i class="far fa-clock"></i> -->
                 </div>

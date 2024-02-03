@@ -5,7 +5,7 @@
         <p style="font-size: 12px" v-if="props.status_open" ><span style="font-size: 18px; font-weight: 900; color: #E94B28">{{ textos.number }}</span> {{ textos.text }}</p>
         <div class="form-group">
             <label></label>
-            <input type="text" v-model="filters" class="form-control" placeholder="Buscar modelo o marca">
+            <input type="text" v-model="filters" class="form-control" :placeholder="$t('modelo_marca')">
             <i class="far fa-car"></i>
         </div>
             

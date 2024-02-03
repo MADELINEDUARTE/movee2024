@@ -24,10 +24,10 @@
                             <ReservaPasosOficina 
                                 :status_open="statusOpen" 
                                 :oficinas="oficinas.data" 
-                                :type="'recogida'"
+                                :type="$t('recogida')"
                                 :textos="{
                                     number: '1.',
-                                    text: 'Selecciona la oficina y fecha donde deseas recoger tu coche.'
+                                    text: $t('ofi_selecciona')
                                 }"
                                 class="col-paso mb-4" 
                                 :class="statusOpen ? 'col-12 col-md-6 offset-3':'col-12 col-md-6'"
@@ -41,10 +41,10 @@
                             <ReservaPasosOficina 
                                 :status_open="statusOpen" 
                                 :oficinas="oficinas.data" 
-                                :type="'devolución'"
+                                :type="$t('devolucion')"
                                 :textos="{
                                     number: '2.',
-                                    text: 'Selecciona la oficina y fecha donde deseas devolver el coche.'
+                                    text: $t('ofi_selecciona2')
                                 }"
                                 class="col-paso mb-4" 
                                 :class="statusOpen ? 'col-12 col-md-6 offset-3':'col-12 col-md-6'"
@@ -63,7 +63,7 @@
                                 :coches="coches.data"
                                 :textos="{
                                     number: '3.',
-                                    text: 'Elige un coche seleccionando el plan que prefieras.'
+                                    text: $t('elige_coche')
                                 }"
                                 
                                 v-model:plan_id="reserva.coche.plan_id"
@@ -74,7 +74,7 @@
                                 class="col-12 col-sm-8"
                                 :textos="{
                                     number: '4.',
-                                    text: 'Resumen de la reserva.'
+                                    text: $t('resumen')
                                 }"
                                 v-if="reserva.coche.coche_id"
                                 :plan_id="reserva.coche.plan_id"

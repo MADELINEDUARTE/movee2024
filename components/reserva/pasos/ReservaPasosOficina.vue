@@ -9,7 +9,7 @@
             <div class="col-12">
                 <div  class="form-group">
                     <div class="d-flex justify-content-between">
-                        <label>{{$t('Oficina_de')}} {{ type }}</label>
+                        <label>{{$t('oficina_de')}} {{ type }}</label>
                         <a href="#" style="font-size: 12px" class="mt-1" v-if="oficina_id" >{{$t('ver_mapa')}} <span class="fa fa-location-dot"></span> </a>
                     </div>
                     <select type="text" class="form-control" placeholder="Oficina" v-model="oficina_id">

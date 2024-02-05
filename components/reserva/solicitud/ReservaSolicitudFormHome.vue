@@ -102,7 +102,7 @@
             <div class="card-body text-center">
                 
                 <Vue3Lottie
-                    animationLink="/_nuxt/public/assets/lotties/creditcards.json"
+                    animationLink="/public/assets/lotties/creditcards.json"
                     :height="300"
                     :width="300"
                 />

@@ -4,8 +4,9 @@
             <div class="find-car-form" :class="statusOpen ? 'px-0':''">
                 <div class="d-flex justify-content-between" :class="statusOpen ? 'mb-4':''">
                     <div class="d-flex justify-center flex-column ">
-                        <h4 class="find-car-title m-0">Encuentra la Furgoneta perfecta</h4>
-                        <p v-if="statusOpen">Completa la siguiente informacion para iniciar tu reserva.</p>
+                        <h4 class="find-car-title m-0">{{$t('encuentra')}}</h4>
+                        <p v-if="statusOpen">
+                            {{$t('completainformacion')}}</p>
                     </div>
                     <div @click="onOpen" v-if="statusOpen" class="d-flex justify-center align-items-center p-3">
                         <i class="fa fa-times" style="color: white;font-size: 20px;"></i>
@@ -15,10 +16,11 @@
                 <form @click="onOpenaLL" action="#">
 
                     <div v-if="statusOpen" class="col-12 d-flex mb-4" :class="paso > 1 ? 'justify-content-between':'justify-content-end'">
-                        <button type="button" v-if="paso > 1" @click="siguiente(paso-1)" class="theme-btn w-auto py-2 m-0">Volver</button>
-                        <button type="button" v-if="paso < 2" @click="siguiente(paso+1)" class="theme-btn w-auto py-2 m-0">Siguiente</button>
+                        <button type="button" v-if="paso > 1" @click="siguiente(paso-1)" class="theme-btn w-auto py-2 m-0">{{$t('volver')}}</button>
+                        <button type="button" v-if="paso < 2" @click="siguiente(paso+1)" class="theme-btn w-auto py-2 m-0">{{$t('siguiente')}}</button>
                         <!-- <button type="button" id="inline-popups"  data-effect="mfp-zoom-in" v-show="paso == 2" @click="confirmar" class="btn btn-success w-auto py-2">Confirmar</button> -->
-                        <ul v-show="paso == 2"  id="inline-popups"><li><a :style="{opacity: validateStatus ? '1':'.5', cursor: validateStatus ? 'pointer':'no-drop' }" href="#test-popup" data-effect="mfp-zoom-in" class="btn btn-success w-auto py-2">Confirmar</a></li></ul>
+                        <ul v-show="paso == 2"  id="inline-popups"><li><a :style="{opacity: validateStatus ? '1':'.5', cursor: validateStatus ? 'pointer':'no-drop' }" href="#test-popup" data-effect="mfp-zoom-in" class="btn btn-success w-auto py-2">{{$t('siguiente')}}</a></li></ul>
+
                     </div>
 
                     <Transition>
@@ -26,10 +28,10 @@
                             <ReservaPasosOficina 
                                 :status_open="statusOpen" 
                                 :oficinas="oficinas.data" 
-                                :type="'recogida'"
+                                :type="$t('recogida')"
                                 :textos="{
                                     number: '1.',
-                                    text: 'Selecciona la oficina y fecha donde deseas recoger tu coche.'
+                                    text: $t('ofi_selecciona')
                                 }"
                                 class="col-paso mb-4" 
                                 :class="statusOpen ? 'col-12 col-sm-6 offset-sm-3':'col-12 col-md-6'"
@@ -43,10 +45,10 @@
                             <ReservaPasosOficina 
                                 :status_open="statusOpen" 
                                 :oficinas="oficinas.data" 
-                                :type="'devolución'"
+                                :type="$t('devolucion')"
                                 :textos="{
                                     number: '2.',
-                                    text: 'Selecciona la oficina y fecha donde deseas devolver el coche.'
+                                    text: $t('ofi_selecciona2')
                                 }"
                                 class="col-paso mb-4" 
                                 :class="statusOpen ? 'col-12 col-sm-6 offset-sm-3':'col-12 col-md-6'"

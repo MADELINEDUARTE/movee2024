@@ -11,11 +11,11 @@
                     <table class="table caption-top">
                         <tbody>
                             <tr>
-                                <th>Precio Plan tarifa Basic</th>
-                                <td style="text-align: right;"><strong>{{ reserva.invoice.plan.amount }}€ x {{ reserva.invoice.plan.dias }} día {{ reserva.invoice.plan.dias > 1 ? 's':'' }} </strong></td>   
+                                <th>{{$t('tarifa_plan')}}</th>
+                                <td style="text-align: right;"><strong>{{ reserva.invoice.plan.amount }}{{$t('moneda')}} x {{ reserva.invoice.plan.dias }} día {{ reserva.invoice.plan.dias > 1 ? 's':'' }} </strong></td>   
                             </tr>
                             <tr>
-                                <th>Sub-total</th>    
+                                <th>{{$t('sub_total')}}</th>    
                                 <td style="text-align: right;"><strong>{{ reserva.invoice.subtotal }}€</strong></td>
                             </tr>
                             <tr v-for="(item, key) in reserva.mejoras" :key="`mejora-${key}`">
@@ -23,8 +23,9 @@
                                 <td style="text-align: right;"><strong>{{ item.precio }}€</strong></td>
                             </tr>
                             <tr>
-                                <th>Total a pagar por {{ reserva.invoice.plan.dias }} día {{ reserva.invoice.plan.dias > 1 ? 's':'' }}</th>
+                                <th>{{$t('total_pagar')}}  {{ reserva.invoice.plan.dias }} día {{ reserva.invoice.plan.dias > 1 ? 's':'' }}</th>
                                 <td style="text-align: right; font-size: 20px;"><strong>{{ reserva.invoice.total }}€</strong></td>
+
                             </tr>
                                             
                         </tbody>
@@ -38,18 +39,20 @@
         </div>
         
         <div class="col-12">
+
             <p class="m-0" style="font-size: 12px" ><span style="font-size: 18px; font-weight: 900; color: #E94B28">5.</span> Mejora tu reserva</p>
             
             <div class="row mt-2">
                 <div class="col-3 col-sm-2  pe-0">
                         <div @click="onSelectPlan(1)" :style="{ opacity: plan?.id == 1 ? '1':'.4' }" class="cardPaquete theme-btn1 m-0 mb-2 d-flex justify-content-center align-items-center">
-                            <h4 class="">Basic</h4>
+                            <h4 class="">{{$t('basic')}}</h4>
                         </div>
                         <div @click="onSelectPlan(2)" :style="{ opacity: plan?.id == 2 ? '1':'.4' }" class="cardPaquete theme-btn2 m-0 mb-2 d-flex justify-content-center align-items-center">
-                            <h4>Medium</h4>
+                            <h4>{{$t('medium')}}</h4>
                         </div>
                         <div @click="onSelectPlan(3)" :style="{ opacity: plan?.id == 3 ? '1':'.4' }" class="cardPaquete theme-btn3 m-0 mb-2 d-flex justify-content-center align-items-center">
-                            <h4>Premium</h4>
+                            <h4>{{$t('premium')}}</h4>
+
                         </div>
                 </div>
             
@@ -64,21 +67,24 @@
                                <p>{{ item.descripcion }}</p>
                                 <div class="d-flex justify-content-center">
                                     <i v-if="item.basic" class="fa fa-check d-flex align-items-center justify-content-center p-0 m-0 circleC" style=""></i>
-                                    <button v-else  type="button" class="btn btn-sm btn-outline-light">+{{ item.precio }}€</button>
+                                    <button v-else  type="button" class="btn btn-sm btn-outline-light">+{{ item.precio }}{{$t('moneda')}}</button>
+
                                 </div> 
                             </div>
                             <div @click="addBeneficio({plan: 2,item: item , incluido: item.medium})" :style="{ opacity: plan?.id == 2 ? '1':'.4', background: reserva.mejoras.map(e=>e.id).includes(item.id) && plan?.id == 2 ?  plan?.backgroundColor : '', border: plan?.id == 2 && !item.medium  ? '1px solid white':'', }" class="cardPaquete card bgcard mb-2 ">
                                 <p>{{ item.descripcion }}</p>
                                 <div class="d-flex justify-content-center">
                                     <i v-if="item.medium" class="fa fa-check d-flex align-items-center justify-content-center p-0 m-0 circleC" style=""></i>
-                                    <button v-else  type="button" class="btn btn-sm btn-outline-light">+{{ item.precio }}€</button>
+                                    <button v-else  type="button" class="btn btn-sm btn-outline-light">+{{ item.precio }}{{$t('moneda')}}</button>
+
                                 </div> 
                             </div>
                             <div @click="addBeneficio({plan: 3,item: item , incluido: item.premium})" :style="{ opacity: plan?.id == 3 ? '1':'.4', background: reserva.mejoras.map(e=>e.id).includes(item.id) && plan?.id == 3 ?  plan?.backgroundColor : '', border: plan?.id == 3 && !item.premium ? '1px solid white':'', }" class="cardPaquete card bgcard mb-2">
                                 <p>{{ item.descripcion }}</p>
                                 <div class="d-flex justify-content-center">
                                     <i v-if="item.premium" class="fa fa-check d-flex align-items-center justify-content-center p-0 m-0 circleC" style=""></i>
-                                    <button v-else  type="button" class="btn btn-sm btn-outline-light">+{{ item.precio }}€</button>
+                                    <button v-else  type="button" class="btn btn-sm btn-outline-light">+{{ item.precio }}{{$t('moneda')}}</button>
+
                                 </div> 
                             </div>
                             

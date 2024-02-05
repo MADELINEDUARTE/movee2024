@@ -5727,7 +5727,10 @@ box-shadow: 0 0 40px 5px rgb(0 0 0 / 10%);
     sans-serif;
   display: inline-block;
 }
-
+.darkmode .navbar {
+  background: white;
+  
+}
 .darkmode.bg {
   background-color: #fbfbfb;
 }
@@ -5743,7 +5746,7 @@ box-shadow: 0 0 40px 5px rgb(0 0 0 / 10%);
   padding: 30px 0 30px 0;
   font-size: 17px;
   font-weight: 600;
-  color: rgb(0, 0, 0);
+  color: #E94B28;
   text-transform: capitalize;
 }
 .darkmode .navbar .nav-item:last-child .nav-link {
@@ -6114,4 +6117,21 @@ display: none;
 }
 .darkmode .color1, .darkmode .color2, .darkmode .color3{
   color: white;
+}
+
+.darkmode .user-profile-sidebar {
+  background: white;
+}
+.darkmode .user-profile-sidebar-list li a {
+  color:#000000;
+}
+
+.darkmode .user-profile-sidebar-list li a:hover {
+  color: #000000;
+}
+.darkmode .user-profile-card {
+  background: white;
+}
+.darkmode .profile-info-list li {
+  color:#000000;
 }

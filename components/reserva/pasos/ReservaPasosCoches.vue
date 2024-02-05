@@ -5,7 +5,9 @@
         <p style="font-size: 12px" v-if="props.status_open" ><span style="font-size: 18px; font-weight: 900; color: #E94B28">{{ textos.number }}</span> {{ textos.text }}</p>
         <div class="form-group">
             <label></label>
-            <input type="text" :readonly="cocheSeleccionado ? true: false" v-model="filters" class="form-control" placeholder="Buscar modelo o marca">
+
+            <input type="text" :readonly="cocheSeleccionado ? true: false" v-model="filters" class="form-control" :placeholder="$t('modelo_marca')">
+
             <i class="far fa-car"></i>
         </div>
             
@@ -27,7 +29,7 @@
                 <BoxCoche :coche="cocheSeleccionado" @selectCoche="selectCoche"  v-model:plan_id="plan_id" />
                 <div @click="reset" class="w-100 d-flex justify-content-end" style="cursor: pointer;">
                     <i class="fa fa-rotate mx-2" style="color: white"></i>
-                    <p class="m-0">Cambiar de coche</p>
+                    <p class="m-0">{{$t('cambio_coche')}}</p>
                 </div>
             </div>
         </div>

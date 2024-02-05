@@ -1,7 +1,7 @@
 <template>
-    <div class="find-car" :class="statusOpen ? 'fullscreen':''"  id="iniciatureserva">
+    <div class="find-car px-0" :class="statusOpen ? 'fullscreen':''"  id="iniciatureserva">
         <div class="container">
-            <div class="find-car-form">
+            <div class="find-car-form" :class="statusOpen ? 'px-0':''">
                 <div class="d-flex justify-content-between" :class="statusOpen ? 'mb-4':''">
                     <div class="d-flex justify-center flex-column ">
                         <h4 class="find-car-title m-0">Encuentra la Furgoneta perfecta</h4>
@@ -15,9 +15,12 @@
                 <form @click="onOpenaLL" action="#">
 
                     <div v-if="statusOpen" class="col-12 d-flex mb-4" :class="paso > 1 ? 'justify-content-between':'justify-content-end'">
-                        <button type="button" v-if="paso > 1" @click="siguiente(paso-1)" class="theme-btn w-auto py-2">Volver</button>
-                        <button type="button" @click="siguiente(paso+1)" class="theme-btn w-auto py-2">Siguiente</button>
+                        <button type="button" v-if="paso > 1" @click="siguiente(paso-1)" class="theme-btn w-auto py-2 m-0">Volver</button>
+                        <button type="button" v-if="paso < 2" @click="siguiente(paso+1)" class="theme-btn w-auto py-2 m-0">Siguiente</button>
+                        <!-- <button type="button" id="inline-popups"  data-effect="mfp-zoom-in" v-show="paso == 2" @click="confirmar" class="btn btn-success w-auto py-2">Confirmar</button> -->
+                        <ul v-show="paso == 2"  id="inline-popups"><li><a :style="{opacity: validateStatus ? '1':'.5', cursor: validateStatus ? 'pointer':'no-drop' }" href="#test-popup" data-effect="mfp-zoom-in" class="btn btn-success w-auto py-2">Confirmar</a></li></ul>
                     </div>
+
                     <Transition>
                         <div class="row"  v-if="paso == 1">
                             <ReservaPasosOficina 
@@ -29,7 +32,7 @@
                                     text: 'Selecciona la oficina y fecha donde deseas recoger tu coche.'
                                 }"
                                 class="col-paso mb-4" 
-                                :class="statusOpen ? 'col-12 col-md-6 offset-3':'col-12 col-md-6'"
+                                :class="statusOpen ? 'col-12 col-sm-6 offset-sm-3':'col-12 col-md-6'"
                                 v-model:oficina_id="reserva.recogida.oficina_id"
                                 v-model:date="reserva.recogida.fecha.date"
                                 v-model:time="reserva.recogida.fecha.time"
@@ -46,7 +49,7 @@
                                     text: 'Selecciona la oficina y fecha donde deseas devolver el coche.'
                                 }"
                                 class="col-paso mb-4" 
-                                :class="statusOpen ? 'col-12 col-md-6 offset-3':'col-12 col-md-6'"
+                                :class="statusOpen ? 'col-12 col-sm-6 offset-sm-3':'col-12 col-md-6'"
                                 v-model:oficina_id="reserva.devolucion.oficina_id"
                                 v-model:date="reserva.devolucion.fecha.date"
                                 v-model:time="reserva.devolucion.fecha.time"
@@ -55,37 +58,62 @@
                         </div>
                     </Transition>
                    
-                        <div class="row" v-if="paso == 2">
-                            <ReservaPasosCoches 
-                               
-                                :status_open="statusOpen"
-                                :coches="coches.data"
-                                :textos="{
-                                    number: '3.',
-                                    text: 'Elige un coche seleccionando el plan que prefieras.'
-                                }"
-                                
-                                v-model:plan_id="reserva.coche.plan_id"
-                                v-model:coche_id="reserva.coche.coche_id"
-                            />
-
-                            <ReservaPasosResumen 
-                                class="col-12 col-sm-8"
-                                :textos="{
-                                    number: '4.',
-                                    text: 'Resumen de la reserva.'
-                                }"
-                                v-if="reserva.coche.coche_id"
-                                :plan_id="reserva.coche.plan_id"
-                                :coche="coches.data.find( e => e.id == reserva.coche.coche_id)"
-                            />
-
+                    <div class="row" v-if="paso == 2">
+                        <ReservaPasosCoches 
                             
-                        </div>
-                  
-                    
-                    
+                            :status_open="statusOpen"
+                            :coches="coches.data"
+                            :textos="{
+                                number: '3.',
+                                text: 'Elige un coche seleccionando el plan que prefieras.'
+                            }"
+                            
+                            v-model:plan_id="reserva.coche.plan_id"
+                            v-model:coche_id="reserva.coche.coche_id"
+                        />
+
+                        <ReservaPasosResumen 
+                            class="col-12 col-sm-8"
+                            :textos="{
+                                number: '4.',
+                                text: 'Resumen de la reserva.'
+                            }"
+                            v-show="reserva.coche.coche_id"
+                            v-model:plan_id="reserva.coche.plan_id"
+                            :coche="coches.data.find( e => e.id == reserva.coche.coche_id)"
+                            :reserva_devolucion="reserva.devolucion"
+                        />
+
+                        
+                    </div>
+
                 </form>
+            </div>
+        </div>
+        <!-- <ul id="inline-popups">
+            <li><a href="#test-popup" data-effect="mfp-zoom-in">OPEN</a></li>
+        </ul> -->
+      
+  
+
+        <div id="test-popup" class="white-popup mfp-with-anim mfp-hide container card col-12 col-sm-8">
+            <div class="card-body text-center">
+                
+                <Vue3Lottie
+                    animationLink="/_nuxt/public/assets/lotties/creditcards.json"
+                    :height="300"
+                    :width="300"
+                />
+
+                <h2>Paga tu reserva</h2>
+                <p class="mb-3">Total a pagar</p>
+                <h1 class="mb-3">{{ reserva.invoice.total }}€</h1>
+                <p><small>Disfruta de nuestro DESCUENTO del 5% e tu reserva pagando ahora mismo.</small></p>
+                <p class="mb-4"><small>Si pagas en nuestras oficinas te descontamos 1€ en tu reserva.</small></p>
+
+                <button type="button" class="col-12 col-sm-6 mx-auto mb-4 theme-btn d-flex justify-content-between" style="font-weight: 800;"><span>Pagar ahora </span> <span >{{ totalAhora }}€</span></button>
+                <button type="button" class="col-12 col-sm-6 mx-auto mb-4 theme-btn d-flex justify-content-between" style="font-weight: 800; background: #3b3b3b"><span>Pagar en la oficina </span> <span >{{ totalOficina }}€</span></button>
+       
             </div>
         </div>
     </div>
@@ -100,12 +128,35 @@
     const { coches } = useCoche()
     const { mejoras } = useMejoras()
 
+    const totalAhora = computed(()=>{
+        return reserva.invoice.total - ((reserva.invoice.total * 5) / 100)
+    })
+
+    const totalOficina = computed(()=>{
+        return reserva.invoice.total - 1
+    })
+
+    const validateStatus = computed(()=>{
+        if(reserva.coche.coche_id){
+            return true
+        }
+        return false
+    })
+
 
     watch(reserva.recogida,(to)=>{
         const response = getFlota()
     })
     watch(reserva.devolucion,(to)=>{
         const response = getFlota()
+    })
+    watch(()=>reserva.coche.coche_id,(to)=>{
+        // console.log('to',to)
+        setTimeout(()=>{
+            // alert('SS')
+            window.scrollTo(0, 0)
+            // $(window).scrollTop(0)
+        },5000)
     })
 
     const getFlota = async () => {
@@ -144,6 +195,24 @@
         }
     }
 
+    watch(statusOpen,(to)=>{
+        if(to){
+            setTimeout(()=>{
+                $('#inline-popups').magnificPopup({
+                    delegate: 'a',
+                    removalDelay: 500, //delay removal by X to allow out-animation
+                    callbacks: {
+                        beforeOpen: function() {
+                            this.st.mainClass = this.st.el.attr('data-effect');
+                        }
+                    },
+                    midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+                });
+        
+            },1000)
+        }
+    })
+
     const onOpen = () => {
         statusOpen.value = !statusOpen.value
 
@@ -154,6 +223,8 @@
             $('body')[0].style.overflow = ''
             $('html')[0].style.overflow = ''
         }
+
+       
     }
 
     const paso = ref(1)
@@ -173,10 +244,22 @@
         }
     }
 
+    const selectPlan = (id:number) => {
+        reserva.coche.plan_id = id
+    }
+
+    const confirmar = () => {
+
+    }
 
 </script>
 
 <style scoped lang="scss">
+
+.white-popup{
+    background: #1B1A1A;
+    // max-width: 60%;
+}
 .find-car {
     /* position: relative;
     margin-top: -70px;
@@ -191,7 +274,7 @@
         width: 100%;
         height: 100%;
         margin: 0;
-        z-index: 999999999;
+        z-index: 1000;
         background: #1B1A1A;
 
         // Media query para dispositivos pequeños

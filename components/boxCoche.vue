@@ -1,10 +1,11 @@
 <template>
     <div class="car-item w-100 m-0">
-        <div class="car-content" v-if="coche">
+        <div class="car-content" v-if="coche" :style="{opacity: coche.disponible ? '1':'.4'}">
             <div class="car-top">
                 <h4><a class="letrac" href="#">{{ coche.marca }} <br>
                 <h6 class="modelo">{{ coche.modelo }}</h6></a></h4>
                 <br>
+                <p :style="{ fontSize: '10px', color: coche.disponible ? 'green':'red' }">{{ coche.disponible ? 'Disponible':'No Disponible' }}</p>
         
                 <!--<span><i class="fas fa-star"></i> 5.0</span>-->
             </div>
@@ -22,9 +23,9 @@
             <div class="car-footer row justify-content-center" v-if="coche.config">
                 <!--<span class="car-price">$390 <sub>/ month</sub></span>
                 <a href="#" class="car-favorite-btn"><i class="far fa-heart"></i></a>-->
-                <button type="button" :style="{ width: plan_id == 1 ? '70%':'' }"   @click="selectCoche(1)" :class="plan_id == 1 ? 'col-auto' : 'col' " class="theme-btn1 py-2"><strong>{{ plan_id == 0 || plan_id == 1 ? 'Basic':'' }} {{ coche.config.basico }}€</strong></button>
-                <button type="button" :style="{ width: plan_id == 2 ? '70%':'' }"   @click="selectCoche(2)" :class="plan_id == 2 ? 'col-auto' : 'col' " class="theme-btn2 py-2"><strong>{{ plan_id == 0 || plan_id == 2 ? 'Medium':'' }} {{ coche.config.medio }}€</strong></button>
-                <button type="button" :style="{ width: plan_id == 3 ? '70%':'' }"   @click="selectCoche(3)" :class="plan_id == 3 ? 'col-auto' : 'col' " class="theme-btn3 py-2"><strong>{{ plan_id == 0 || plan_id == 3 ? 'Premium':'' }} {{ coche.config.premium }}€</strong></button>
+                <button :disabled="!coche.disponible?true:false" type="button" :style="{ width: plan_id == 1 ? '70%':'' }"   @click="selectCoche(1)" :class="plan_id == 1 ? 'col-auto' : 'col' " class="theme-btn1 py-2"><strong>{{ plan_id == 0 || plan_id == 1 ? 'Basic':'' }} {{ coche.config.basico }}€</strong></button>
+                <button :disabled="!coche.disponible?true:false" type="button" :style="{ width: plan_id == 2 ? '70%':'' }"   @click="selectCoche(2)" :class="plan_id == 2 ? 'col-auto' : 'col' " class="theme-btn2 py-2"><strong>{{ plan_id == 0 || plan_id == 2 ? 'Medium':'' }} {{ coche.config.medio }}€</strong></button>
+                <button :disabled="!coche.disponible?true:false" type="button" :style="{ width: plan_id == 3 ? '70%':'' }"   @click="selectCoche(3)" :class="plan_id == 3 ? 'col-auto' : 'col' " class="theme-btn3 py-2"><strong>{{ plan_id == 0 || plan_id == 3 ? 'Premium':'' }} {{ coche.config.premium }}€</strong></button>
             </div>
             
         </div>
@@ -36,21 +37,21 @@
 
     const props = defineProps({
         coche: Object as () => Coche,
-        plan_id: {
-            type: Number,
-            default: 0
-        }
+        // plan_id: {
+        //     type: Number,
+        //     default: 0
+        // }
     })
 
     const emit = defineEmits(['selectCoche'])
 
     const coche = computed(() => props.coche);
 
-    const plan_id = ref(props.plan_id)
+    const plan_id = defineModel<Number>('plan_id',{ default: 0 })
 
     const selectCoche = (plan: number) => {
         plan_id.value = plan
-        emit( 'selectCoche' , { coche: coche.value , plan: plan_id } )
+        emit( 'selectCoche' , { coche: coche.value, plan: plan_id.value } )
     };
 
 

@@ -10,11 +10,13 @@ interface Fecha {
     time: string;
 }
 
-interface Mejora {
-    name: string,
-    id: string,
-    amount: number,
-}
+import type { Mejora } from '~/composables/useMejoras'
+
+// interface Mejora {
+//     name: string,
+//     id: string,
+//     amount: number,
+// }
 
 interface ItenListInvoice {
     text: string,
@@ -30,7 +32,7 @@ interface Invoice {
         dias: number,
         amount: number
     },
-    mejoras: Mejora[],
+    mejoras: any,
     list: ItenListInvoice[]
     payment_type: paymentType
 }
@@ -51,6 +53,16 @@ interface diffFechas{
 
 type EstadosReserva = 'active' | 'end' | 'cancel' | 'init' | 'pending';
 type paymentType = 'card' | 'oficina' | '';
+
+export interface Calculo {
+    beneficios: Array<Number>;
+    coche_id: Number,
+    plan: Number,
+    idoficina: Number,
+    iddevolucion: Number,
+    start: String,
+    end: String
+}
 
 interface Reserva {
     id: number
@@ -74,7 +86,15 @@ interface Reserva {
     // getOficinas: () => Oficinas,
     // getDifFechas: () => diffFechas,
     // procesarReserva: (reserva: Reserva) => void
+    getDataCalculo: () => Calculo,
+    putInvoice: (data: Object) => void,
+    addMejora: (mejora: Mejora) => void
 }
+
+const { planes } = usePlan()
+const { coches } = useCoche()
+
+
 
 const reserva = reactive<Reserva>({
     id: 0,
@@ -117,6 +137,41 @@ const reserva = reactive<Reserva>({
     //         devolucion: oficinas.data.find((e)=> e.id == this.devolucion.oficina_id),
     //     }
     // },
+    addMejora(mejora){
+
+        const index = this.mejoras.findIndex(element => element.id == mejora.id)
+
+        if(index != -1){
+            this.mejoras.splice(index, 1)
+            return
+        }
+        
+        this.mejoras.push(mejora)
+        this.invoice.total = this.invoice.subtotal
+        this.mejoras.forEach(element => {
+            this.invoice.total += element.precio
+        })
+    },
+    putInvoice(data){
+
+        this.invoice.subtotal = data.subtotal
+        this.invoice.plan.id = this.coche.plan_id
+       
+        this.invoice.plan.dias = data.dias
+
+        const plan = planes.data.find((e)=>e.id == this.coche.plan_id)
+        if(plan){
+             this.invoice.plan.name = plan.nombre
+             this.invoice.plan.amount = coches.data.find((e)=>e.id == this.coche.coche_id)?.config[plan.key]
+        }
+        this.invoice.mejoras = data.beneficios
+
+        this.invoice.total = this.invoice.subtotal
+        this.mejoras.forEach(element => {
+            this.invoice.total += element.precio
+        })
+        // this.invoice.payment_type
+    },
     getFechas: function(){
         return {
             // recogida: moment(`${this.recogida.fecha.date} ${this.recogida.fecha.time}`,'YYYY-MM-DD HH:mm'),
@@ -126,6 +181,17 @@ const reserva = reactive<Reserva>({
 
         }
     },
+    getDataCalculo(){
+        return {
+            beneficios: this.mejoras.map((e)=> e.id) ,
+            coche_id: this.coche.coche_id,
+            plan: this.coche.plan_id,
+            idoficina: this.recogida.oficina_id,
+            iddevolucion: this.devolucion.oficina_id,
+            start: this.getFechas().recogida,
+            end: this.getFechas().devolucion,
+        }
+    }
     // getDifFechas: function(){
     //     const fechas = this.getFechas()
     //     return {

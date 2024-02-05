@@ -41,7 +41,8 @@ export default defineNuxtConfig({
   },
   webpack:{
     plugins: [
-      { src: '/assets/js/jquery-3.6.0.min.js', ssr: false }
+      { src: '/assets/js/jquery-3.6.0.min.js', ssr: false },
+      // { src: '~/plugins/Vue3Lottie.client', mode: 'client' },
     ]
   }
 })

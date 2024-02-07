@@ -1,7 +1,7 @@
 <template>
-
+<LayoutWeb>
 <main class="main">
-    <HomeCarousel/>
+<HomeCarousel/>
 
     <div class="calcula">
         <img class="img-calcula" src="/assets/img/calcula/1.png" alt="">
@@ -352,43 +352,18 @@
     </div>
 
     <div class="partner-area bg pt-50 pb-50">
-        <div class="container">
-            <div class="partner-wrapper partner-slider owl-carousel ">
-            <img src="/assets/img/partner/01.png" alt="thumb">
-            </div>
-            <div class="partner-wrapper partner-slider owl-carousel ">
-            <img src="/assets/img/partner/01.png" alt="thumb">
-            </div>
-        </div>
-    </div>
-
-    <div class="partner-area bg pt-50 pb-50">
     <div class="container">
-      <div class="partner-wrapper partner-slider owl-carousel">
-        <div class="item">
-          <img src="/assets/img/partner/01.png" alt="thumb">
+        <div class="partner-wrapper partner-slider owl-carousel ">
+            <img src="/assets/img/partner/01.png" alt="thumb">
+            <img src="/assets/img/partner/02.png" alt="thumb">
+            <img src="/assets/img/partner/03.png" alt="thumb">
+            <img src="/assets/img/partner/04.png" alt="thumb">
+            <img src="/assets/img/partner/05.png" alt="thumb">
+            <img src="/assets/img/partner/06.png" alt="thumb">
+            <img src="/assets/img/partner/07.png" alt="thumb">
         </div>
-        <div class="item">
-          <img src="/assets/img/partner/02.png" alt="thumb">
-        </div>
-        <div class="item">
-          <img src="/assets/img/partner/03.png" alt="thumb">
-        </div>
-        <div class="item">
-          <img src="/assets/img/partner/04.png" alt="thumb">
-        </div>
-        <div class="item">
-          <img src="/assets/img/partner/05.png" alt="thumb">
-        </div>
-        <div class="item">
-          <img src="/assets/img/partner/06.png" alt="thumb">
-        </div>
-        <div class="item">
-          <img src="/assets/img/partner/07.png" alt="thumb">
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
   <div class="faq-area py-120">
         <div class="container">
@@ -516,4 +491,178 @@
         </div>
     </div>
 </main>
+</LayoutWeb>
 </template>
+
+<script>
+onNuxtReady(async () => {
+    (function ($) {
+        "use strict";
+
+       
+        // partner-slider
+        $('.partner-slider').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        });
+
+
+        // testimonial-slider
+        $('.testimonial-slider').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+
+
+        // car-single-slider
+        $('.car-single-slider').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: false,
+            navText: [
+                "<i class='fal fa-long-arrow-left'></i>",
+                "<i class='fal fa-long-arrow-right'></i>"
+            ],
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+
+
+        // // fun fact counter
+        // $('.counter').countTo();
+        // $('.counter-box').appear(function () {
+        //     $('.counter').countTo();
+        // }, {
+        //     accY: -100
+        // });
+
+
+            /**
+             * TODO donde se usa esto
+             */
+        // magnific popup init
+        // $(".popup-gallery").magnificPopup({
+        //     delegate: '.popup-img',
+        //     type: 'image',
+        //     gallery: {
+        //         enabled: true
+        //     },
+        // });
+
+        // $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
+        //     type: "iframe",
+        //     mainClass: "mfp-fade",
+        //     removalDelay: 160,
+        //     preloader: false,
+        //     fixedContentPos: false
+        // });
+
+        // // countdown
+        // if ($('#countdown').length) {
+        //     $('#countdown').countdown('2030/01/30', function (event) {
+        //         $(this).html(event.strftime('' + '<div class="row">' + '<div class="col countdown-single">' + '<h2 class="mb-0">%-D</h2>' + '<h5 class="mb-0">Day%!d</h5>' + '</div>' + '<div class="col countdown-single">' + '<h2 class="mb-0">%H</h2>' + '<h5 class="mb-0">Hours</h5>' + '</div>' + '<div class="col countdown-single">' + '<h2 class="mb-0">%M</h2>' + '<h5 class="mb-0">Minutes</h5>' + '</div>' + '<div class="col countdown-single">' + '<h2 class="mb-0">%S</h2>' + '<h5 class="mb-0">Seconds</h5>' + '</div>' + '</div>'));
+        //     });
+        // }
+
+        /**
+         * TODO este se usa?
+         */
+        // // copywrite date
+        // let date = new Date().getFullYear();
+        // $("#date").html(date);
+
+        // find-car date picker 
+        // if ($('.date-picker').length) {
+        //     $(function () {
+        //         $(".date-picker").datepicker();
+        //     });
+        // }
+
+        // // find-car time picker 
+        // if ($('.time-picker').length) {
+        //     $(function () {
+        //         $(".time-picker").timepicker();
+        //     });
+        // }
+
+        // // profile image btn
+        // $(".profile-img-btn").click(function () {
+        //     $(".profile-img-file").click(); 
+        // });
+
+
+    })(jQuery);
+    // do something with myAnalyticsLibrary
+  })
+// $(document).ready(function() {
+ 
+//  $(".owl-carousel").owlCarousel();
+
+// });
+// document.addEventListener('DOMContentLoaded', function () {
+//   const bdark = document.querySelector('#bdark');
+//   const body = document.querySelector('body');
+
+//   load();
+
+//   bdark.addEventListener('click', function (e) {
+//     body.classList.toggle('darkmode');
+//     store(body.classList.contains('darkmode'));
+//   });
+
+//   function load() {
+//     const darkmode = localStorage.getItem('darkmode');
+
+//     if (!darkmode) {
+//       store('false');
+//     } else if (darkmode === 'true') {
+//       body.classList.add('darkmode');
+//     }
+//   }
+
+//   function store(value) {
+//     localStorage.setItem('darkmode', value);
+//   }
+// });
+</script>
+
+  

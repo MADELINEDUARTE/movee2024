@@ -252,9 +252,7 @@ theme default css
   height: 100vh;
 }
 
-.bg {
-  
-}
+
 
 .theme-bg-dark {
   background-color: #44bcc5;
@@ -3666,7 +3664,7 @@ pricing css
 .pricing-feature ul li::before{
   content: "\f560";
   position: absolute;
-  ffont-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #4F5DEC;
   left: 0;
   top: 0;
@@ -5352,6 +5350,7 @@ terms/privacy css
   display: flex;
   gap: 15px;
   justify-content: end;
+
 }
 
 .footer-social li a i {
@@ -5359,7 +5358,7 @@ terms/privacy css
   width: 38px;
   line-height: 38px;
   text-align: center;
-  border-radius: 0px;
+  border-radius: 50px;
   background: #fff;
   color: #44bcc5;
   transition: all .5s ease-in-out;

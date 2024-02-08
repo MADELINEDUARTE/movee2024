@@ -8,16 +8,16 @@
                             <div class="hero-content">
                                 <h1 class="hero-title wow animate__animated animate__fadeInUp"
                                         data-wow-duration="1s" data-wow-delay=".50s">
-                                        Alquiler de <br>
-                                        <span>Coches de lujo
-                                        </span> ¡Visítanos!
+                                        {{$t('alquiler')}} <br>
+                                        <span>{{$t('coches_de')}}
+                                        </span> {{$t('visitanos')}}
                                     </h1>
                                     <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                         data-wow-delay=".75s">
-                                        Podrás conducir los coches que siempre <br>has soñado
+                                        {{$t('podras')}} <br>{{$t('sonado')}}
                                     </p>
                                     <div>
-                                        <a href="ofertas.html" class="theme-btn">Ver más &nbsp;<i class="far fa-arrow-right"></i></a>
+                                        <a href="ofertas.html" class="theme-btn">{{$t('ver_mas')}} &nbsp;<i class="far fa-arrow-right"></i></a>
                                     </div>
                             </div>
                         </div>
@@ -32,16 +32,16 @@
                             <div class="hero-content">
                                 <h1 class="hero-title wow animate__animated animate__fadeInUp"
                                         data-wow-duration="1s" data-wow-delay=".50s">
-                                        Una experiencia <br>
-                                        <span> de lujo
-                                        </span> a tu alcance
+                                        {{$t('una_experiencia')}} <br>
+                                        <span> {{$t('de_lujo')}}
+                                        </span> {{$t('alcance')}}
                                     </h1>
                                     <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                         data-wow-delay=".75s">
-                                        Somos una empresa líder en alquiler de vehículos <br> de alta gama.
+                                        {{$t('somos')}} <br> {{$t('alta_gama')}}
                                     </p>
                                     <div>
-                                        <a href="ofertas.html" class="theme-btn">Ver más &nbsp;<i class="far fa-arrow-right"></i></a>
+                                        <a href="ofertas" class="theme-btn">{{$t('ver_mas')}} &nbsp;<i class="far fa-arrow-right"></i></a>
                                     </div>
                             </div>
                         </div>
@@ -58,16 +58,16 @@
                             <div class="hero-content">
                                 <h1 class="hero-title wow animate__animated animate__fadeInUp"
                                         data-wow-duration="1s" data-wow-delay=".50s">
-                                        Alquila la <br>
-                                        <span> Moto Perfecta
-                                        </span> Estés donde estés
+                                        {{$t('alquila')}} <br>
+                                        <span> {{$t(' moto')}}
+                                        </span> {{$t('estes')}}
                                     </h1>
                                     <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                                         data-wow-delay=".75s">
-                                        Queremos que vivas una experiencia de conducción óptima.
+                                        {{$t('queremos')}}
                                     </p>
                                     <div>
-                                        <a href="ofertas.html" class="theme-btn">Ver más &nbsp;<i class="far fa-arrow-right"></i></a>
+                                        <a href="ofertas" class="theme-btn">{{$t('ver_mas')}} &nbsp;<i class="far fa-arrow-right"></i></a>
                                     </div>
                             </div>
                         </div>

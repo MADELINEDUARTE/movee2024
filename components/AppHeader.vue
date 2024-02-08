@@ -37,12 +37,15 @@
             <div class="collapse navbar-collapse" id="main_nav">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown"></li>
-                        <li class="nav-item"><a class="nav-link" href="ofertas">Ofertas</a></li>
-                            <li class="nav-item"><a class="nav-link" href="renting-flexible">Renting Flexible</a></li>   
-                            <li class="nav-item"><a class="nav-link" href="particulares">Particulares</a></li>
-                            <li class="nav-item"><a class="nav-link" href="empresas">Empresas</a></li>
-                            <li class="nav-item"><a class="nav-link" href="autonomos">Autónomos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#" data-bs-toggle="dropdown">{{$t('inicio')}}</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="ofertas">{{$t('ofertas')}}</a></li>
+                            <li class="nav-item"><a class="nav-link" href="renting-flexible">{{$t('renting_flexible')}}</a></li>   
+                            <li class="nav-item"><a class="nav-link" href="particulares">{{$t('particulares')}}</a></li>
+                            <li class="nav-item"><a class="nav-link" href="empresas">{{$t('empresas')}}</a></li>
+                            <li class="nav-item"><a class="nav-link" href="autonomos">{{$t('autonomos')}}</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact">{{$t('contacto')}}</a></li>
                 </ul>
                 <div class="header-nav-right">
                     <div class="header-phone">
@@ -50,16 +53,7 @@
                         </div>
                     </div>
                     <div class="header-account">
-                        <div class="dropdown">
-                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-regular fa-language"></i>
-                                </button>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-caret-right"></i> Español</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-caret-right"></i>Inglés</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-caret-right"></i> Catalán</a></li>
-                                    </ul>
-                        </div>
+                        <BottonLanguage />
                     </div>
                         <div class="header-top-social">
                             <a href="#"><i class="fa-regular fa-envelope"></i></a>

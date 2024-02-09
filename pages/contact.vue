@@ -3,11 +3,11 @@
     <!-- breadcrumb -->
         <div class="site-breadcrumb" style="background: url(assets/img/contact/02.png)">
             <div class="container">
-                <h2 class="breadcrumb-title">Comunícate con <br> <span>Nosotros</span> </h2>
+                <h2 class="breadcrumb-title">{{$t('comunicate')}} <br> <span>{{$t('nosotros')}}</span> </h2>
                     <br>
                     <br>
                     <div>
-                        <a href="ofertas" class="theme-btn">Ver Coches &nbsp;<i class="far fa-arrow-right"></i></a>
+                        <a href="ofertas" class="theme-btn">{{$t('ver_coches')}} &nbsp;<i class="far fa-arrow-right"></i></a>
                     </div>
             </div>
         </div>
@@ -22,8 +22,8 @@
                                     <i class="fal fa-map-marker-alt"></i>
                                 </div>
                                 <div class="contact-info-content">
-                                    <h5>Niestras oficinas</h5>
-                                    <p>Madrid</p>
+                                    <h5>{{$t('nuestras_ofi')}}</h5>
+                                    <p>{{$t('madrid')}}</p>
                                 </div>
                             </div>
                         </div>
@@ -33,8 +33,8 @@
                                     <i class="fal fa-phone"></i>
                                 </div>
                                 <div class="contact-info-content">
-                                    <h5>Contáctanos</h5>
-                                    <p>+34 </p>
+                                    <h5>{{$t('contactanos')}}</h5>
+                                    <p>{{$t('telefono')}} </p>
                                 </div>
                             </div>
                         </div>
@@ -44,8 +44,8 @@
                                     <i class="fal fa-envelope"></i>
                                 </div>
                                 <div class="contact-info-content">
-                                    <h5>Email</h5>
-                                    <p>@example.com</p>
+                                    <h5>{{$t('correo')}}</h5>
+                                    <p>{{$t('correo2')}}</p>
                                 </div>
                             </div>
                         </div>
@@ -55,9 +55,8 @@
                                     <i class="fal fa-clock"></i>
                                 </div>
                                 <div class="contact-info-content">
-                                    <h5>Nuestros Horarios</h5>
-                                    <p>Lun. a Dom.
-                                        8:00 a 20:00 
+                                    <h5>{{$t('horario')}}</h5>
+                                    <p>{{$t('semana')}} 
                                     </p>
                                 </div>
                             </div>
@@ -77,33 +76,33 @@
                         <div class="col-lg-6 align-self-center">
                             <div class="contact-form">
                                 <div class="contact-form-header">
-                                    <h2>Contáctanos</h2>
-                                    <p>Si tienes alguna duda comunícate con nosotros. </p>
+                                    <h2>{{$t('contactanos')}}</h2>
+                                    <p>{{$t('texto1')}} </p>
                                 </div>
                                 <form method="post" action="/moveen/assets/php/contact.php" id="contact-form">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <input type="text" class="form-control" name="name"
-                                                    placeholder="Your Name" required>
+                                                    :placeholder="$t('nombre')" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <input type="email" class="form-control" name="email"
-                                                    placeholder="Your Email" required>
+                                                    :placeholder="$t('email')" required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="subject"
-                                            placeholder="Your Subject" required>
+                                            :placeholder="$t('consulta')" required>
                                     </div>
                                     <div class="form-group">
                                         <textarea name="message" cols="30" rows="5" class="form-control"
-                                            placeholder="Write Your Message"></textarea>
+                                            :placeholder="$t('mensaje')"></textarea>
                                     </div>
-                                    <button type="submit" class="theme-btn">Envíar</button>
+                                    <button type="submit" class="theme-btn">{{$t('b_enviar')}}</button>
                                     <div class="col-md-12 mt-3">
                                         <div class="form-messege text-success"></div>
                                     </div>

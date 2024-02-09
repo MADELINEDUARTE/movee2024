@@ -3,11 +3,11 @@
     <!-- breadcrumb -->
         <div class="site-breadcrumb" style="background: url(assets/img/renting-flexible/01.png)">
             <div class="container">
-                <h2 class="breadcrumb-title">Renting de coches <br> <span>100% flexible</span> </h2>
+                <h2 class="breadcrumb-title">{{$t('r_coches')}} <br> <span>{{$t('cien')}}</span> </h2>
                     <br>
                     <br>
                     <div>
-                        <a href="#" class="theme-btn">Ver Coches &nbsp;<i class="far fa-arrow-right"></i></a>
+                        <a href="#" class="theme-btn">{{$t('ver_coches')}} &nbsp;<i class="far fa-arrow-right"></i></a>
                     </div>
             </div>
         </div>
@@ -19,12 +19,10 @@
                 <div class="site-heading mb-3">
                    
                     <h2 class="site-title">
-                        Encuentra en MOVEE tu <span>renting flexible,</span> coche listo para llevar <span>¡Desde ya!</span>
+                        {{$t('encuentra')}} <span>{{$t('r_flexible')}}</span> {{$t('c_listo')}} <span>{{$t('desde_ya')}}</span>
                     </h2>
                 </div>
-                <p> ¿Te ha surgido un imprevisto y necesitas un coche o una furgoneta para un periodo corto? En MOVEE tenemos la solución
-                con nuestro servicio de renting flexible. Desde 12 hasta 60 meses podrás disponer de un vehículo acorde a tus necesidades
-                y de entrega inmediata
+                <p> {{$t('texto_ren')}}
                 </p>
             </div>
         </div>
@@ -45,23 +43,23 @@
                 <div class="car-content">
                     <div class="car-top">
                         <div>
-                            <h4 class="textflex">Renting Flexible</h4>
+                            <h4 class="textflex">{{$t('r_flexible')}}</h4>
                         </div>
                     </div>
                      <div class="car-top">
-                            <h4><a href="#">BMW X1 <br> SDrive 18d</a></h4>
-                            <span><i class="fas fa-star"></i> 5.0</span>
-                        </div>
+                        <h4><a href="#">{{$t('modelo_coche')}} <br> {{$t('modelo_coche2')}}</a></h4>
+                        <span><i class="fas fa-star"></i> {{$t('valoracion')}}</span>
+                    </div>
                     <div>
                         <div class="car-top">
-                        <span class="car-price"><sub>desde </sub> <strong> $390 </strong> <sub>Al mes</sub></span>
+                        <span class="car-price"><sub>{{$t('desde')}} </sub> <strong> {{$t('precio')}} </strong> <sub>{{$t('al_mes')}}</sub></span>
                         </div>
                     </div>
                     <div class="car-footer">
                             
-                            <a href="configuratuoferta" class="theme-btn1">Particulares</a>
-                            <a href="configuratuoferta" class="theme-btn1">Empresas</a>
-                            <a href="configuratuoferta" class="theme-btn1">Autónomos</a>
+                            <a href="configuratuoferta" class="theme-btn1">{{$t('particulares')}}</a>
+                            <a href="configuratuoferta" class="theme-btn1">{{$t('empresas')}}</a>
+                            <a href="configuratuoferta" class="theme-btn1">{{$t('autonomos')}}</a>
                         </div>
                 </div>
             </div>
@@ -69,7 +67,7 @@
     </div>
             </div>
             <div class="text-center mt-4">
-            <a href="ofertas" class="theme-btn">Ver Más </a>
+            <a href="ofertas" class="theme-btn">{{$t('ver_mas')}} </a>
         </div>
         </div>
     </div>

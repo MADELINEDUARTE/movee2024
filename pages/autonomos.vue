@@ -3,11 +3,11 @@
     <!-- breadcrumb -->
         <div class="site-breadcrumb" style="background: url(assets/img/autonomos/01.png)">
             <div class="container">
-                <h2 class="breadcrumb-title">Ofertas de Renting <br> <span>para Autónomos</span> </h2>
+                <h2 class="breadcrumb-title">{{$t('ofertas_ren')}} <br> <span>{{$t('p_autonomos')}}</span> </h2>
                     <br>
                     <br>
                     <div>
-                        <a href="ofertas" class="theme-btn">Ver Coches &nbsp;<i class="far fa-arrow-right"></i></a>
+                        <a href="ofertas" class="theme-btn">{{$t('ver_coches')}} &nbsp;<i class="far fa-arrow-right"></i></a>
                     </div>
             </div>
         </div>
@@ -19,12 +19,10 @@
                 <div class="site-heading mb-3">
                    
                     <h2 class="site-title">
-                        Ofertas destacadas <span>para Autónomos </span>
+                        {{$t('ofertas_destacadas')}}  <span>{{$t('p_autonomos')}} </span>
                     </h2>
                 </div>
-                <p>Todo incluido | Sin entrada
-                    Configura tu nuevo coche a medida
-                    Ofertas para Autónomos</p>
+                <p>{{$t('incluidoa')}}</p>
             </div>
         </div>
             </div>
@@ -41,34 +39,22 @@
                 <div class="car-img">
                     <img src="/assets/img/car/01.png" alt="">
                 </div>
-                <div class="car-content">
+                 <div class="car-content">
                     <div class="car-top">
-                        <div>
-                            <h4 class="textflex">Renting Empresas</h4>
-                        </div>
-                    </div>
-                     <div class="car-top">
-                            <h4><a href="#">BMW X1 <br> SDrive 18d</a></h4>
-                            <span><i class="fas fa-star"></i> 5.0</span>
-                        </div>
-                    <div>
-                        <div class="car-top">
-                        <span class="car-price"><sub>desde </sub> <strong> $390 </strong> <sub>Al mes</sub></span>
-                        </div>
+                        <h4><a href="#">{{$t('modelo_coche')}} <br> {{$t('modelo_coche2')}}</a></h4>
+                        <span><i class="fas fa-star"></i> {{$t('valoracion')}}</span>
                     </div>
                     <div class="car-footer">
-                            
-                            <a href="configuratuoferta" class="theme-btn1">Particulares</a>
-                            <a href="configuratuoferta" class="theme-btn1">Empresas</a>
-                            <a href="configuratuoferta" class="theme-btn1">Autónomos</a>
-                        </div>
+                        <span class="car-price"><sub>{{$t('desde')}} </sub> <strong>{{$t('precio')}} </strong>  <sub>{{$t('al_mes')}}</sub></span>
+                        <a href="configuratuoferta.html" class="theme-btn">{{$t('ver_ahora')}}</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
             </div>
             <div class="text-center mt-4">
-            <a href="ofertas" class="theme-btn">Ver Destacados </a>
+            <a href="ofertas" class="theme-btn">{{$t('ver_destacados')}} </a>
         </div>
         </div>
     </div>
@@ -80,11 +66,10 @@
                 <div class="site-heading mb-3">
                    
                     <h2 class="site-title">
-                        En MOVEE ofrecemos <span>coches por suscripción sin entrada </span>
+                        {{$t('en_movve')}} <span>{{$t('coches_s')}} </span>
                     </h2>
                 </div>
-                <p>La nueva solución de movilidad que está revolucionando el sector de la automoción. ¿Quieres disponer de un vehículo de la marca que siempre has deseado sin gastos iniciales? ¿Necesitas un coche solamente
-                para 1 mes? <br> ¿Y para unas vacaciones?</p>
+                <p>{{$t('nueva_solucion')}} <br> {{$t('nueva_solucion2')}}</p>
             </div>
         </div>
             </div>
@@ -104,29 +89,24 @@
                 <div class="car-content">
                     <div class="car-top">
                         <div>
-                            <h4 class="textflex">Renting Autónomos</h4>
+                            <h4 class="textflex">{{$t('renting_autonomos')}}</h4>
                         </div>
                     </div>
                      <div class="car-top">
-                            <h4><a href="#">BMW X1 <br> SDrive 18d</a></h4>
-                            <span><i class="fas fa-star"></i> 5.0</span>
-                        </div>
-                    <div>
-                        <div class="car-top">
-                        <span class="car-price"><sub>desde </sub> <strong> $390 </strong> <sub>Al mes</sub></span>
-                        </div>
+                        <h4><a href="#">{{$t('modelo_coche')}} <br> {{$t('modelo_coche2')}}</a></h4>
+                        <span><i class="fas fa-star"></i> {{$t('valoracion')}}</span>
                     </div>
                     <div class="car-footer">
-                            
-                            <a href="configuratuoferta.html" class="theme-btn1">Autónomos</a>
-                        </div>
+                        <span class="car-price"><sub>{{$t('desde')}} </sub> <strong>{{$t('precio')}} </strong>  <sub>{{$t('al_mes')}}</sub></span>
+                        <a href="configuratuoferta.html" class="theme-btn">{{$t('ver_ahora')}}</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
             </div>
             <div class="text-center mt-4">
-            <a href="ofertas" class="theme-btn">Ver Coches </a>
+            <a href="ofertas" class="theme-btn">{{$t('ver_coches')}} </a>
         </div>
         </div>
     </div>

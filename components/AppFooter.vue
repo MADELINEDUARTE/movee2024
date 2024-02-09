@@ -15,26 +15,26 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="footer-widget-box list">
-                        <h4 class="footer-widget-title">Conócenos</h4>
+                        <h4 class="footer-widget-title">{{$t('conocenos')}}</h4>
                         <ul class="footer-list">
-                            <li><a href="about.html">Sobre MOVEE</a></li>
-                            <li><a href="privacy.html">Política de Privacidad</a></li>
-                            <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                            <li><a href="about">{{$t('sobre_m')}}</a></li>
+                            <li><a href="privacy">{{$t('politica')}}</a></li>
+                            <li><a href="aviso-legal">{{$t('aviso')}}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="footer-widget-box list">
-                        <h4 class="footer-widget-title">Días Laborables</h4>
+                        <h4 class="footer-widget-title">{{$t('laborales')}}</h4>
                         <ul class="footer-list">
-                            <li><a href="#">Lunes a Domingo</a></li>
-                            <li><a href="#">De 9:00 a 19:00</a></li>
+                            <li><a href="#">{{$t('lun_dom')}}</a></li>
+                            <li><a href="#">{{$t('hora')}}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="footer-widget-box list">
-                        <h4 class="footer-widget-title">Métodos de Pago</h4>
+                        <h4 class="footer-widget-title">{{$t('pago')}}</h4>
                         <!--<div class="footer-newsletter">
                             <ul class="pago">
                                 <li><a href="#"><img src="/assets/img/" alt=""></a></li>
@@ -51,7 +51,7 @@
             <div class="row">
                 <div class="col-md-6 align-self-center">
                     <p class="copyright-text">
-                        &copy; <span id="date"></span> <a href="#"><strong>MOVEE</strong></a> Todos los derechos reservados 2024.
+                        &copy; <span id="date"></span> <a href="#"><strong>{{$t('move')}}</strong></a> {{$t('derechos')}}
                     </p>
                 </div>
                 <div class="col-md-6 align-self-center">

@@ -17,7 +17,7 @@
                                         {{$t('podras')}} <br>{{$t('sonado')}}
                                     </p>
                                     <div>
-                                        <a href="ofertas.html" class="theme-btn">{{$t('ver_mas')}} &nbsp;<i class="far fa-arrow-right"></i></a>
+                                        <a href="ofertas" class="theme-btn">{{$t('ver_mas')}} &nbsp;<i class="far fa-arrow-right"></i></a>
                                     </div>
                             </div>
                         </div>

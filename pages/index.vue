@@ -8,7 +8,7 @@
         <div class="calculat">
         <h1>{{$t('que_coche')}} <br> {{$t('mejor')}}<br>
         <span> {{$t('proxima')}}</span></h1>
-        <a href="#" class="theme-btn">{{$t('calcula')}} &nbsp;<i class="far fa-arrow-right"></i></a>
+        <a href="configuratuoferta" class="theme-btn">{{$t('calcula')}} &nbsp;<i class="far fa-arrow-right"></i></a>
         </div>
     </div>
 
@@ -36,7 +36,7 @@
                  </div>
             </div>
             <div class="btncentro">
-                <a href="ofertas.html" button class="theme-btn" type="submit">{{$t('buscar')}} <i class="far fa-arrow-right"></i></a>
+                <a href="ofertas" button class="theme-btn" type="submit">{{$t('buscar')}} <i class="far fa-arrow-right"></i></a>
             </div>
             </div>
             </form>
@@ -66,7 +66,7 @@
                     </div>
                     <div class="car-footer">
                         <span class="car-price"><sub>{{$t('desde')}} </sub> <strong>{{$t('precio')}} </strong>  <sub>{{$t('al_mes')}}</sub></span>
-                        <a href="configuratuoferta.html" class="theme-btn">{{$t('ver_ahora')}}</a>
+                        <a href="configuratuoferta" class="theme-btn">{{$t('ver_ahora')}}</a>
                     </div>
                 </div>
                 </div>
@@ -85,7 +85,7 @@
                     </div>
                     <div class="car-footer">
                         <span class="car-price"><sub>{{$t('desde')}} </sub> <strong>{{$t('precio')}} </strong>  <sub>{{$t('al_mes')}}</sub></span>
-                        <a href="configuratuoferta.html" class="theme-btn">{{$t('ver_ahora')}}</a>
+                        <a href="configuratuoferta" class="theme-btn">{{$t('ver_ahora')}}</a>
                     </div>
                 </div>
                 </div>
@@ -104,7 +104,7 @@
                     </div>
                     <div class="car-footer">
                         <span class="car-price"><sub>{{$t('desde')}} </sub> <strong>{{$t('precio')}} </strong>  <sub>{{$t('al_mes')}}</sub></span>
-                        <a href="configuratuoferta.html" class="theme-btn">{{$t('ver_ahora')}}</a>
+                        <a href="configura" class="theme-btn">{{$t('ver_ahora')}}</a>
                     </div>
                 </div>
                 </div>
@@ -131,7 +131,7 @@
                                 <p>{{$t('caben_en')}}</p>
                                 <br>
                             </div>
-                            <a href="compactos.html" class="theme-btn">{{$t('ver_ahora')}}</a>
+                            <a href="compactos" class="theme-btn">{{$t('ver_ahora')}}</a>
                         </div>
                         
                     </div>
@@ -173,7 +173,7 @@
                                 <p>{{$t('los_reyes')}}</p>
                                 <br>
                             </div>
-                            <a href="suvs.html" class="theme-btn">{{$t('ver_ahora')}}</a>
+                            <a href="suvs" class="theme-btn">{{$t('ver_ahora')}}</a>
                         </div>
                         
                     </div>
@@ -201,7 +201,7 @@
                                 <p>{{$t('nueva_gen')}}</p>
                                 <br>
                             </div>
-                            <a href="furgonetas.html" class="theme-btn">{{$t('ver_ahora')}}</a>
+                            <a href="furgonetas" class="theme-btn">{{$t('ver_ahora')}}</a>
                         </div>
                         
                     </div>

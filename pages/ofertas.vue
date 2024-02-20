@@ -364,9 +364,9 @@
                                         </div>
                                         <div class="car-footer">
                                 
-                                            <a href="configuratuoferta.html" class="theme-btn1">{{$t('particulares')}}</a>
-                                            <a href="configuratuoferta.html" class="theme-btn1">{{$t('empresas')}}</a>
-                                            <a href="configuratuoferta.html" class="theme-btn1">{{$t('autonomos')}}</a>
+                                            <a href="configuratuoferta" class="theme-btn1">{{$t('particulares')}}</a>
+                                            <a href="configuratuoferta" class="theme-btn1">{{$t('empresas')}}</a>
+                                            <a href="configuratuoferta" class="theme-btn1">{{$t('autonomos')}}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -393,9 +393,9 @@
                                         </div>
                                         <div class="car-footer">
                                 
-                                            <a href="configuratuoferta.html" class="theme-btn1">{{$t(' particulares')}}</a>
-                                            <a href="configuratuoferta.html" class="theme-btn1">{{$t('empresas')}}</a>
-                                            <a href="configuratuoferta.html" class="theme-btn1">{{$t('autonomos')}}</a>
+                                            <a href="configuratuoferta" class="theme-btn1">{{$t(' particulares')}}</a>
+                                            <a href="configuratuoferta" class="theme-btn1">{{$t('empresas')}}</a>
+                                            <a href="configuratuoferta" class="theme-btn1">{{$t('autonomos')}}</a>
                                         </div>
                                     </div>
                                 </div>

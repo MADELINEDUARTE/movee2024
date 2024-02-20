@@ -1,16 +1,16 @@
 <template>
-<LayoutWeb>
-    <!-- breadcrumb -->
-        <div class="site-breadcrumb" style="background: url(/assets/img/renting-flexible/01.png)">
+    <LayoutWeb>
+         <div class="site-breadcrumb" style="background: url(/assets/img/suvs/01.png)">
             <div class="container">
-                <h2 class="breadcrumb-title">{{$t('r_coches')}} <br> <span>{{$t('cien')}}</span> </h2>
+                <h2 class="breadcrumb-title">{{$t('renting_co')}} <br> <span>{{$t('suvs')}}</span> </h2>
                     <br>
                     <br>
                     <div>
-                        <a href="#" class="theme-btn">{{$t('ver_coches')}} &nbsp;<i class="far fa-arrow-right"></i></a>
+                        <a href="ofertas" class="theme-btn">{{$t('ver_mas')}} &nbsp;<i class="far fa-arrow-right"></i></a>
                     </div>
             </div>
         </div>
+
 
         <div class="about-area">
             <div class="container">
@@ -19,10 +19,10 @@
                 <div class="site-heading mb-3">
                    
                     <h2 class="site-title">
-                        {{$t('encuentra')}} <span>{{$t('r_flexible')}}</span> {{$t('c_listo')}} <span>{{$t('desde_ya')}}</span>
+                        {{$t('c_suv')}} <span>{{$t('nuevo_suv')}}</span> {{$t('p_particular')}}
                     </h2>
                 </div>
-                <p> {{$t('texto_ren')}}
+                <p> {{$t('t_suv')}}
                 </p>
             </div>
         </div>
@@ -71,7 +71,5 @@
         </div>
         </div>
     </div>
-    
-    
-</LayoutWeb>
+        </LayoutWeb>
 </template>

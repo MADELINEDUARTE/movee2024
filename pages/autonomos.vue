@@ -46,7 +46,7 @@
                     </div>
                     <div class="car-footer">
                         <span class="car-price"><sub>{{$t('desde')}} </sub> <strong>{{$t('precio')}} </strong>  <sub>{{$t('al_mes')}}</sub></span>
-                        <a href="configuratuoferta.html" class="theme-btn">{{$t('ver_ahora')}}</a>
+                        <a href="configuratuoferta" class="theme-btn">{{$t('ver_ahora')}}</a>
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="car-footer">
                         <span class="car-price"><sub>{{$t('desde')}} </sub> <strong>{{$t('precio')}} </strong>  <sub>{{$t('al_mes')}}</sub></span>
-                        <a href="configuratuoferta.html" class="theme-btn">{{$t('ver_ahora')}}</a>
+                        <a href="configuratuoferta" class="theme-btn">{{$t('ver_ahora')}}</a>
                     </div>
                 </div>
             </div>

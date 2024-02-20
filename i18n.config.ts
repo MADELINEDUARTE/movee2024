@@ -290,7 +290,33 @@ export default defineI18nConfig(() => ({
             domiciliod: 'Los textos, imágenes, sonidos, animaciones, software y el resto de contenidos incluidos en este website son propiedad exclusiva de www.XXXX.com o sus licenciantes.Cualquier acto de transmisión, distribución, cesión, reproducción, almacenamiento o comunicación pública total o parcial, debe contar con el consentimiento expreso de www.movve.com.',
             domicilioe: 'Asimismo, para acceder a algunos de los servicios que www.XXXX.com ofrece a través del website deberá proporcionar algunos datos de carácter personal.En cumplimiento de lo establecido en el Reglamento(UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos le informamos que, mediante la cumplimentación de los presentes formularios, sus datos personales quedarán incorporados y serán tratados en los ficheros de MOVEE con el fin de poderle prestar y ofrecer nuestros servicios así como para informarle de las mejoras del sitio Web.Asimismo, le informamos de la posibilidad de que ejerza los derechos de acceso, rectificación, cancelación y oposición de sus datos de carácter personal, manera gratuita mediante email a movee.com o en la dirección XXXXX',
             
+            renting_co: 'Renting de coches',
+            perfectos: 'Perfectos',
+            c_compactos: 'Coches compactos',
+            ciudad: 'para ciudad, ágiles y polivalentes',
+            t_compactos: 'Un coche compacto cabe en (casi) cualquier lugar. Son pequeños, manejables, ideales para trayectos urbanos. Contrata tu nuevo coche compacto con MOVEE y disfruta de todas las ventajas del renting',
             
+            t_berlinas: 'Una de las principales ventajas de una berlina es que su carrocería es más rígida gracias a la separación entre volúmenes. Contrata tu nueva Berlina con MOVEE y disfruta de todas las ventajas del renting',
+
+            c_comerciales: 'En MOVEE ofrecemos coches comerciales',
+            sin_entrada: 'por suscripción sin entrada,',
+            ofer_adaptadas: 'con ofertas adaptadas a las necesidades de cada conductor',
+            t_comerciales: 'Cambiar de coche es una decisión delicada. No siempre es fácil dar con el modelo que mejor se adapta a un conductor, y  mucho menos si va a ser el coche familiar.En MOVEE ponemos a tu disposición una gama completa de coches para que puedas encontrar, junto con tus seres queridos, el que mejor se ajusta a todos',
+
+            c_suv: 'Encuentra en MOVEE tu',
+            p_particular: 'para particulares, autónomos y empresas',
+            nuevo_suv:'nuevo SUV,',
+            t_suv: 'Los SUV son los reyes de la carretera. A medio camino entre un todoterreno y un coche urbano, ofrecen comodidad, potencia, diseño y prestaciones.Si estás pensando en cambiar de coche y valoras hacerte con un SUV, en MOVEE encontrarás ofertas de renting para particulares, empresas y autónomos',
+
+            nuevo_furgo: 'nueva Furgoneta,',
+            t_furgo: 'Las furgonetas son vehículos multifuncionales ideados para transportar mercancías. Sin embargo, se han ganado un hueco muy importante entre los conductores no profesionales. ¿Estás pensando en pasarte a las furgonetas? Ponemos a tu disposición todas estas ofertas',
+
+            h_elect: 'híbridos & eléctricos',
+            ofer_elec: 'Ofrecemos ofertas de renting de',
+            c_hibridos_elec:'coches híbridos & eléctricos,',
+            adaptados:'adaptadas a las necesidades de cada conductor',
+            t_hibridos: '¿Quieres pasarte a un coche eléctrico o híbrido pero aún no estás segur@ de dar el salto? Atrévete con un renting sin entrada y mantenimiento incluido y conduce tu nuevo coche eléctrico cuando, cuanto y como quieras',
+
 
 
         },
